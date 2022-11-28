@@ -1,0 +1,12 @@
+using QFramework;
+
+namespace BrotatoM
+{
+    public class BrotatoGame : Architecture<BrotatoGame>
+    {
+        protected override void Init()
+        {
+            
+        }
+    }
+}

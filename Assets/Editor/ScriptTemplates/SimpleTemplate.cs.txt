@@ -1,0 +1,9 @@
+using QFramework;
+
+namespace BrotatoM
+{
+    public class #NAME#
+    {
+        
+    }
+}
