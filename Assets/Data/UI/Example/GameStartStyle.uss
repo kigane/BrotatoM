@@ -1,0 +1,4 @@
+Label {
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+}
