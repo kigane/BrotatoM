@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174363907}
   - component: {fileID: 174363908}
+  - component: {fileID: 174363909}
   m_Layer: 0
   m_Name: Snack (2)
   m_TagString: Untagged
@@ -207,6 +208,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &174363909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174363906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
 --- !u!1 &555170444
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +378,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.5188679, g: 0.48623708, b: 0.18796721, a: 1}
+  m_Color: {r: 0.9056604, g: 0.4704898, b: 0.19992878, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -460,8 +474,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.34117648, g: 0.28433084, b: 0.23529412, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 550ebade03f233442bf5945218190916, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -480,7 +494,7 @@ Transform:
   m_GameObject: {fileID: 872439908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 30, y: 18, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -496,6 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250188968}
   - component: {fileID: 1250188969}
+  - component: {fileID: 1250188970}
   m_Layer: 0
   m_Name: Snack
   m_TagString: Untagged
@@ -570,6 +585,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1250188970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250188967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
 --- !u!1 &1289895776
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +631,7 @@ MonoBehaviour:
   m_PanelSettings: {fileID: 11400000, guid: f080ee4536a6ba840b6f1282a6fca106, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 710fc843918a042489d9b102fbe15cfb, type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!4 &1289895778
 Transform:
   m_ObjectHideFlags: 0
@@ -675,6 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899990100}
   - component: {fileID: 1899990101}
+  - component: {fileID: 1899990102}
   m_Layer: 0
   m_Name: Snack (1)
   m_TagString: Untagged
@@ -749,3 +778,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1899990102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899990099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
