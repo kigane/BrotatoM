@@ -1,0 +1,37 @@
+Label {
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    color: rgba(255, 255, 255, 0.9);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-align: middle-left;
+}
+
+Button {
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(144, 144, 144, 0.8);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 26px;
+}
+
+ProgressBar {
+    border-left-color: rgba(2, 2, 2, 255);
+    border-right-color: rgba(2, 2, 2, 255);
+    border-top-color: rgba(2, 2, 2, 255);
+    border-bottom-color: rgba(2, 2, 2, 255);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+#attrs > #attr-container {
+    margin-top: 4px;
+}

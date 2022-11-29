@@ -8,7 +8,7 @@ namespace BrotatoM
     public class GameStartUI : MonoBehaviour
     {
         private VisualElement mRootElement;
-        private Action[] mBtnActions = new Action[4];
+        private readonly Action[] mBtnActions = new Action[4];
 
         private void Start()
         {
@@ -45,8 +45,7 @@ namespace BrotatoM
 
         private void OnClickStartBtn()
         {
-            Debug.Log("new game start");
-            // SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("MainScene");
         }
 
         private void OnClickSettingsBtn()
