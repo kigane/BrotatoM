@@ -7,6 +7,7 @@ namespace BrotatoM
         protected override void Init()
         {
             RegisterModel<IPlayerModel>(new PlayerModel());
+            RegisterSystem<ITimeSystem>(new TimeSystem());
         }
     }
 }

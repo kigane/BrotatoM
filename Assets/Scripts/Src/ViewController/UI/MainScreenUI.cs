@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 using QFramework;
+using System.Collections;
 // using DG.Tweening;
 
 namespace BrotatoM
@@ -12,6 +13,9 @@ namespace BrotatoM
         private VisualElement mBodyContainer;
         private VisualElement mHealthBar;
         private VisualElement mExpBar;
+        private Label mHarvestLabel;
+        private Label mHarvestBagLabel;
+        private Label mTimeLabel;
         private IPlayerModel mPlayerModel;
 
         private void Start()
@@ -25,18 +29,17 @@ namespace BrotatoM
             mBodyContainer = mRootElement.Q("body-container");
             mBodyContainer.style.display = DisplayStyle.None;
 
-            mHealthBar = mRootElement.Q("health-bar");
-            float healthBarLength = mHealthBar.parent.worldBound.width - 10;
-            mHealthBar.style.width = mPlayerModel.HP.Value / mPlayerModel.MaxHP.Value * healthBarLength;
+            mHarvestLabel = mRootElement.Q<Label>("stuff-amount");
+            mHarvestLabel.text = mPlayerModel.Harvest.Value.ToString();
+            mHarvestBagLabel = mRootElement.Q<Label>("stock-amount");
+            mHarvestBagLabel.text = mPlayerModel.HarvestBag.Value.ToString();
 
-            mExpBar = mRootElement.Q("exp-bar");
-            float expBarLength = mExpBar.parent.worldBound.width - 10;
-            mExpBar.style.width = mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value * expBarLength;
-            Debug.Log(mPlayerModel.Exp.Value);
-            Debug.Log(mPlayerModel.CurrMaxExp.Value);
-            Debug.Log(mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value);
-            Debug.Log(expBarLength);
-            Debug.Log(mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value * expBarLength);
+            mTimeLabel = mRootElement.Q<Label>("time");
+            StartCoroutine(CountDown(20));
+
+            // UI Toolkit在第一帧还没有计算出各个元素的width,height，值都为NaN
+            // 需要等待一帧后才能获取到实际值
+            StartCoroutine(MainScreenUIInitialization());
 
             // Invoke(nameof(AnimateLoadingBar), 1f);
         }
@@ -47,6 +50,29 @@ namespace BrotatoM
             //remove 25px to account for margins
             // float endWidth = mHealthBar.parent.worldBound.width - 10;
             // DOTween.To(() => 0, x => mHealthBar.style.width = x, endWidth, 5f).SetEase(Ease.Linear);
+        }
+
+        private IEnumerator MainScreenUIInitialization()
+        {
+            yield return null; // 等待一帧
+            mHealthBar = mRootElement.Q("health-bar");
+            float healthBarLength = mHealthBar.parent.worldBound.width - 10;
+            mHealthBar.style.width = (float)mPlayerModel.HP.Value / (float)mPlayerModel.MaxHP.Value * healthBarLength;
+
+            mExpBar = mRootElement.Q("exp-bar");
+            float expBarLength = mExpBar.parent.resolvedStyle.width - 10;
+            mExpBar.style.width = (float)mPlayerModel.Exp.Value / (float)mPlayerModel.CurrMaxExp.Value * expBarLength;
+        }
+
+        private IEnumerator CountDown(int seconds)
+        {
+            mTimeLabel.text = seconds.ToString();
+            while (seconds > 0)
+            {
+                yield return new WaitForSeconds(1);
+                seconds--;
+                mTimeLabel.text = seconds.ToString();
+            }
         }
     }
 }
