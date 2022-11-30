@@ -16,13 +16,14 @@ namespace BrotatoM
 
         private void Update()
         {
+            // 移动逻辑
             var moveSignal = mPlayerControl.Player.Move.ReadValue<Vector2>();
             var currPos = transform.position;
             currPos.x += moveSignal.x * Time.deltaTime * moveSpeed;
             currPos.x = Mathf.Clamp(currPos.x, -14, 14);
             currPos.y += moveSignal.y * Time.deltaTime * moveSpeed;
             currPos.y = Mathf.Clamp(currPos.y, -8, 8);
-            ChangeDirection(moveSignal);
+            ChangeDirection(moveSignal, transform);
             transform.position = currPos;
         }
 
@@ -36,7 +37,7 @@ namespace BrotatoM
             mPlayerControl.Disable();
         }
 
-        private void ChangeDirection(Vector2 moveDir)
+        private void ChangeDirection(Vector2 moveDir, Transform transform)
         {
             if (moveDir.x * transform.localScale.x < 0)
             {

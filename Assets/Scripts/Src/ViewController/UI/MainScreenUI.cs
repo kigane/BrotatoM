@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
-using DG.Tweening;
+// using DG.Tweening;
 
 namespace BrotatoM
 {
@@ -23,15 +23,15 @@ namespace BrotatoM
 
             mHealthBar = mRootElement.Q("health-bar");
 
-            Invoke(nameof(AnimateLoadingBar), 1f);
+            // Invoke(nameof(AnimateLoadingBar), 1f);
         }
 
         private void AnimateLoadingBar()
         {
             //Grab the final width of the progress bar based on the parent and
             //remove 25px to account for margins
-            float endWidth = mHealthBar.parent.worldBound.width - 10;
-            DOTween.To(() => 0, x => mHealthBar.style.width = x, endWidth, 5f).SetEase(Ease.Linear);
+            // float endWidth = mHealthBar.parent.worldBound.width - 10;
+            // DOTween.To(() => 0, x => mHealthBar.style.width = x, endWidth, 5f).SetEase(Ease.Linear);
         }
     }
 }
