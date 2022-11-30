@@ -22,6 +22,7 @@ namespace BrotatoM
             currPos.x = Mathf.Clamp(currPos.x, -14, 14);
             currPos.y += moveSignal.y * Time.deltaTime * moveSpeed;
             currPos.y = Mathf.Clamp(currPos.y, -8, 8);
+            ChangeDirection(moveSignal);
             transform.position = currPos;
         }
 
@@ -33,6 +34,16 @@ namespace BrotatoM
         private void OnDisable()
         {
             mPlayerControl.Disable();
+        }
+
+        private void ChangeDirection(Vector2 moveDir)
+        {
+            if (moveDir.x * transform.localScale.x < 0)
+            {
+                var localScale = transform.localScale;
+                localScale.x *= -1;
+                transform.localScale = localScale;
+            }
         }
     }
 }
