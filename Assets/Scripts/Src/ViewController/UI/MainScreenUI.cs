@@ -1,18 +1,22 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
+using QFramework;
 // using DG.Tweening;
 
 namespace BrotatoM
 {
-    public class MainScreenUI : MonoBehaviour
+    public class MainScreenUI : BrotatoGameController
     {
         private VisualElement mRootElement;
         private VisualElement mPromptElement;
         private VisualElement mBodyContainer;
         private VisualElement mHealthBar;
+        private VisualElement mExpBar;
+        private IPlayerModel mPlayerModel;
 
         private void Start()
         {
+            mPlayerModel = this.GetModel<IPlayerModel>();
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
 
             mPromptElement = mRootElement.Q<Label>("prompt");
@@ -22,6 +26,17 @@ namespace BrotatoM
             mBodyContainer.style.display = DisplayStyle.None;
 
             mHealthBar = mRootElement.Q("health-bar");
+            float healthBarLength = mHealthBar.parent.worldBound.width - 10;
+            mHealthBar.style.width = mPlayerModel.HP.Value / mPlayerModel.MaxHP.Value * healthBarLength;
+
+            mExpBar = mRootElement.Q("exp-bar");
+            float expBarLength = mExpBar.parent.worldBound.width - 10;
+            mExpBar.style.width = mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value * expBarLength;
+            Debug.Log(mPlayerModel.Exp.Value);
+            Debug.Log(mPlayerModel.CurrMaxExp.Value);
+            Debug.Log(mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value);
+            Debug.Log(expBarLength);
+            Debug.Log(mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value * expBarLength);
 
             // Invoke(nameof(AnimateLoadingBar), 1f);
         }

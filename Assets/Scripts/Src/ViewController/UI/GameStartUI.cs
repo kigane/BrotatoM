@@ -2,10 +2,11 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using System;
+using QFramework;
 
 namespace BrotatoM
 {
-    public class GameStartUI : MonoBehaviour
+    public class GameStartUI : BrotatoGameController
     {
         private VisualElement mRootElement;
         private readonly Action[] mBtnActions = new Action[4];
