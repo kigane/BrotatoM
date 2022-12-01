@@ -41,27 +41,39 @@ namespace BrotatoM
             // 需要等待一帧后才能获取到实际值
             StartCoroutine(MainScreenUIInitialization());
 
-            // Invoke(nameof(AnimateLoadingBar), 1f);
-        }
+            mPlayerModel.HP.Register(value =>
+            {
+                UpdateBar("health-bar", value / mPlayerModel.MaxHP.Value);
+            });
 
-        private void AnimateLoadingBar()
-        {
-            //Grab the final width of the progress bar based on the parent and
-            //remove 25px to account for margins
-            // float endWidth = mHealthBar.parent.worldBound.width - 10;
-            // DOTween.To(() => 0, x => mHealthBar.style.width = x, endWidth, 5f).SetEase(Ease.Linear);
+            mPlayerModel.Exp.Register(value =>
+            {
+                UpdateBar("exp-bar", value / mPlayerModel.CurrMaxExp.Value);
+            });
+
+            mPlayerModel.Harvest.Register(value =>
+            {
+                mRootElement.Q<Label>("stuff-amount").text = value.ToString();
+            });
         }
 
         private IEnumerator MainScreenUIInitialization()
         {
             yield return null; // 等待一帧
-            mHealthBar = mRootElement.Q("health-bar");
-            float healthBarLength = mHealthBar.parent.worldBound.width - 10;
-            mHealthBar.style.width = (float)mPlayerModel.HP.Value / (float)mPlayerModel.MaxHP.Value * healthBarLength;
+            UpdateBar("health-bar", mPlayerModel.HP.Value / mPlayerModel.MaxHP.Value);
+            UpdateBar("exp-bar", mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value);
+        }
 
-            mExpBar = mRootElement.Q("exp-bar");
-            float expBarLength = mExpBar.parent.resolvedStyle.width - 10;
-            mExpBar.style.width = (float)mPlayerModel.Exp.Value / (float)mPlayerModel.CurrMaxExp.Value * expBarLength;
+        /// <summary>
+        /// 更新进度条
+        /// </summary>
+        /// <param name="barName">进度条ID</param>
+        /// <param name="progress">进度</param>
+        private void UpdateBar(string barName, float progress)
+        {
+            var bar = mRootElement.Q(barName);
+            float barLength = bar.parent.worldBound.width - 10;
+            bar.style.width = progress * barLength;
         }
 
         private IEnumerator CountDown(int seconds)

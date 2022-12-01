@@ -7,7 +7,6 @@ namespace BrotatoM
         public float speed;
         public Vector2 direction = new(1f, 0f);
         private Rigidbody2D mRig;
-        private float isRight;
 
         private void Awake()
         {
@@ -19,8 +18,9 @@ namespace BrotatoM
         {
             speed = 5;
             var mPlayerTransform = GameObject.FindWithTag("Player").transform;
-            var direction = transform.position - mPlayerTransform.position;
-            mRig.velocity = speed * direction.normalized;
+            var mWeaponTransform = mPlayerTransform.Find("Weapon");
+            // 四元数和向量的乘积表示旋转
+            mRig.velocity = speed * (mWeaponTransform.rotation * Vector3.right).normalized;
         }
     }
 }

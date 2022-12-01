@@ -8,10 +8,13 @@ namespace BrotatoM
     {
         public float moveSpeed;
         private PlayerControl mPlayerControl;
+        private SpriteRenderer mSpriteRenderer;
+        private bool mFlipped;
 
         private void Awake()
         {
             mPlayerControl = new PlayerControl();
+            mSpriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         private void Update()
@@ -23,7 +26,7 @@ namespace BrotatoM
             currPos.x = Mathf.Clamp(currPos.x, -14, 14);
             currPos.y += moveSignal.y * Time.deltaTime * moveSpeed;
             currPos.y = Mathf.Clamp(currPos.y, -8, 8);
-            ChangeDirection(moveSignal, transform);
+            ChangeDirection(moveSignal);
             transform.position = currPos;
         }
 
@@ -37,13 +40,20 @@ namespace BrotatoM
             mPlayerControl.Disable();
         }
 
-        private void ChangeDirection(Vector2 moveDir, Transform transform)
+        private void ChangeDirection(Vector2 moveDir)
         {
-            if (moveDir.x * transform.localScale.x < 0)
+            if (moveDir.x < 0)
             {
-                var localScale = transform.localScale;
-                localScale.x *= -1;
-                transform.localScale = localScale;
+                mSpriteRenderer.flipX = true;
+                mFlipped = true;
+            }
+            else if (moveDir.x > 0)
+            {
+                if (mFlipped)
+                {
+                    mSpriteRenderer.flipX = false;
+                    mFlipped = false;
+                }
             }
         }
     }
