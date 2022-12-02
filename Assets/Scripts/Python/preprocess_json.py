@@ -8,6 +8,7 @@ def name_to_path(name: str, part: str):
     """根据name找到相应的Resources的图像加载路径(basename)"""
     base_path = f"ArtAssets/{part}/"
     name = "_".join(name.split())  # 'A B' => 'A_B'
+    name = name.replace("'", "%27")  # 转义单引号
 
     for path in filter(  # 过滤.meta文件
         lambda x: x.endswith(".png"), os.listdir(RESOURCES_DIR + base_path)
@@ -25,7 +26,7 @@ def spacial_dispose(part: str, v: dict):
     elif part == "Characters":
         v.pop("Item Tags")
     elif part == "Stats":
-        v["PathBig"] = v["Path"].replace("20", "60")
+        v["Path Big"] = v["Path"].replace("20", "60")
     elif part == "Enemies":
         #! 需要手动替换掉Unicode字符u00a0,和†。
         #! 第一个ID由'-'改为'0'。
@@ -51,7 +52,7 @@ def spacial_dispose(part: str, v: dict):
             for el in lst
         ]
         v["Damage"] = damage_lst
-        v["DamageModifier"] = modifier_lst
+        v["Damage Modifier"] = modifier_lst
 
         v["Attack Speed"] = str_to_lst(
             v["Attack Speed"], lambda x: float(x[:-1])
@@ -95,16 +96,30 @@ def preprocess_jsons(part):
         valid_counts = 0
         for k, v in tables.items():
             v["Path"] = name_to_path(v["Name"], part)
-            v["Path"] = v["Path"].replace("'", "%27")  # 转义单引号
 
             # 特殊处理
             spacial_dispose(part, v)
 
-            config_lst.append(v)
+            # 把key转换为C#变量名形式
+            new_dic = {}
+            for key, val in v.items():
+                if key == "+hp/wave":
+                    newKey = "HpIncreasePerWave"
+                elif key == "+dmg/wave":
+                    newKey = "DamageIncreasePerWave"
+                else:
+                    newKey = "".join([s.capitalize() for s in key.split()])
+                new_dic[newKey] = v[key]
+
+            config_lst.append(new_dic)
             if os.path.exists(RESOURCES_DIR + v["Path"]):
                 valid_counts += 1
-            if v["PathBig"] != None and os.path.exists(RESOURCES_DIR + v["PathBig"]):
-                valid_counts += 1
+            try:
+                if os.path.exists(RESOURCES_DIR + v["PathBig"]):
+                    valid_counts += 1
+            except KeyError:
+                pass
+
         print(f"有效图片数: {valid_counts}")
 
     with open(f"./Processed{part}.json", "w") as pf:
@@ -120,7 +135,7 @@ if __name__ == "__main__":
         # "Weapons",
         # "Enemies",
         # "Dangers",
-        "Stats"
+        "Stats",
     ]
     for part in parts:
         preprocess_jsons(part)
