@@ -1,5 +1,9 @@
 {
     "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
+    },
     "files.exclude":
     {
         "**/.DS_Store":true,
@@ -52,5 +56,6 @@
         "ProjectSettings/":true,
         "temp/":true,
         "Temp/":true
-    }
+    },
+    "python.analysis.typeCheckingMode": "basic"
 }

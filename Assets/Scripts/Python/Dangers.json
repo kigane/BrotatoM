@@ -1,0 +1,38 @@
+{
+    "0": {
+        "Danger": 0,
+        "Screenshot": null,
+        "Modifiers": "No Modifiers",
+        "Unlocks": "One Armed"
+    },
+    "1": {
+        "Danger": 1,
+        "Screenshot": null,
+        "Modifiers": "New Enemies Appear",
+        "Unlocks": "Bull"
+    },
+    "2": {
+        "Danger": 2,
+        "Screenshot": null,
+        "Modifiers": "New Enemies Appear An Elite or horde appears for 1 round (round 11 or 12)",
+        "Unlocks": "Soldier"
+    },
+    "3": {
+        "Danger": 3,
+        "Screenshot": null,
+        "Modifiers": "New Enemies Appear An Elite or horde appears for 1 round (rounds 11 or 12) Enemies are stronger (Enemies hit 5% more, have 5% more hp, and run 5% faster.) [slightly outdated they are now stronger]",
+        "Unlocks": "Masochist"
+    },
+    "4": {
+        "Danger": 4,
+        "Screenshot": null,
+        "Modifiers": "New Enemies Appear An Elite or horde appears for 3 rounds (rounds 11 to 18) Enemies are stronger",
+        "Unlocks": "Knight"
+    },
+    "5": {
+        "Danger": 5,
+        "Screenshot": null,
+        "Modifiers": "New Enemies Appear An Elite or horde appears for 3 rounds (rounds 11 to 18) Enemies are stronger Two Bosses spawn instead of one (round 20) (Bosses have -25% less HP)",
+        "Unlocks": "Demon"
+    }
+}

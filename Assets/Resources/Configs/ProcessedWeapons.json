@@ -1,0 +1,1656 @@
+[
+    {
+        "Name": "Cacti Club",
+        "Class": [
+            "Primitive",
+            "Heavy"
+        ],
+        "Damage": [
+            10,
+            20,
+            30,
+            50
+        ],
+        "Attack Speed": [
+            1.67,
+            1.57,
+            1.5,
+            1.34
+        ],
+        "Range": [
+            200,
+            200,
+            200,
+            200
+        ],
+        "Knockback": [
+            8,
+            8,
+            8,
+            8
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hitting and enemy spawns 3/4/5/6 projectiles dealing 50% damage",
+        "Base price": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Cacti_Club.png",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Chopper",
+        "Class": [
+            "Blade"
+        ],
+        "Damage": [
+            6,
+            12,
+            18,
+            30
+        ],
+        "Attack Speed": [
+            1.01,
+            0.97,
+            0.94,
+            0.85
+        ],
+        "Range": [
+            125,
+            135,
+            150,
+            180
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "+1/+1/+1/+2 health healed from consumables",
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Win a run with Multitasker",
+        "Path": "ArtAssets/Weapons/60px-Chopper.png",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "Crit Chance": [
+            0.1,
+            0.15,
+            0.2,
+            0.2
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Circular Saw",
+        "Class": [
+            "Blade",
+            "Medical"
+        ],
+        "Damage": [
+            0,
+            10,
+            15,
+            25
+        ],
+        "Attack Speed": [
+            0,
+            0.67,
+            0.61,
+            0.56
+        ],
+        "Range": [
+            0,
+            175,
+            175,
+            175
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0.45,
+            0.5,
+            0.6
+        ],
+        "Special Effects": null,
+        "Base price": [
+            0,
+            46,
+            86,
+            173
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Circular_Saw.png",
+        "DamageModifier": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0.05,
+            0.1,
+            0.2
+        ],
+        "Crit Multiplicator": [
+            0,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Thief Dagger",
+        "Class": [
+            "Precise"
+        ],
+        "Damage": [
+            5,
+            10,
+            15,
+            25
+        ],
+        "Attack Speed": [
+            1.01,
+            0.92,
+            0.85,
+            0.7
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "30%/36%/42%/60% to gain 1 material when killing an enemy with a critical hit with this weapon",
+        "Base price": [
+            12,
+            26,
+            52,
+            105
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Thief_Dagger.png",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "Crit Chance": [
+            0.2,
+            0.25,
+            0.3,
+            0.4
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Fist",
+        "Class": [
+            "Unarmed"
+        ],
+        "Damage": [
+            8,
+            16,
+            32,
+            64
+        ],
+        "Attack Speed": [
+            0.76,
+            0.7,
+            0.67,
+            0.56
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            15,
+            15,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Fist.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "Crit Multiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Flaming Brass Knuckles",
+        "Class": [
+            "Unarmed",
+            "Elemental"
+        ],
+        "Damage": [
+            0,
+            16,
+            32,
+            64
+        ],
+        "Attack Speed": [
+            0,
+            0.7,
+            0.67,
+            0.56
+        ],
+        "Range": [
+            0,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            0,
+            15,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Deals -/8x5/12x6/15x7(100%) burning damage",
+        "Base price": [
+            0,
+            46,
+            86,
+            173
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Flaming_Brass_Knuckles.png",
+        "DamageModifier": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "Crit Multiplicator": [
+            0,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Ghost Axe",
+        "Class": [
+            "Ethereal"
+        ],
+        "Damage": [
+            12,
+            18,
+            24,
+            40
+        ],
+        "Attack Speed": [
+            1.74,
+            1.67,
+            1.57,
+            1.5
+        ],
+        "Range": [
+            200,
+            200,
+            200,
+            200
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "+1% Damage for every 20/18/16/12 kills in a wave with this weapon",
+        "Base price": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Ghost_Axe.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Ghost Flint",
+        "Class": [
+            "Ethereal"
+        ],
+        "Damage": [
+            6,
+            9,
+            12,
+            18
+        ],
+        "Attack Speed": [
+            1.25,
+            1.17,
+            1.08,
+            1.01
+        ],
+        "Range": [
+            150,
+            160,
+            170,
+            180
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "+1% Attack Speed for every 20/18/16/12 kills in a wave with this weapon",
+        "Base price": [
+            12,
+            26,
+            52,
+            105
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Ghost_Flint.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Hammer",
+        "Class": [
+            "Blunt",
+            "Heavy"
+        ],
+        "Damage": [
+            0,
+            30,
+            60,
+            100
+        ],
+        "Attack Speed": [
+            0,
+            1.67,
+            1.57,
+            1.5
+        ],
+        "Range": [
+            0,
+            175,
+            175,
+            175
+        ],
+        "Knockback": [
+            0,
+            25,
+            30,
+            40
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            0,
+            51,
+            95,
+            190
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Hammer.png",
+        "DamageModifier": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            0,
+            1.75,
+            1.75,
+            1.75
+        ]
+    },
+    {
+        "Name": "Hand",
+        "Class": [
+            "Unarmed",
+            "Support"
+        ],
+        "Damage": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Attack Speed": [
+            1.01,
+            0.92,
+            0.85,
+            0.68
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            30,
+            30,
+            30,
+            30
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "+3/+6/+9/+18 Harvesting",
+        "Base price": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Hand.png",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "Crit Chance": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "Crit Multiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Hatchet",
+        "Class": [
+            "Primitive"
+        ],
+        "Damage": [
+            5,
+            10,
+            20,
+            40
+        ],
+        "Attack Speed": [
+            0.68,
+            0.68,
+            0.68,
+            0.61
+        ],
+        "Range": [
+            125,
+            125,
+            125,
+            125
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Win a run with Wildling",
+        "Path": "ArtAssets/Weapons/60px-Hatchet.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Knife",
+        "Class": [
+            "Precise"
+        ],
+        "Damage": [
+            6,
+            9,
+            12,
+            20
+        ],
+        "Attack Speed": [
+            1.01,
+            0.92,
+            0.85,
+            0.76
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Knife.png",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "Crit Chance": [
+            0.2,
+            0.3,
+            0.4,
+            0.5
+        ],
+        "Crit Multiplicator": [
+            2.5,
+            3,
+            3.5,
+            4
+        ]
+    },
+    {
+        "Name": "Lightning Shiv",
+        "Class": [
+            "Precise",
+            "Elemental"
+        ],
+        "Damage": [
+            3,
+            6,
+            9,
+            15
+        ],
+        "Attack Speed": [
+            1.01,
+            0.92,
+            0.85,
+            0.76
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hitting an enemy spawns a lightning projectile that bounces 1 times and inflicts 5/8/12/15 damage",
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Lightning_Shiv.png",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "Crit Chance": [
+            0.05,
+            0.1,
+            0.15,
+            0.15
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Plank",
+        "Class": [
+            "Explosive",
+            "Elemental"
+        ],
+        "Damage": [
+            10,
+            15,
+            20,
+            25
+        ],
+        "Attack Speed": [
+            1.34,
+            1.25,
+            1.16,
+            1.07
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hits have 25%/30%/35%/40% chance to explode for 75% damage",
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Plank.png",
+        "DamageModifier": [
+            0.25,
+            0.3,
+            0.35,
+            0.4
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Plasma Sledgehammer",
+        "Class": [
+            "Elemental",
+            "Explosive"
+        ],
+        "Damage": [
+            0,
+            0,
+            80,
+            120
+        ],
+        "Attack Speed": [
+            0,
+            0,
+            1.57,
+            1.5
+        ],
+        "Range": [
+            0,
+            0,
+            175,
+            175
+        ],
+        "Knockback": [
+            0,
+            0,
+            30,
+            30
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hits have 20%/30% chance to explode for 80%/100% damage",
+        "Base price": [
+            0,
+            0,
+            136,
+            272
+        ],
+        "Unlocked by": "Win a run with Knight",
+        "Path": "ArtAssets/Weapons/60px-Plasma_Sledgehammer.png",
+        "DamageModifier": [
+            0,
+            0,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            0,
+            0,
+            1.75,
+            1.75
+        ]
+    },
+    {
+        "Name": "Power Fist",
+        "Class": [
+            "Unarmed",
+            "Explosive"
+        ],
+        "Damage": [
+            0,
+            0,
+            40,
+            60
+        ],
+        "Attack Speed": [
+            0,
+            0,
+            0.67,
+            0.56
+        ],
+        "Range": [
+            0,
+            0,
+            150,
+            150
+        ],
+        "Knockback": [
+            0,
+            0,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hits have 25%/50% chance to explode for 50%/75% damage",
+        "Base price": [
+            0,
+            0,
+            110,
+            221
+        ],
+        "Unlocked by": "Win a run with Brawler",
+        "Path": "ArtAssets/Weapons/60px-Power_Fist.png",
+        "DamageModifier": [
+            0,
+            0,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0,
+            0.01,
+            0.01
+        ],
+        "Crit Multiplicator": [
+            0,
+            0,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Rock",
+        "Class": [
+            "Primitive",
+            "Blunt"
+        ],
+        "Damage": [
+            20,
+            30,
+            40,
+            60
+        ],
+        "Attack Speed": [
+            1.74,
+            1.67,
+            1.57,
+            1.5
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "-/+1 Armor/+1 Armor, +2 Max HP/+2 Armor, +2 Max HP",
+        "Base price": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Rock.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.1,
+            0.15,
+            0.2,
+            0.25
+        ],
+        "Crit Multiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Scissors",
+        "Class": [
+            "Medical",
+            "Precise"
+        ],
+        "Damage": [
+            5,
+            10,
+            15,
+            20
+        ],
+        "Attack Speed": [
+            1.01,
+            0.97,
+            0.94,
+            0.85
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0.4,
+            0.45,
+            0.5,
+            0.6
+        ],
+        "Special Effects": null,
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Scissors.png",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "Crit Chance": [
+            0.1,
+            0.12,
+            0.15,
+            0.2
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Screwdriver",
+        "Class": [
+            "Tool",
+            "Precise"
+        ],
+        "Damage": [
+            8,
+            12,
+            16,
+            20
+        ],
+        "Attack Speed": [
+            1.08,
+            1.03,
+            0.99,
+            0.88
+        ],
+        "Range": [
+            125,
+            125,
+            125,
+            125
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "A landmine spawns every 12s/9s/6s/3s dealing 10(100% ) damage in an area",
+        "Base price": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Screwdriver.png",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "Crit Chance": [
+            0.1,
+            0.15,
+            0.2,
+            0.3
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Spear",
+        "Class": [
+            "Primitive"
+        ],
+        "Damage": [
+            15,
+            25,
+            40,
+            60
+        ],
+        "Attack Speed": [
+            1.34,
+            1.17,
+            1.01,
+            0.85
+        ],
+        "Range": [
+            350,
+            375,
+            400,
+            500
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Spear.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Spiky Shield",
+        "Class": [
+            "Medieval",
+            "Blunt"
+        ],
+        "Damage": [
+            10,
+            15,
+            20,
+            30
+        ],
+        "Attack Speed": [
+            1.17,
+            1.17,
+            1.17,
+            1.01
+        ],
+        "Range": [
+            150,
+            150,
+            150,
+            150
+        ],
+        "Knockback": [
+            20,
+            20,
+            20,
+            20
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": null,
+        "Base price": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "Unlocked by": "Win a run with Masochist",
+        "Path": "ArtAssets/Weapons/60px-Spiky_Shield.png",
+        "DamageModifier": [
+            1,
+            1.25,
+            1.5,
+            2
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Stick",
+        "Class": [
+            "Primitive"
+        ],
+        "Damage": [
+            8,
+            8,
+            12,
+            20
+        ],
+        "Attack Speed": [
+            1.25,
+            1.17,
+            1.08,
+            1.01
+        ],
+        "Range": [
+            175,
+            175,
+            175,
+            175
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Deals +4/+6/+8/+10 for every additional stick you have",
+        "Base price": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Stick.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Sword",
+        "Class": [
+            "Blade",
+            "Medieval"
+        ],
+        "Damage": [
+            0,
+            25,
+            40,
+            60
+        ],
+        "Attack Speed": [
+            0,
+            1.25,
+            1.08,
+            0.92
+        ],
+        "Range": [
+            0,
+            200,
+            200,
+            200
+        ],
+        "Knockback": [
+            0,
+            5,
+            5,
+            5
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Alternates between thrusting and sweeping attacks",
+        "Base price": [
+            0,
+            51,
+            95,
+            190
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Sword.png",
+        "DamageModifier": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            0,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Thunder Sword",
+        "Class": [
+            "Blade",
+            "Elemental"
+        ],
+        "Damage": [
+            0,
+            0,
+            30,
+            60
+        ],
+        "Attack Speed": [
+            0,
+            0,
+            1.17,
+            1.01
+        ],
+        "Range": [
+            0,
+            0,
+            200,
+            200
+        ],
+        "Knockback": [
+            0,
+            0,
+            5,
+            5
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Hitting and enemy spawns 2/4 projectiles that slow and damage enemies by 100%",
+        "Base price": [
+            0,
+            0,
+            119,
+            238
+        ],
+        "Unlocked by": "Win a run with Mage",
+        "Path": "ArtAssets/Weapons/60px-Thunder_Sword.png",
+        "DamageModifier": [
+            0,
+            0,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0,
+            0,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            0,
+            0,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Torch",
+        "Class": [
+            "Primitive",
+            "Elemental"
+        ],
+        "Damage": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Attack Speed": [
+            1.08,
+            1.01,
+            0.92,
+            0.76
+        ],
+        "Range": [
+            175,
+            175,
+            175,
+            175
+        ],
+        "Knockback": [
+            20,
+            20,
+            20,
+            20
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Deals 3x3/5x4/8x5/12x8(100%) burning damage",
+        "Base price": [
+            12,
+            26,
+            52,
+            105
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Torch.png",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "Crit Chance": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Crit Multiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Wrench",
+        "Class": [
+            "Tool"
+        ],
+        "Damage": [
+            12,
+            16,
+            20,
+            24
+        ],
+        "Attack Speed": [
+            1.74,
+            1.67,
+            1.57,
+            1.5
+        ],
+        "Range": [
+            175,
+            175,
+            175,
+            175
+        ],
+        "Knockback": [
+            20,
+            20,
+            20,
+            20
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Special Effects": "Spawns a Turret",
+        "Base price": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "Unlocked by": "Default",
+        "Path": "ArtAssets/Weapons/60px-Wrench.png",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "Crit Chance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "Crit Multiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    }
+]

@@ -1,0 +1,1370 @@
+[
+    {
+        "Name": "Acid",
+        "Rarity": 2,
+        "Effects": "+8 Max HP -4% Dodge",
+        "Base Price": 65,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Acid.png"
+    },
+    {
+        "Name": "Alien Baby",
+        "Rarity": 3,
+        "Effects": "+15 Max HP +8 Enemy Speed",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alien_Baby.png"
+    },
+    {
+        "Name": "Alien Eyes",
+        "Rarity": 2,
+        "Effects": "Shoots +6 alien eyes around you every 5 seconds dealing (50%)",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alien_Eyes.png"
+    },
+    {
+        "Name": "Alien Magic",
+        "Rarity": 3,
+        "Effects": "+8 Max HP +3 HP Regeneration -8 Luck",
+        "Base Price": 85,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alien_Magic.png"
+    },
+    {
+        "Name": "Alien Tongue",
+        "Rarity": 1,
+        "Effects": "+30% pickup range",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alien_Tongue.png"
+    },
+    {
+        "Name": "Alien Worm",
+        "Rarity": 1,
+        "Effects": "+1 HP Regeneration -1 HP recovered from consumables +2 Max HP",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alien_Worm.png"
+    },
+    {
+        "Name": "Alloy",
+        "Rarity": 3,
+        "Effects": "+3 Melee Damage +3 Ranged Damage +3 Engineering +5% Crit Chance -6% Dodge",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Alloy.png"
+    },
+    {
+        "Name": "Baby Elephant",
+        "Rarity": 1,
+        "Effects": "+20% chance to deal (10%) damage to a random enemy when you pick up a material",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Baby_Elephant.png"
+    },
+    {
+        "Name": "Baby Gecko",
+        "Rarity": 1,
+        "Effects": "+15% chance to instantly attract a material when its dropped -1% Life Steal",
+        "Base Price": 18,
+        "Limit": 7,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Baby_Gecko.png"
+    },
+    {
+        "Name": "Baby with a Beard",
+        "Rarity": 3,
+        "Effects": "+1 bullet dealing () damage is fired from an enemy corpse when they die -40 Range",
+        "Base Price": 95,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Baby_with_a_Beard.png"
+    },
+    {
+        "Name": "Bag",
+        "Rarity": 1,
+        "Effects": "+20 materials when you pick up a crate -1% Speed",
+        "Base Price": 18,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Bag.png"
+    },
+    {
+        "Name": "Bandana",
+        "Rarity": 3,
+        "Effects": "Projectiles pierce through +1 additional target -10% Damage",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Bandana.png"
+    },
+    {
+        "Name": "Banner",
+        "Rarity": 2,
+        "Effects": "+20 Range +10% Attack Speed -2% Life Steal",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Banner.png"
+    },
+    {
+        "Name": "Barricade",
+        "Rarity": 3,
+        "Effects": "+6 Armor while standing still. -8% Speed",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Barricade.png"
+    },
+    {
+        "Name": "Bat",
+        "Rarity": 1,
+        "Effects": "+2% Life Steal -2 Harvesting",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Bat.png"
+    },
+    {
+        "Name": "Beanie",
+        "Rarity": 1,
+        "Effects": "+4% Speed -6 Range",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Beanie.png"
+    },
+    {
+        "Name": "Bean Teacher",
+        "Rarity": 3,
+        "Effects": "+30% XP Gain -2% Life Steal",
+        "Base Price": 70,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Bean_Teacher.png"
+    },
+    {
+        "Name": "Big Arms",
+        "Rarity": 4,
+        "Effects": "+10 Melee Damage +5 Ranged Damage -2 Armor -5% Speed",
+        "Base Price": 105,
+        "Limit": null,
+        "Unlocked By": "Win a run with Generalist",
+        "Path": "ArtAssets/Items/60px-Big_Arms.png"
+    },
+    {
+        "Name": "Black Belt",
+        "Rarity": 2,
+        "Effects": "+15% XP Gain +3 Melee Damage -8 Luck",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Black_Belt.png"
+    },
+    {
+        "Name": "Blindfold",
+        "Rarity": 2,
+        "Effects": "+5% Crit Chance +5% Dodge -15 Range",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Blindfold.png"
+    },
+    {
+        "Name": "Blood Donation",
+        "Rarity": 3,
+        "Effects": "+40 Harvesting Take +1 damage per second (does not give invulnerability time)",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Blood_Donation.png"
+    },
+    {
+        "Name": "Blood Leech",
+        "Rarity": 2,
+        "Effects": "+2% Life Steal +2 HP Regeneration -6 Harvesting",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Blood_Leech.png"
+    },
+    {
+        "Name": "Boiling Water",
+        "Rarity": 1,
+        "Effects": "+2 Elemental Damage -1 Max HP",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Boiling_Water.png"
+    },
+    {
+        "Name": "Book",
+        "Rarity": 1,
+        "Effects": "+1 Engineering",
+        "Base Price": 8,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Book.png"
+    },
+    {
+        "Name": "Bowler Hat",
+        "Rarity": 3,
+        "Effects": "+15 Luck +18 Harvesting -5% Attack Speed -3% Crit Chance",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": "Win a run with Entrepreneur",
+        "Path": "ArtAssets/Items/60px-Bowler_Hat.png"
+    },
+    {
+        "Name": "Boxing Glove",
+        "Rarity": 1,
+        "Effects": "+3 Knockback",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Boxing_Glove.png"
+    },
+    {
+        "Name": "Broken Mouth",
+        "Rarity": 1,
+        "Effects": "+5 Max HP -1 HP Regeneration",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Broken_Mouth.png"
+    },
+    {
+        "Name": "Butterfly",
+        "Rarity": 1,
+        "Effects": "+2% Life Steal -1 Elemental Damage",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Butterfly.png"
+    },
+    {
+        "Name": "Cake",
+        "Rarity": 1,
+        "Effects": "+3 Max HP -1% Damage",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cake.png"
+    },
+    {
+        "Name": "Campfire",
+        "Rarity": 2,
+        "Effects": "+2 Elemental Damage +2 HP Regeneration -2% Speed",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Campfire.png"
+    },
+    {
+        "Name": "Candle",
+        "Rarity": 3,
+        "Effects": "+4 Elemental Damage +1 HP Regeneration -10% Enemies -5% Damage",
+        "Base Price": 65,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Candle.png"
+    },
+    {
+        "Name": "Cape",
+        "Rarity": 4,
+        "Effects": "+5% Life Steal +20% Dodge -2 Melee Damage -2 Ranged Damage -2 Elemental Damage",
+        "Base Price": 110,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cape.png"
+    },
+    {
+        "Name": "Chameleon",
+        "Rarity": 3,
+        "Effects": "+20% Dodge while standing still. -6% Damage",
+        "Base Price": 70,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Chameleon.png"
+    },
+    {
+        "Name": "Charcoal",
+        "Rarity": 1,
+        "Effects": "+1 Elemental Damage +2 Melee Damage -2 Harvesting",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Charcoal.png"
+    },
+    {
+        "Name": "Claw Tree",
+        "Rarity": 1,
+        "Effects": "+1 Melee Damage +3% Crit Chance -1 Max HP",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Claw_Tree.png"
+    },
+    {
+        "Name": "Clover",
+        "Rarity": 3,
+        "Effects": "+20 Luck +6% Dodge -2% Life Steal",
+        "Base Price": 65,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Clover.png"
+    },
+    {
+        "Name": "Coffee",
+        "Rarity": 1,
+        "Effects": "+10% Attack Speed -2% Damage",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Coffee.png"
+    },
+    {
+        "Name": "Cog",
+        "Rarity": 2,
+        "Effects": "+4 Engineering -4% Damage",
+        "Base Price": 35,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cog.png"
+    },
+    {
+        "Name": "Compass",
+        "Rarity": 2,
+        "Effects": "+5% Speed +3 Engineering -3% Crit Chance",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": "Win a run with Explorer",
+        "Path": "ArtAssets/Items/60px-Compass.png"
+    },
+    {
+        "Name": "Coupon",
+        "Rarity": 1,
+        "Effects": "-5% Price",
+        "Base Price": 15,
+        "Limit": 5,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Coupon.png"
+    },
+    {
+        "Name": "Crown",
+        "Rarity": 3,
+        "Effects": "Harvesting increases by an additional +8% at the end of a wave (stacking)",
+        "Base Price": 70,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Crown.png"
+    },
+    {
+        "Name": "Cute Monkey",
+        "Rarity": 1,
+        "Effects": "+8% chance to heal 1 HP when picking up a material -1 Ranged Damage",
+        "Base Price": 25,
+        "Limit": 13,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cute_Monkey.png"
+    },
+    {
+        "Name": "Cyberball",
+        "Rarity": 1,
+        "Effects": "+15% chance to deal (25%) damage to a random enemy when an enemy dies",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cyberball.png"
+    },
+    {
+        "Name": "Cyclops Worm",
+        "Rarity": 2,
+        "Effects": "+12% Damage -12 Range",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Cyclops_Worm.png"
+    },
+    {
+        "Name": "Dangerous Bunny",
+        "Rarity": 2,
+        "Effects": "+1 free reroll in the shop",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Dangerous_Bunny.png"
+    },
+    {
+        "Name": "Defective Steroids",
+        "Rarity": 1,
+        "Effects": "+2 Melee Damage -3% Attack Speed +2 Max HP",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Defective_Steroids.png"
+    },
+    {
+        "Name": "Diploma",
+        "Rarity": 4,
+        "Effects": "+10 Engineering +10% XP Gain -3 Max HP",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Diploma.png"
+    },
+    {
+        "Name": "Duct Tape",
+        "Rarity": 1,
+        "Effects": "+1 Armor +1 Engineering -2 Max HP",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Duct_Tape.png"
+    },
+    {
+        "Name": "Dynamite",
+        "Rarity": 1,
+        "Effects": "+15% Explosion Damage",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Dynamite.png"
+    },
+    {
+        "Name": "Energy Bracelet",
+        "Rarity": 2,
+        "Effects": "+4% Crit Chance +2 Elemental Damage -2 Ranged Damage",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Energy_Bracelet.png"
+    },
+    {
+        "Name": "Esty's Couch",
+        "Rarity": 4,
+        "Effects": "+2 HP Regeneration for every -1% Speed you have. +5 Max HP -15% Speed",
+        "Base Price": 100,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Esty%27s_Couch.png"
+    },
+    {
+        "Name": "Exoskeleton",
+        "Rarity": 4,
+        "Effects": "+5 Armor +5% Crit Chance +5 Engineering +5% Speed -2 HP Regeneration -2% Life Steal",
+        "Base Price": 90,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Exoskeleton.png"
+    },
+    {
+        "Name": "Explosive Shells",
+        "Rarity": 4,
+        "Effects": "+60% Explosion Damage -15% Damage",
+        "Base Price": 100,
+        "Limit": 1,
+        "Unlocked By": "Win a run with Artificer",
+        "Path": "ArtAssets/Items/60px-Explosive_Shells.png"
+    },
+    {
+        "Name": "Eyes Surgery",
+        "Rarity": 2,
+        "Effects": "Burning activates +15%faster -12 Range",
+        "Base Price": 60,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Eyes_Surgery.png"
+    },
+    {
+        "Name": "Fertilizer",
+        "Rarity": 1,
+        "Effects": "+8 Harvesting -1 Melee Damage",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Fertilizer.png"
+    },
+    {
+        "Name": "Fin",
+        "Rarity": 3,
+        "Effects": "+10% Speed +3% Life Steal -8 Luck",
+        "Base Price": 65,
+        "Limit": null,
+        "Unlocked By": "Win a run with Speedy",
+        "Path": "ArtAssets/Items/60px-Fin.png"
+    },
+    {
+        "Name": "Focus",
+        "Rarity": 4,
+        "Effects": "+30% Damage -3% Attack Speed for every weapon you have.",
+        "Base Price": 110,
+        "Limit": null,
+        "Unlocked By": "Win a run with One Armed",
+        "Path": "ArtAssets/Items/60px-Focus.png"
+    },
+    {
+        "Name": "Fuel Tank",
+        "Rarity": 2,
+        "Effects": "+4 Elemental Damage -1 Melee Damage -1 Ranged Damage",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Fuel_Tank.png"
+    },
+    {
+        "Name": "Gambling Token",
+        "Rarity": 2,
+        "Effects": "+8% Dodge -1 Armor",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Gambling_Token.png"
+    },
+    {
+        "Name": "Gentle Alien",
+        "Rarity": 1,
+        "Effects": "+5% Damage +5% Enemies +2 Max HP",
+        "Base Price": 30,
+        "Limit": 10,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Gentle_Alien.png"
+    },
+    {
+        "Name": "Glasses",
+        "Rarity": 1,
+        "Effects": "+20 Range",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Glasses.png"
+    },
+    {
+        "Name": "Glass Cannon",
+        "Rarity": 3,
+        "Effects": "+25% Damage -3 Armor",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Glass_Cannon.png"
+    },
+    {
+        "Name": "Gnome",
+        "Rarity": 4,
+        "Effects": "+10 Melee Damage +5 Elemental Damage -20 Range -20% pickup range",
+        "Base Price": 100,
+        "Limit": null,
+        "Unlocked By": "Win a run with Bull",
+        "Path": "ArtAssets/Items/60px-Gnome.png"
+    },
+    {
+        "Name": "Goat Skull",
+        "Rarity": 1,
+        "Effects": "+3 Melee Damage -2% Crit Chance",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Goat_Skull.png"
+    },
+    {
+        "Name": "Gummy Berserker",
+        "Rarity": 1,
+        "Effects": "+5% Attack Speed +15 Range -1 Armor",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Gummy_Berserker.png"
+    },
+    {
+        "Name": "Handcuffs",
+        "Rarity": 3,
+        "Effects": "+8 Melee Damage +8 Ranged Damage +8 Elemental Damage Your max HP is capped at its current value",
+        "Base Price": 80,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Handcuffs.png"
+    },
+    {
+        "Name": "Head Injury",
+        "Rarity": 1,
+        "Effects": "+6% Damage -8 Range",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Head_Injury.png"
+    },
+    {
+        "Name": "Heavy Bullets",
+        "Rarity": 4,
+        "Effects": "+5 Ranged Damage +10% Damage +10 Range -10% Attack Speed -5% Crit Chance",
+        "Base Price": 100,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Heavy_Bullets.png"
+    },
+    {
+        "Name": "Hedgehog",
+        "Rarity": 1,
+        "Effects": "+2 Melee Damage +1 Ranged Damage -1 HP Regeneration",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Hedgehog.png"
+    },
+    {
+        "Name": "Helmet",
+        "Rarity": 1,
+        "Effects": "+1 Armor -2% Speed",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Helmet.png"
+    },
+    {
+        "Name": "Hunting Trophy",
+        "Rarity": 3,
+        "Effects": "+33% chance to get 1 material when killing an enemy with a critical hit",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": "Win a run with Crazy",
+        "Path": "ArtAssets/Items/60px-Hunting_Trophy.png"
+    },
+    {
+        "Name": "Injection",
+        "Rarity": 1,
+        "Effects": "+7% Damage -2 Max HP",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Injection.png"
+    },
+    {
+        "Name": "Insanity",
+        "Rarity": 1,
+        "Effects": "+6% Crit Chance -3% Damage",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Insanity.png"
+    },
+    {
+        "Name": "Jet Pack",
+        "Rarity": 4,
+        "Effects": "+15% Speed +10% Dodge -6 Max HP -2 Armor",
+        "Base Price": 100,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Jet_Pack.png"
+    },
+    {
+        "Name": "Landmines",
+        "Rarity": 1,
+        "Effects": "A landmine spawns every 12 seconds dealing (100%) damage in an area",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Landmines.png"
+    },
+    {
+        "Name": "Leather Vest",
+        "Rarity": 2,
+        "Effects": "+2 Armor +6% Dodge -3 Max HP",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Leather_Vest.png"
+    },
+    {
+        "Name": "Lemonade",
+        "Rarity": 1,
+        "Effects": "+1 HP recovered from consumables",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Lemonade.png"
+    },
+    {
+        "Name": "Lens",
+        "Rarity": 1,
+        "Effects": "+1 Ranged Damage -5 Range",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Lens.png"
+    },
+    {
+        "Name": "Little Frog",
+        "Rarity": 2,
+        "Effects": "+20% pickup range +10 Harvesting -5% Dodge",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Little_Frog.png"
+    },
+    {
+        "Name": "Little Muscley Dude",
+        "Rarity": 2,
+        "Effects": "+3 Melee Damage +5 Max HP -15 Range",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Little_Muscley_Dude.png"
+    },
+    {
+        "Name": "Lost Duck",
+        "Rarity": 1,
+        "Effects": "+10 Luck -1 Elemental Damage",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Lost_Duck.png"
+    },
+    {
+        "Name": "Lucky Charm",
+        "Rarity": 3,
+        "Effects": "+30 Luck -2 Melee Damage -1 Ranged Damage",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": "Win a run with Lucky",
+        "Path": "ArtAssets/Items/60px-Lucky_Charm.png"
+    },
+    {
+        "Name": "Lumberjack Shirt",
+        "Rarity": 1,
+        "Effects": "Trees die in one hit",
+        "Base Price": 15,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Lumberjack_Shirt.png"
+    },
+    {
+        "Name": "Mammoth",
+        "Rarity": 4,
+        "Effects": "+15 Melee Damage +2 HP Regeneration -8% Damage -3% Speed",
+        "Base Price": 115,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Mammoth.png"
+    },
+    {
+        "Name": "Mastery",
+        "Rarity": 2,
+        "Effects": "+6 Melee Damage -3 Ranged Damage",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Mastery.png"
+    },
+    {
+        "Name": "Medal",
+        "Rarity": 2,
+        "Effects": "+3 Max HP +3% Damage +1 Armor +3% Speed -4% Crit Chance",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Medal.png"
+    },
+    {
+        "Name": "Medikit",
+        "Rarity": 4,
+        "Effects": "+8 HP Regeneration -15 Luck",
+        "Base Price": 90,
+        "Limit": null,
+        "Unlocked By": "Win a run with Doctor",
+        "Path": "ArtAssets/Items/60px-Medikit.png"
+    },
+    {
+        "Name": "Metal Detector",
+        "Rarity": 2,
+        "Effects": "+5% chance to double the value of picked up materials +6 Luck +2 Engineering -5% Damage",
+        "Base Price": 40,
+        "Limit": 20,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Metal_Detector.png"
+    },
+    {
+        "Name": "Metal Plate",
+        "Rarity": 2,
+        "Effects": "+2 Armor -3% Damage",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Metal_Plate.png"
+    },
+    {
+        "Name": "Missile",
+        "Rarity": 2,
+        "Effects": "+10% Damage -6% Attack Speed",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Missile.png"
+    },
+    {
+        "Name": "Mouse",
+        "Rarity": 3,
+        "Effects": "+5% Life Steal +10% Enemies -5 Harvesting",
+        "Base Price": 55,
+        "Limit": 5,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Mouse.png"
+    },
+    {
+        "Name": "Mushroom",
+        "Rarity": 1,
+        "Effects": "+2 HP Regeneration -3 Luck",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Mushroom.png"
+    },
+    {
+        "Name": "Mutation",
+        "Rarity": 1,
+        "Effects": "+1 Ranged Damage +1 Elemental Damage -3% Speed",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Mutation.png"
+    },
+    {
+        "Name": "Night Goggles",
+        "Rarity": 4,
+        "Effects": "+15% Crit Chance +50 Range -3 Max HP -2 Armor",
+        "Base Price": 90,
+        "Limit": null,
+        "Unlocked By": "Win a run with Ranger",
+        "Path": "ArtAssets/Items/60px-Night_Goggles.png"
+    },
+    {
+        "Name": "Octopus",
+        "Rarity": 4,
+        "Effects": "+12 Max HP +5% Life Steal -8% Crit Chance",
+        "Base Price": 105,
+        "Limit": null,
+        "Unlocked By": "Win a run with Mutant",
+        "Path": "ArtAssets/Items/60px-Octopus.png"
+    },
+    {
+        "Name": "Padding",
+        "Rarity": 2,
+        "Effects": "+1 Max HP for every 80 Materials you have. -5% Speed",
+        "Base Price": 45,
+        "Limit": null,
+        "Unlocked By": "Win a run with Saver",
+        "Path": "ArtAssets/Items/60px-Padding.png"
+    },
+    {
+        "Name": "Panda",
+        "Rarity": 4,
+        "Effects": "+12 Max HP +25 Luck -12% Damage",
+        "Base Price": 100,
+        "Limit": null,
+        "Unlocked By": "Win a run with Pacifist",
+        "Path": "ArtAssets/Items/60px-Panda.png"
+    },
+    {
+        "Name": "Peaceful Bee",
+        "Rarity": 1,
+        "Effects": "+4% Dodge +4 Harvesting -1 Melee Damage -1 Ranged Damage",
+        "Base Price": 18,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Peaceful_Bee.png"
+    },
+    {
+        "Name": "Pencil",
+        "Rarity": 1,
+        "Effects": "+2 Engineering -1% Attack Speed -1% Crit Chance",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Pencil.png"
+    },
+    {
+        "Name": "Piggy Bank",
+        "Rarity": 2,
+        "Effects": "+20% of your materials at the start of waves",
+        "Base Price": 40,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Piggy_Bank.png"
+    },
+    {
+        "Name": "Plant",
+        "Rarity": 1,
+        "Effects": "+2 HP Regeneration -1% Life Steal",
+        "Base Price": 10,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Plant.png"
+    },
+    {
+        "Name": "Plastic Explosive",
+        "Rarity": 3,
+        "Effects": "+25% Explosion Size",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Plastic_Explosive.png"
+    },
+    {
+        "Name": "Poisonous Tonic",
+        "Rarity": 3,
+        "Effects": "+10% Attack Speed +8% Crit Chance +15 Range -2 HP Regeneration",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Poisonous_Tonic.png"
+    },
+    {
+        "Name": "Potato",
+        "Rarity": 4,
+        "Effects": "+3 Max HP +1 HP Regeneration +1% Life Steal +3% Damage +3% Speed +3% Dodge +1 Armor +5 Luck",
+        "Base Price": 85,
+        "Limit": null,
+        "Unlocked By": "Win a run with Well Rounded",
+        "Path": "ArtAssets/Items/60px-Potato.png"
+    },
+    {
+        "Name": "Power Generator",
+        "Rarity": 3,
+        "Effects": "+1% Damage for every 1% Speed you have. -5% Damage",
+        "Base Price": 50,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Power_Generator.png"
+    },
+    {
+        "Name": "Propeller Hat",
+        "Rarity": 1,
+        "Effects": "+10 Luck -2% Damage",
+        "Base Price": 28,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Propeller_Hat.png"
+    },
+    {
+        "Name": "Pumpkin",
+        "Rarity": 2,
+        "Effects": "+15% Piercing Damage. Can't go above base damage -2% Damage",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Pumpkin.png"
+    },
+    {
+        "Name": "Recycling Machine",
+        "Rarity": 2,
+        "Effects": "Gain +35% more materials from recycling items",
+        "Base Price": 35,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Recycling_Machine.png"
+    },
+    {
+        "Name": "Retromation's Hoodie",
+        "Rarity": 4,
+        "Effects": "+2% Attack Speed for every 1% Dodge you have. +10% Dodge -50 Range",
+        "Base Price": 100,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Retromation%27s_Hoodie.png"
+    },
+    {
+        "Name": "Ricochet",
+        "Rarity": 4,
+        "Effects": "Your projectiles gain +1 bounce -35% Damage",
+        "Base Price": 100,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Ricochet.png"
+    },
+    {
+        "Name": "Rip and Tear",
+        "Rarity": 3,
+        "Effects": "Enemies have a +10% chance to explode for (50%) damage when they die -12 Harvesting",
+        "Base Price": 65,
+        "Limit": 10,
+        "Unlocked By": "Win a run with Loud",
+        "Path": "ArtAssets/Items/60px-Rip_and_Tear.png"
+    },
+    {
+        "Name": "Ritual",
+        "Rarity": 2,
+        "Effects": "+6% Damage +2% Life Steal -2 Engineering",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": "Win a run with Ghost",
+        "Path": "ArtAssets/Items/60px-Ritual.png"
+    },
+    {
+        "Name": "Robot Arm",
+        "Rarity": 4,
+        "Effects": "+6 Armor +6 Engineering -3 HP Regeneration -3% Life Steal",
+        "Base Price": 90,
+        "Limit": null,
+        "Unlocked By": "Win a run with Engineer",
+        "Path": "ArtAssets/Items/60px-Robot_Arm.png"
+    },
+    {
+        "Name": "Sad Tomato",
+        "Rarity": 3,
+        "Effects": "+8 HP Regeneration Start waves with -50% HP",
+        "Base Price": 50,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Sad_Tomato.png"
+    },
+    {
+        "Name": "Scar",
+        "Rarity": 1,
+        "Effects": "+15% XP Gain -8 Range",
+        "Base Price": 30,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Scar.png"
+    },
+    {
+        "Name": "Scared Sausage",
+        "Rarity": 1,
+        "Effects": "Attacks have a +25% chance to deal 1x3() burning damage",
+        "Base Price": 25,
+        "Limit": 4,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Scared_Sausage.png"
+    },
+    {
+        "Name": "Scope",
+        "Rarity": 2,
+        "Effects": "+2 Ranged Damage +25 Range -7% Attack Speed",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Scope.png"
+    },
+    {
+        "Name": "Shady Potion",
+        "Rarity": 2,
+        "Effects": "+20 Luck -2 HP Regeneration",
+        "Base Price": 48,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Shady_Potion.png"
+    },
+    {
+        "Name": "Shmoop",
+        "Rarity": 3,
+        "Effects": "+6 Max HP +2 HP Regeneration -2 Melee Damage -1 Ranged Damage",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Shmoop.png"
+    },
+    {
+        "Name": "Sifd's Relic",
+        "Rarity": 4,
+        "Effects": "+100% chance to instantly attract a material when its dropped -12% Speed",
+        "Base Price": 100,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Sifd%27s_Relic.png"
+    },
+    {
+        "Name": "Small Magazine",
+        "Rarity": 2,
+        "Effects": "+2 Ranged Damage +10% Attack Speed -10% Damage",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Small_Magazine.png"
+    },
+    {
+        "Name": "Snail",
+        "Rarity": 2,
+        "Effects": "-5 Enemy Speed -3% Speed",
+        "Base Price": 40,
+        "Limit": 1,
+        "Unlocked By": "Win a run with Old",
+        "Path": "ArtAssets/Items/60px-Snail.png"
+    },
+    {
+        "Name": "Snake",
+        "Rarity": 1,
+        "Effects": "Burning spreads to a nearby enemy -1 Max HP",
+        "Base Price": 25,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Snake.png"
+    },
+    {
+        "Name": "Spider",
+        "Rarity": 4,
+        "Effects": "+12% Damage +5% Attack Speed for every unique weapon you have -6% Dodge -8 Harvesting",
+        "Base Price": 120,
+        "Limit": null,
+        "Unlocked By": "Win a run with Gladiator",
+        "Path": "ArtAssets/Items/60px-Spider.png"
+    },
+    {
+        "Name": "Statue",
+        "Rarity": 3,
+        "Effects": "+25% Damage while standing still. -10% Speed",
+        "Base Price": 85,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Statue.png"
+    },
+    {
+        "Name": "Sunglasses",
+        "Rarity": 2,
+        "Effects": "+10% Crit Chance -1 Armor",
+        "Base Price": 50,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Sunglasses.png"
+    },
+    {
+        "Name": "Terrified Onion",
+        "Rarity": 1,
+        "Effects": "+4% Speed -6 Luck",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Terrified_Onion.png"
+    },
+    {
+        "Name": "Toolbox",
+        "Rarity": 3,
+        "Effects": "+6 Engineering -8% Attack Speed",
+        "Base Price": 55,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Toolbox.png"
+    },
+    {
+        "Name": "Torture",
+        "Rarity": 4,
+        "Effects": "+10 Max HP Restore +3 HP per second. Cannot heal any other way.",
+        "Base Price": 110,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Torture.png"
+    },
+    {
+        "Name": "Toxic Sludge",
+        "Rarity": 1,
+        "Effects": "+2 Elemental Damage -2% Dodge",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Toxic_Sludge.png"
+    },
+    {
+        "Name": "Tractor",
+        "Rarity": 3,
+        "Effects": "+40 Harvesting -8% Damage",
+        "Base Price": 70,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Tractor.png"
+    },
+    {
+        "Name": "Tree",
+        "Rarity": 1,
+        "Effects": "More trees spawn",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Tree.png"
+    },
+    {
+        "Name": "Triangle of Power",
+        "Rarity": 3,
+        "Effects": "+20% Damage +1 Armor -2% Damage until the end of the wave when you take damage",
+        "Base Price": 65,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Triangle_of_Power.png"
+    },
+    {
+        "Name": "Turret",
+        "Rarity": 1,
+        "Effects": "Spawns a turret that shoots bullets dealing (80%) damage",
+        "Base Price": 15,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Turret.png"
+    },
+    {
+        "Name": "Incendiary Turret",
+        "Rarity": 2,
+        "Effects": "Spawns a turret that shoots flames dealing (25%) damage",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Incendiary_Turret.png"
+    },
+    {
+        "Name": "Medical Turret",
+        "Rarity": 2,
+        "Effects": "Spawns a medical turret that shoots bullets healing (10%) HP",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Medical_Turret.png"
+    },
+    {
+        "Name": "Laser Turret",
+        "Rarity": 3,
+        "Effects": "Spawns a turret that shoots piercing bullets dealing (150%) damage",
+        "Base Price": 65,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Laser_Turret.png"
+    },
+    {
+        "Name": "Explosive Turret",
+        "Rarity": 4,
+        "Effects": "Spawns a turret that shoots explosive bullets dealing (175%) damage",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Explosive_Turret.png"
+    },
+    {
+        "Name": "Tyler",
+        "Rarity": 3,
+        "Effects": "Spawns a little guy that slowly shoots piercing lightning projectiles around him for (100%) damage each",
+        "Base Price": 75,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Tyler.png"
+    },
+    {
+        "Name": "Ugly Tooth",
+        "Rarity": 1,
+        "Effects": "Hitting an enemy removes +10% of their speed Max: 30% -3% Speed",
+        "Base Price": 25,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Ugly_Tooth.png"
+    },
+    {
+        "Name": "Vigilante Ring",
+        "Rarity": 3,
+        "Effects": "+3% Damage at the end of a wave (stacking)",
+        "Base Price": 92,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Vigilante_Ring.png"
+    },
+    {
+        "Name": "Wandering Bot",
+        "Rarity": 3,
+        "Effects": "Spawns a little bot that slows down nearby enemies",
+        "Base Price": 60,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Wandering_Bot.png"
+    },
+    {
+        "Name": "Warrior Helmet",
+        "Rarity": 3,
+        "Effects": "+3 Armor +5 Max HP -5% Speed",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Warrior_Helmet.png"
+    },
+    {
+        "Name": "Weird Food",
+        "Rarity": 1,
+        "Effects": "+2 HP recovered from consumables -2% Dodge",
+        "Base Price": 20,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Weird_Food.png"
+    },
+    {
+        "Name": "Weird Ghost",
+        "Rarity": 1,
+        "Effects": "+3 Max HP Start the next wave with 1 HP",
+        "Base Price": 12,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Weird_Ghost.png"
+    },
+    {
+        "Name": "Wheat",
+        "Rarity": 3,
+        "Effects": "+4 Melee Damage +2 Ranged Damage +10 Harvesting -2 Elemental Damage",
+        "Base Price": 85,
+        "Limit": null,
+        "Unlocked By": "Win a run with Farmer",
+        "Path": "ArtAssets/Items/60px-Wheat.png"
+    },
+    {
+        "Name": "Wheelbarrow",
+        "Rarity": 2,
+        "Effects": "-1 Armor +16 Harvesting",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Wheelbarrow.png"
+    },
+    {
+        "Name": "Whetstone",
+        "Rarity": 2,
+        "Effects": "+4% Life Steal -3 Knockback",
+        "Base Price": 40,
+        "Limit": null,
+        "Unlocked By": "Win a run with Sick",
+        "Path": "ArtAssets/Items/60px-Whetstone.png"
+    },
+    {
+        "Name": "White Flag",
+        "Rarity": 2,
+        "Effects": "+5 Harvesting -5% Enemies",
+        "Base Price": 40,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-White_Flag.png"
+    },
+    {
+        "Name": "Wings",
+        "Rarity": 3,
+        "Effects": "+10% Speed +30 Range -2 Elemental Damage",
+        "Base Price": 85,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Wings.png"
+    },
+    {
+        "Name": "Wisdom",
+        "Rarity": 3,
+        "Effects": "+5 damage every 5 seconds -20% Damage",
+        "Base Price": 85,
+        "Limit": 1,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Wisdom.png"
+    },
+    {
+        "Name": "Wolf Helmet",
+        "Rarity": 4,
+        "Effects": "+8 Elemental Damage +15 Luck -5 Engineering",
+        "Base Price": 80,
+        "Limit": null,
+        "Unlocked By": null,
+        "Path": "ArtAssets/Items/60px-Wolf_Helmet.png"
+    }
+]

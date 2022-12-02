@@ -26,8 +26,8 @@ namespace BrotatoM
             mPromptElement = mRootElement.Q<Label>("prompt");
             mPromptElement.style.display = DisplayStyle.None;
 
-            mBodyContainer = mRootElement.Q("body-container");
-            mBodyContainer.style.display = DisplayStyle.None;
+            // mBodyContainer = mRootElement.Q("body-container");
+            // mBodyContainer.style.display = DisplayStyle.None;
 
             mHarvestLabel = mRootElement.Q<Label>("stuff-amount");
             mHarvestLabel.text = mPlayerModel.Harvest.Value.ToString();
@@ -36,6 +36,10 @@ namespace BrotatoM
 
             mTimeLabel = mRootElement.Q<Label>("time");
             StartCoroutine(CountDown(20));
+
+            // 设置属性图标
+            var mAttrIcon = mRootElement.Query("attr-icon").First();
+            mAttrIcon.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("ArtAssets/Stats/20px-Ranged_Damage"));
 
             // UI Toolkit在第一帧还没有计算出各个元素的width,height，值都为NaN
             // 需要等待一帧后才能获取到实际值

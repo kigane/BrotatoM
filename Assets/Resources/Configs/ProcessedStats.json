@@ -1,0 +1,130 @@
+[
+    {
+        "Name": "Max HP",
+        "Effects": "Amount of damage you can take before dying",
+        "Limit": "No limit",
+        "Negative stat effect": "Can't go negative",
+        "Path": "ArtAssets/Stats/20px-Max_HP.png",
+        "PathBig": "ArtAssets/Stats/60px-Max_HP.png"
+    },
+    {
+        "Name": "HP Regeneration",
+        "Effects": "You regenerate 0.0x HP every second. Unless you have torture where you regenerate 3 HP every second.",
+        "Limit": "No limit",
+        "Negative stat effect": "Acts like the stat is at 0",
+        "Path": "ArtAssets/Stats/20px-HP_Regeneration.png",
+        "PathBig": "ArtAssets/Stats/60px-HP_Regeneration.png"
+    },
+    {
+        "Name": "Life Steal",
+        "Effects": "Your attacks have a x% chance to heal you for 1HP.",
+        "Limit": "10HP/second",
+        "Negative stat effect": "Act like the stat is 0",
+        "Path": "ArtAssets/Stats/20px-Life_Steal.png",
+        "PathBig": "ArtAssets/Stats/60px-Life_Steal.png"
+    },
+    {
+        "Name": "Damage",
+        "Effects": "Your attacks deal x% more damage but doesn't affect engineering turrets or mines",
+        "Limit": "No limit",
+        "Negative stat effect": "Negatively affects your damage",
+        "Path": "ArtAssets/Stats/20px-Damage.png",
+        "PathBig": "ArtAssets/Stats/60px-Damage.png"
+    },
+    {
+        "Name": "Melee Damage",
+        "Effects": "Your melee attacks deal x additional damage.",
+        "Limit": "No limit",
+        "Negative stat effect": "Makes your melee attacks deal x less damage down to a minimum of 1 damage",
+        "Path": "ArtAssets/Stats/20px-Melee_Damage.png",
+        "PathBig": "ArtAssets/Stats/60px-Melee_Damage.png"
+    },
+    {
+        "Name": "Ranged Damage",
+        "Effects": "Your ranged attacks deal x additional damage.",
+        "Limit": "No limit",
+        "Negative stat effect": "Your ranged attacks deal x less damage down to a minimum of 1 damage.",
+        "Path": "ArtAssets/Stats/20px-Ranged_Damage.png",
+        "PathBig": "ArtAssets/Stats/60px-Ranged_Damage.png"
+    },
+    {
+        "Name": "Elemental Damage",
+        "Effects": "Makes you elemental attacks deal x damage.",
+        "Limit": "No limit",
+        "Negative stat effect": "Your elemental attacks deal x less damage down to a minimum of 1",
+        "Path": "ArtAssets/Stats/20px-Elemental_Damage.png",
+        "PathBig": "ArtAssets/Stats/60px-Elemental_Damage.png"
+    },
+    {
+        "Name": "Attack Speed",
+        "Effects": "You attack x% faster. Also applies to Ranged Weapons but not engineering turrets or mines",
+        "Limit": "No limit",
+        "Negative stat effect": "You attack x% slower.",
+        "Path": "ArtAssets/Stats/20px-Attack_Speed.png",
+        "PathBig": "ArtAssets/Stats/60px-Attack_Speed.png"
+    },
+    {
+        "Name": "Crit Chance",
+        "Effects": "Your weapons have an x increased chance to deal a critical hit.",
+        "Limit": "No limit",
+        "Negative stat effect": "Your weapons have an x decreased chance to do a critical hit damage this can stop your weapons from inflicting a critical hit",
+        "Path": "ArtAssets/Stats/20px-Crit_Chance.png",
+        "PathBig": "ArtAssets/Stats/60px-Crit_Chance.png"
+    },
+    {
+        "Name": "Engineering",
+        "Effects": "Increases the power of your structures. The other stats don't affect structures but specials do (piercing, bouncing, explosion etc.)",
+        "Limit": "No limit",
+        "Negative stat effect": "Your structures have x decreased power down to a minimum of 1 damage or healing",
+        "Path": "ArtAssets/Stats/20px-Engineering_Stat.png",
+        "PathBig": "ArtAssets/Stats/60px-Engineering_Stat.png"
+    },
+    {
+        "Name": "Range",
+        "Effects": "The max range of your weapons is increased by x. A higher range also increases the cooldown of melee weapons.(longer travel distance)",
+        "Limit": "No limit but half as effective on melee weapons",
+        "Negative stat effect": "Your weapons have x less range.",
+        "Path": "ArtAssets/Stats/20px-Ranged_Damage.png",
+        "PathBig": "ArtAssets/Stats/60px-Ranged_Damage.png"
+    },
+    {
+        "Name": "Armor",
+        "Effects": "You take 4% less damage per armor (not linear)",
+        "Limit": "No limit but gets less effective with each level",
+        "Negative stat effect": "You take more damage",
+        "Path": "ArtAssets/Stats/20px-Armor.png",
+        "PathBig": "ArtAssets/Stats/60px-Armor.png"
+    },
+    {
+        "Name": "Dodge",
+        "Effects": "You have a x% chance to dodge attacks.",
+        "Limit": "60% (90% with Ghost)",
+        "Negative stat effect": "Acts like this stat is 0",
+        "Path": "ArtAssets/Stats/20px-Dodge_Stat.png",
+        "PathBig": "ArtAssets/Stats/60px-Dodge_Stat.png"
+    },
+    {
+        "Name": "Speed",
+        "Effects": "You move x% faster.",
+        "Limit": "No limit",
+        "Negative stat effect": "You move x% slower",
+        "Path": "ArtAssets/Stats/20px-Attack_Speed.png",
+        "PathBig": "ArtAssets/Stats/60px-Attack_Speed.png"
+    },
+    {
+        "Name": "Luck",
+        "Effects": "You have an x% more chance of finding items or consumables when you kill enemies. Also increases the rarity of the items in the shop and level upgrades.",
+        "Limit": "No limit",
+        "Negative stat effect": "You have an x% less chance of finding items or consumables when you kill enemies. Also decreases the rarity of the items in the shop and level upgrades.",
+        "Path": "ArtAssets/Stats/20px-Luck.png",
+        "PathBig": "ArtAssets/Stats/60px-Luck.png"
+    },
+    {
+        "Name": "Harvesting",
+        "Effects": "You earn x materials and XP at the end of a wave. Increased by 5% every time it activates.",
+        "Limit": "No limit",
+        "Negative stat effect": "You lose x materials and XP at the end of a wave. Does not further scale downwards.",
+        "Path": "ArtAssets/Stats/20px-Harvesting.png",
+        "PathBig": "ArtAssets/Stats/60px-Harvesting.png"
+    }
+]
