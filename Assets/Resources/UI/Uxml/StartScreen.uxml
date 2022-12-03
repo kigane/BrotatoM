@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Data/UI/GameStartStyle.uss?fileID=7433441132597879392&amp;guid=8237af0226cb7334db5f9a1427dcc0a1&amp;type=3#GameStartStyle" />
-    <ui:VisualElement name="main-container" style="flex-grow: 1; background-image: resource(&apos;BrotatoTitle&apos;); -unity-background-scale-mode: scale-and-crop; flex-direction: row;">
+    <Style src="project://database/Assets/Resources/UI/GameStartStyle.uss?fileID=7433441132597879392&amp;guid=8237af0226cb7334db5f9a1427dcc0a1&amp;type=3#GameStartStyle" />
+    <ui:VisualElement name="main-container" style="flex-grow: 1; background-image: resource(&apos;ArtAssets/Grounds/BrotatoTitle&apos;); -unity-background-scale-mode: scale-and-crop; flex-direction: row;">
         <ui:VisualElement name="options-container" style="flex-basis: 20%;">
             <ui:VisualElement name="blank" style="flex-basis: 50%;" />
             <ui:VisualElement name="options" style="flex-basis: 50%;">

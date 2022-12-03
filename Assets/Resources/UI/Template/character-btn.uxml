@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button display-tooltip-when-elided="true" name="character-btn" style="background-image: resource(&apos;ArtAssets/Characters/60px-Old&apos;); flex-basis: initial; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; background-color: rgb(38, 38, 38); flex-grow: 1;" />
+</ui:UXML>

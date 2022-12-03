@@ -16,6 +16,7 @@ namespace BrotatoM
         /// <value></value>
         public BindableProperty<float> Harvest { get; }
         public BindableProperty<float> HarvestBag { get; }
+
         // 属性栏
         public BindableProperty<float> MaxHP { get; }
         public BindableProperty<float> HPRegeneration { get; }
@@ -37,6 +38,7 @@ namespace BrotatoM
         /// </summary>
         /// <value></value>
         public BindableProperty<float> Harvesting { get; }
+
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; }
         public BindableProperty<float> TreeSpawnRate { get; }
@@ -52,6 +54,7 @@ namespace BrotatoM
         public BindableProperty<int> Level { get; } = new() { Value = 0 };
         public BindableProperty<float> Harvest { get; } = new() { Value = 30 };
         public BindableProperty<float> HarvestBag { get; } = new() { Value = 0 };
+
         // 属性栏
         public BindableProperty<float> MaxHP { get; } = new() { Value = 15 };
         public BindableProperty<float> HPRegeneration { get; } = new() { Value = 0 };
@@ -69,10 +72,13 @@ namespace BrotatoM
         public BindableProperty<float> SpeedStat { get; } = new() { Value = 0 };
         public BindableProperty<float> Luck { get; } = new() { Value = 0 };
         public BindableProperty<float> Harvesting { get; } = new() { Value = 0 };
+
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<float> TreeSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<int> CharacterId { get; } = new() { Value = 0 };
+
+        
 
         protected override void OnInit()
         {

@@ -13,8 +13,8 @@ def name_to_path(name: str, part: str):
     for path in filter(  # 过滤.meta文件
         lambda x: x.endswith(".png"), os.listdir(RESOURCES_DIR + base_path)
     ):
-        if name in path:  # 匹配路径
-            return base_path + path
+        if name in path:  # 匹配路径, Unity的资源加载不需要后缀
+            return base_path + path.replace(".png", "")
 
 
 def spacial_dispose(part: str, v: dict):
@@ -120,10 +120,10 @@ def preprocess_jsons(part):
                 new_dic[newKey] = val
 
             config_lst.append(new_dic)
-            if os.path.exists(RESOURCES_DIR + v["Path"]):
+            if os.path.exists(RESOURCES_DIR + v["Path"] + ".png"):
                 valid_counts += 1
             try:
-                if os.path.exists(RESOURCES_DIR + v["PathBig"]):
+                if os.path.exists(RESOURCES_DIR + v["PathBig"] + ".png"):
                     valid_counts += 1
             except KeyError:
                 pass
@@ -138,12 +138,12 @@ def preprocess_jsons(part):
 
 if __name__ == "__main__":
     parts = [
-        # "Characters",
+        "Characters",
         "Items",
-        # "Weapons",
-        # "Enemies",
-        # "Dangers",
-        # "Stats",
+        "Weapons",
+        "Enemies",
+        "Dangers",
+        "Stats",
     ]
     for part in parts:
         preprocess_jsons(part)

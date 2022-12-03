@@ -10,6 +10,7 @@ namespace BrotatoM
     {
         private VisualElement mRootElement;
         private readonly Action[] mBtnActions = new Action[4];
+        public UIDocument characterSelectUI;
 
         private void Start()
         {
@@ -46,7 +47,9 @@ namespace BrotatoM
 
         private void OnClickStartBtn()
         {
-            SceneManager.LoadScene("MainScene");
+            // characterSelectUI.SetActive(true);
+            characterSelectUI.sortingOrder = 6;
+            // SceneManager.LoadScene("MainScene");
         }
 
         private void OnClickSettingsBtn()

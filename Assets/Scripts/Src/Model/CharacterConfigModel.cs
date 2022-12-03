@@ -1,5 +1,6 @@
 ﻿using QFramework;
 using UnityEngine;
+using System.Linq;
 
 namespace BrotatoM
 {
@@ -14,14 +15,30 @@ namespace BrotatoM
 
     public class CharacterConfigModel : BaseConfigModel<CharacterConfigItem>
     {
+        private CharacterConfigItem[] mItems;
         public CharacterConfigModel(string path) : base(path)
         {
+
         }
 
         protected override void OnInit()
         {
             base.OnInit();
-            VerifyLogs("Chunky");
+            mItems = mDict.Values.ToArray();
+            // VerifyLogs("Chunky");
+        }
+
+        public CharacterConfigItem[] GetAllCharacterConfig()
+        {
+            return mItems;
+        }
+
+        public CharacterConfigItem GetCharacterConfigItemById(int i)
+        {
+            if (i < 0 || i >= mItems.Length)
+                throw new System.IndexOutOfRangeException("Character Id is out of range!");
+
+            return mItems[i];
         }
 
         private void VerifyLogs(string name)

@@ -4,223 +4,223 @@
         "Stats": "+5 Max Hp +5% Speed +8 Harvesting",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Potato",
-        "Path": "ArtAssets/Characters/60px-Well_Rounded.png"
+        "Path": "ArtAssets/Characters/60px-Well_Rounded"
     },
     {
         "Name": "Brawler",
         "Stats": "+50% Attack Speed with Unarmed weapons You start with 1 Fist +15% Dodge -50 Range -50 Ranged Damage",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Power Fist",
-        "Path": "ArtAssets/Characters/60px-Brawler.png"
+        "Path": "ArtAssets/Characters/60px-Brawler"
     },
     {
         "Name": "Crazy",
         "Stats": "+100 Range with Precise weapons +25% Attack Speed You start with 1 Knife -30% Dodge -10 Engineering -10 Ranged Damage",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Hunting Trophy",
-        "Path": "ArtAssets/Characters/60px-Crazy.png"
+        "Path": "ArtAssets/Characters/60px-Crazy"
     },
     {
         "Name": "Ranger",
         "Stats": "+50 Range You start with 1 Pistol Ranged Damage modifications are increased by 50% You can't equip melee weapons Max HP modifications are reduced by 25%",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Night Goggles",
-        "Path": "ArtAssets/Characters/60px-Ranger.png"
+        "Path": "ArtAssets/Characters/60px-Ranger"
     },
     {
         "Name": "Mage",
         "Stats": "+5 Elemental Damage Elemental Damage modifications are increased by 33% You start with 1 Snake You start with 1 Scared Sausage -100 Ranged Damage -100 Melee Damage -100 Engineering",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Thunder Sword",
-        "Path": "ArtAssets/Characters/60px-Mage.png"
+        "Path": "ArtAssets/Characters/60px-Mage"
     },
     {
         "Name": "Chunky",
         "Stats": "Max HP modifications are increased by 25%  +1% Damage for every 3 Max HP you have [+3] +3 HP recovered from consumables -100% Life Steal HP Regeneration modifications are reduced by 50%  %Dodge modifications are reduced by 50% %Speed modifications are reduced by 100%",
         "UnlockedBy": "Die for the first time",
         "Unlocks": "Potato Thrower",
-        "Path": "ArtAssets/Characters/60px-Chunky.png"
+        "Path": "ArtAssets/Characters/60px-Chunky"
     },
     {
         "Name": "Old",
         "Stats": "-25% Enemy speed +10 Harvesting -33%Map Size -10% Enemies -10% Speed",
         "UnlockedBy": "Kill 300 enemies",
         "Unlocks": "Snail",
-        "Path": "ArtAssets/Characters/60px-Old.png"
+        "Path": "ArtAssets/Characters/60px-Old"
     },
     {
         "Name": "Lucky",
         "Stats": "+100 Luck Luck modifications are increased by 25% +75% chance to deal 1 (15%Luck) damage to a random enemy when you pick up a material -60% Attack Speed -50% XP Gain",
         "UnlockedBy": "Collect 300 materials",
         "Unlocks": "Lucky Charm",
-        "Path": "ArtAssets/Characters/60px-Lucky.png"
+        "Path": "ArtAssets/Characters/60px-Lucky"
     },
     {
         "Name": "Mutant",
         "Stats": "+200% XP Gain +50% Items Price",
         "UnlockedBy": "Kill 2000 enemies",
         "Unlocks": "Octopus",
-        "Path": "ArtAssets/Characters/60px-Mutant.png"
+        "Path": "ArtAssets/Characters/60px-Mutant"
     },
     {
         "Name": "Generalist",
         "Stats": "+2 Melee Damage for every 1 Ranged Damage you have +1 Ranged Damage for every 2 Melee Damage you have You can only equip 3 melee weapons and 3 ranged weapons at a time",
         "UnlockedBy": "Collect 300 materials",
         "Unlocks": "Big Arms",
-        "Path": "ArtAssets/Characters/60px-Generalist.png"
+        "Path": "ArtAssets/Characters/60px-Generalist"
     },
     {
         "Name": "Loud",
         "Stats": "+30% Damage +50% Enemies -3 Harvesting at the end of a wave",
         "UnlockedBy": "Kill 5000 enemies",
         "Unlocks": "Rip and Tear",
-        "Path": "ArtAssets/Characters/60px-Loud.png"
+        "Path": "ArtAssets/Characters/60px-Loud"
     },
     {
         "Name": "Multitasker",
         "Stats": "+20% Damage You can equip up to 12 weapons at a time -5% Damage for every weapon you have",
         "UnlockedBy": "Collect 5000 materials",
         "Unlocks": "Chopper",
-        "Path": "ArtAssets/Characters/60px-Multitasker.png"
+        "Path": "ArtAssets/Characters/60px-Multitasker"
     },
     {
         "Name": "Wildling",
         "Stats": "+25% Life Steal with Primitive weapons You start with 1 Stick You can't equip weapons above tier 2 -3 Melee Damage -3 Ranged Damage",
         "UnlockedBy": "Kill 10000 enemies",
         "Unlocks": "Hatchet",
-        "Path": "ArtAssets/Characters/60px-Wildling.png"
+        "Path": "ArtAssets/Characters/60px-Wildling"
     },
     {
         "Name": "Pacifist",
         "Stats": "Gain 0.65 material and XP for every living enemy at the end of a wave You start with 1 Lumberjack Shirt -100% Damage -100 Engineering",
         "UnlockedBy": "Collect 10000 materials",
         "Unlocks": "Panda",
-        "Path": "ArtAssets/Characters/60px-Pacifist.png"
+        "Path": "ArtAssets/Characters/60px-Pacifist"
     },
     {
         "Name": "Gladiator",
         "Stats": "+15% Attack Speed for every unique weapon you have +5 Melee Damage You can't equip ranged weapons -30% Attack Speed -30 Luck",
         "UnlockedBy": "Kill 20000 enemies",
         "Unlocks": "Spider",
-        "Path": "ArtAssets/Characters/60px-Gladiator.png"
+        "Path": "ArtAssets/Characters/60px-Gladiator"
     },
     {
         "Name": "Saver",
         "Stats": "+10 Harvesting +1% Damage for every 30 Materials you have You start with 1 Piggy Bank +50% Items Price",
         "UnlockedBy": "Collect 20000 materials",
         "Unlocks": "Padding",
-        "Path": "ArtAssets/Characters/60px-Saver.png"
+        "Path": "ArtAssets/Characters/60px-Saver"
     },
     {
         "Name": "Sick",
         "Stats": "+12 Max HP +25% Life Steal You take 1 damage per second (does not give invulnerability time) -100 HP Regeneration",
         "UnlockedBy": "Reach -5聽% HP Regeneration",
         "Unlocks": "Whetstone",
-        "Path": "ArtAssets/Characters/60px-Sick.png"
+        "Path": "ArtAssets/Characters/60px-Sick"
     },
     {
         "Name": "Farmer",
         "Stats": "+30 Harvesting increases by an additional 5% at the end of a wave -50% materials dropped Damage modifications are reduced by 25%",
         "UnlockedBy": "Reach +200 Harvesting",
         "Unlocks": "Wheat",
-        "Path": "ArtAssets/Characters/60px-Farmer.png"
+        "Path": "ArtAssets/Characters/60px-Farmer"
     },
     {
         "Name": "Ghost",
         "Stats": "+10 Damage with Ethereal weapons +30% Dodge Dodge is capped at 90% -100 Armor",
         "UnlockedBy": "Reach +60% Dodge",
         "Unlocks": "Ritual",
-        "Path": "ArtAssets/Characters/60px-Ghost.png"
+        "Path": "ArtAssets/Characters/60px-Ghost"
     },
     {
         "Name": "Speedy",
         "Stats": "+30% Speed +1 Melee Damage for every 2% Speed you have -100 Armor while standing still -3 Armor",
         "UnlockedBy": "Reach +50% Speed",
         "Unlocks": "Fin",
-        "Path": "ArtAssets/Characters/60px-Speedy.png"
+        "Path": "ArtAssets/Characters/60px-Speedy"
     },
     {
         "Name": "Entrepreneur",
         "Stats": "-25% Items Price Harvesting modifications are increased by 50% Gain 25% more materials from recycling items -100% of your materials at the start of waves Damage modifications are reduced by 50%",
         "UnlockedBy": "Hold 3000 Materials",
         "Unlocks": "Bowler Hat",
-        "Path": "ArtAssets/Characters/60px-Entrepreneur.png"
+        "Path": "ArtAssets/Characters/60px-Entrepreneur"
     },
     {
         "Name": "Engineer",
         "Stats": "+10 Engineering Engineering modifications are increased by 25% You start with 1 Wrench  Structures spawn close to each other Damage modifications are reduced by 50%",
         "UnlockedBy": "Get 5 turrets on the map simultaneously",
         "Unlocks": "Robot Arm",
-        "Path": "ArtAssets/Characters/60px-Engineer.png"
+        "Path": "ArtAssets/Characters/60px-Engineer"
     },
     {
         "Name": "Explorer",
         "Stats": "More trees spawn You start with 1 Lumberjack Shirt +10% Speed +50% pickup range +33% Map Size +25% Enemies -50% materials dropped from enemies +10% Enemy Speed -40% Damage",
         "UnlockedBy": "Kill 50 trees",
         "Unlocks": "Compass",
-        "Path": "ArtAssets/Characters/60px-Explorer.png"
+        "Path": "ArtAssets/Characters/60px-Explorer"
     },
     {
         "Name": "Doctor",
         "Stats": "+200% Attack Speed with Medical weapons +5 HP Regeneration HP Regeneration is doubled +5 Harvesting -100% Attack Speed Armor modifications are reduced by 50%",
         "UnlockedBy": "Heal 200 HP in one wave",
         "Unlocks": "Medikit",
-        "Path": "ArtAssets/Characters/60px-Doctor.png"
+        "Path": "ArtAssets/Characters/60px-Doctor"
     },
     {
         "Name": "Hunter",
         "Stats": "+100 Range +1% Damage for every 10 Range you have Crit Chance modifications are increased by 25% Harvesting modifications are reduced by 100% Max HP modifications are reduced by 33%",
         "UnlockedBy": "Reach +300 Range",
         "Unlocks": "Sniper Gun",
-        "Path": "ArtAssets/Characters/60px-Hunter.png"
+        "Path": "ArtAssets/Characters/60px-Hunter"
     },
     {
         "Name": "Artificer",
         "Stats": "+175% Explosion Damage +4% Explosion Size for every 1 Elemental Damage you have -100% Damage Armor modifications are reduced by 50%",
         "UnlockedBy": "Kill 15 Enemies with a single explosion",
         "Unlocks": "Explosive Shells",
-        "Path": "ArtAssets/Characters/60px-Artificer.png"
+        "Path": "ArtAssets/Characters/60px-Artificer"
     },
     {
         "Name": "OneArmed",
         "Stats": "+200% Attack Speed Damage modifications are increased by 100% You can only equip one weapon at a time",
         "UnlockedBy": "Win a run in Danger 0",
         "Unlocks": "Focus",
-        "Path": "ArtAssets/Characters/60px-One_Armed.png"
+        "Path": "ArtAssets/Characters/60px-One_Armed"
     },
     {
         "Name": "Bull",
         "Stats": "+20 Max HP +15 HP Regeneration +10 Armor HP Regeneration modifications are increased by 50% You explode for 30 (300% 300% 300%) damage when you take damage This explosion has a 1.5x crit multiplier You can't equip weapons",
         "UnlockedBy": "Win a run in Danger 1",
         "Unlocks": "Gnome",
-        "Path": "ArtAssets/Characters/60px-Bull.png"
+        "Path": "ArtAssets/Characters/60px-Bull"
     },
     {
         "Name": "Soldier",
         "Stats": "+50% Damage while standing still +50% Attack Speed while standing still +10% Speed +200% pickup range +15 Knockback You cant attack while moving",
         "UnlockedBy": "Win a run in Danger 2",
         "Unlocks": "Nuclear Launcher",
-        "Path": "ArtAssets/Characters/60px-Soldier.png"
+        "Path": "ArtAssets/Characters/60px-Soldier"
     },
     {
         "Name": "Masochist",
         "Stats": "+5% Damage when you take damage until the end of the wave +10 Max HP +20 HP Regeneration +8 Armor -100% Damage",
         "UnlockedBy": "Win a run in Danger 3",
         "Unlocks": "Spiky Shield",
-        "Path": "ArtAssets/Characters/60px-Masochist.png"
+        "Path": "ArtAssets/Characters/60px-Masochist"
     },
     {
         "Name": "Knight",
         "Stats": "+2 Melee Damage for every 1 Armor you have +5 Armor You can't equip ranged weapons You can only equip tier 2 weapons or above % Attack Speed modifications are reduced by 50% Harvesting modifications are reduced by 80%",
         "UnlockedBy": "Win a run in Danger 4",
         "Unlocks": "Plasma Sledgehammer",
-        "Path": "ArtAssets/Characters/60px-Knight.png"
+        "Path": "ArtAssets/Characters/60px-Knight"
     },
     {
         "Name": "Demon",
         "Stats": "+50% of your Materials are converted into Max HP at the end of a wave (13 Materials=1 Max HP) You buy items using Max HP instead of materials",
         "UnlockedBy": "Win a run in Danger 5",
         "Unlocks": "Obliterator",
-        "Path": "ArtAssets/Characters/60px-Demon.png"
+        "Path": "ArtAssets/Characters/60px-Demon"
     }
 ]

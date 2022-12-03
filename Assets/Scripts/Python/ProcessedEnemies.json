@@ -12,7 +12,7 @@
         "ContainerDropRate": 0.2,
         "FirstWave": 1,
         "Id": 0,
-        "Path": "ArtAssets/Enemies/100px-Corrupted_Tree.png",
+        "Path": "ArtAssets/Enemies/100px-Corrupted_Tree",
         "FirstWaveD1": 0
     },
     {
@@ -28,7 +28,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 1,
         "Id": 1,
-        "Path": "ArtAssets/Enemies/Baby_Alien.png",
+        "Path": "ArtAssets/Enemies/Baby_Alien",
         "FirstWaveD1": 0
     },
     {
@@ -44,7 +44,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 2,
         "Id": 2,
-        "Path": "ArtAssets/Enemies/Chaser.png",
+        "Path": "ArtAssets/Enemies/Chaser",
         "FirstWaveD1": 0
     },
     {
@@ -60,7 +60,7 @@
         "ContainerDropRate": 0.1,
         "FirstWave": 4,
         "Id": 3,
-        "Path": "ArtAssets/Enemies/Spitter.png",
+        "Path": "ArtAssets/Enemies/Spitter",
         "FirstWaveD1": 0
     },
     {
@@ -76,7 +76,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 6,
         "Id": 4,
-        "Path": "ArtAssets/Enemies/100px-Horned_Charger.png",
+        "Path": "ArtAssets/Enemies/100px-Horned_Charger",
         "FirstWaveD1": 0
     },
     {
@@ -92,7 +92,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 11,
         "Id": 5,
-        "Path": "ArtAssets/Enemies/100px-Pursuer.png",
+        "Path": "ArtAssets/Enemies/100px-Pursuer",
         "FirstWaveD1": 0
     },
     {
@@ -108,7 +108,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 8,
         "Id": 6,
-        "Path": "ArtAssets/Enemies/100px-Bruiser.png",
+        "Path": "ArtAssets/Enemies/100px-Bruiser",
         "FirstWaveD1": 0
     },
     {
@@ -124,7 +124,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 16,
         "Id": 7,
-        "Path": "ArtAssets/Enemies/Buffer.png",
+        "Path": "ArtAssets/Enemies/Buffer",
         "FirstWaveD1": 0
     },
     {
@@ -140,7 +140,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 0,
         "Id": 8,
-        "Path": "ArtAssets/Enemies/66px-Fly.png",
+        "Path": "ArtAssets/Enemies/66px-Fly",
         "FirstWaveD1": 4
     },
     {
@@ -156,7 +156,7 @@
         "ContainerDropRate": 0,
         "FirstWave": 0,
         "Id": 9,
-        "Path": "ArtAssets/Enemies/100px-Corrupted_Tree.png",
+        "Path": "ArtAssets/Enemies/100px-Corrupted_Tree",
         "FirstWaveD1": 15
     },
     {
@@ -172,7 +172,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 0,
         "Id": 12,
-        "Path": "ArtAssets/Enemies/Healer.png",
+        "Path": "ArtAssets/Enemies/Healer",
         "FirstWaveD1": 7
     },
     {
@@ -188,7 +188,7 @@
         "ContainerDropRate": 1,
         "FirstWave": 1,
         "Id": 13,
-        "Path": "ArtAssets/Enemies/100px-Looter.png",
+        "Path": "ArtAssets/Enemies/100px-Looter",
         "FirstWaveD1": 0
     },
     {
@@ -204,7 +204,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 13,
         "Id": 14,
-        "Path": "ArtAssets/Enemies/100px-Helmet_Alien.png",
+        "Path": "ArtAssets/Enemies/100px-Helmet_Alien",
         "FirstWaveD1": 10
     },
     {
@@ -220,7 +220,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 15,
         "Id": 15,
-        "Path": "ArtAssets/Enemies/100px-Fin_Alien.png",
+        "Path": "ArtAssets/Enemies/100px-Fin_Alien",
         "FirstWaveD1": 9
     },
     {
@@ -236,7 +236,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 14,
         "Id": 16,
-        "Path": "ArtAssets/Enemies/100px-Spawner.png",
+        "Path": "ArtAssets/Enemies/100px-Spawner",
         "FirstWaveD1": 0
     },
     {
@@ -252,7 +252,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 14,
         "Id": 17,
-        "Path": "ArtAssets/Enemies/100px-Junkie.png",
+        "Path": "ArtAssets/Enemies/100px-Junkie",
         "FirstWaveD1": 0
     },
     {
@@ -268,7 +268,7 @@
         "ContainerDropRate": 0.03,
         "FirstWave": 13,
         "Id": 18,
-        "Path": "ArtAssets/Enemies/100px-Horned_Bruiser.png",
+        "Path": "ArtAssets/Enemies/100px-Horned_Bruiser",
         "FirstWaveD1": 8
     },
     {
@@ -284,7 +284,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 18,
         "Id": 19,
-        "Path": "ArtAssets/Enemies/100px-Horned_Charger.png",
+        "Path": "ArtAssets/Enemies/100px-Horned_Charger",
         "FirstWaveD1": 0
     },
     {
@@ -300,7 +300,7 @@
         "ContainerDropRate": 0,
         "FirstWave": 0,
         "Id": 23,
-        "Path": "ArtAssets/Enemies/Slasher_Egg.png",
+        "Path": "ArtAssets/Enemies/Slasher_Egg",
         "FirstWaveD1": 7
     },
     {
@@ -316,7 +316,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 0,
         "Id": 24,
-        "Path": "ArtAssets/Enemies/100px-Slasher.png",
+        "Path": "ArtAssets/Enemies/100px-Slasher",
         "FirstWaveD1": 4
     },
     {
@@ -332,7 +332,7 @@
         "ContainerDropRate": 0.01,
         "FirstWave": 0,
         "Id": 25,
-        "Path": "ArtAssets/Enemies/100px-Tentacle.png",
+        "Path": "ArtAssets/Enemies/100px-Tentacle",
         "FirstWaveD1": 10
     }
 ]

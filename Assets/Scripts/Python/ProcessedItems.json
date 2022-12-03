@@ -6,7 +6,7 @@
         "BasePrice": 65,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Acid.png"
+        "Path": "ArtAssets/Items/60px-Acid"
     },
     {
         "Name": "AlienBaby",
@@ -15,7 +15,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alien_Baby.png"
+        "Path": "ArtAssets/Items/60px-Alien_Baby"
     },
     {
         "Name": "AlienEyes",
@@ -24,7 +24,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alien_Eyes.png"
+        "Path": "ArtAssets/Items/60px-Alien_Eyes"
     },
     {
         "Name": "AlienMagic",
@@ -33,7 +33,7 @@
         "BasePrice": 85,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alien_Magic.png"
+        "Path": "ArtAssets/Items/60px-Alien_Magic"
     },
     {
         "Name": "AlienTongue",
@@ -42,7 +42,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alien_Tongue.png"
+        "Path": "ArtAssets/Items/60px-Alien_Tongue"
     },
     {
         "Name": "AlienWorm",
@@ -51,7 +51,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alien_Worm.png"
+        "Path": "ArtAssets/Items/60px-Alien_Worm"
     },
     {
         "Name": "Alloy",
@@ -60,7 +60,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Alloy.png"
+        "Path": "ArtAssets/Items/60px-Alloy"
     },
     {
         "Name": "BabyElephant",
@@ -69,7 +69,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Baby_Elephant.png"
+        "Path": "ArtAssets/Items/60px-Baby_Elephant"
     },
     {
         "Name": "BabyGecko",
@@ -78,7 +78,7 @@
         "BasePrice": 18,
         "Limit": 7,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Baby_Gecko.png"
+        "Path": "ArtAssets/Items/60px-Baby_Gecko"
     },
     {
         "Name": "BabyWithABeard",
@@ -87,7 +87,7 @@
         "BasePrice": 95,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Baby_with_a_Beard.png"
+        "Path": "ArtAssets/Items/60px-Baby_with_a_Beard"
     },
     {
         "Name": "Bag",
@@ -96,7 +96,7 @@
         "BasePrice": 18,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Bag.png"
+        "Path": "ArtAssets/Items/60px-Bag"
     },
     {
         "Name": "Bandana",
@@ -105,7 +105,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Bandana.png"
+        "Path": "ArtAssets/Items/60px-Bandana"
     },
     {
         "Name": "Banner",
@@ -114,7 +114,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Banner.png"
+        "Path": "ArtAssets/Items/60px-Banner"
     },
     {
         "Name": "Barricade",
@@ -123,7 +123,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Barricade.png"
+        "Path": "ArtAssets/Items/60px-Barricade"
     },
     {
         "Name": "Bat",
@@ -132,7 +132,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Bat.png"
+        "Path": "ArtAssets/Items/60px-Bat"
     },
     {
         "Name": "Beanie",
@@ -141,7 +141,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Beanie.png"
+        "Path": "ArtAssets/Items/60px-Beanie"
     },
     {
         "Name": "BeanTeacher",
@@ -150,7 +150,7 @@
         "BasePrice": 70,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Bean_Teacher.png"
+        "Path": "ArtAssets/Items/60px-Bean_Teacher"
     },
     {
         "Name": "BigArms",
@@ -159,7 +159,7 @@
         "BasePrice": 105,
         "Limit": 0,
         "UnlockedBy": "Win a run with Generalist",
-        "Path": "ArtAssets/Items/60px-Big_Arms.png"
+        "Path": "ArtAssets/Items/60px-Big_Arms"
     },
     {
         "Name": "BlackBelt",
@@ -168,7 +168,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Black_Belt.png"
+        "Path": "ArtAssets/Items/60px-Black_Belt"
     },
     {
         "Name": "Blindfold",
@@ -177,7 +177,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Blindfold.png"
+        "Path": "ArtAssets/Items/60px-Blindfold"
     },
     {
         "Name": "BloodDonation",
@@ -186,7 +186,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Blood_Donation.png"
+        "Path": "ArtAssets/Items/60px-Blood_Donation"
     },
     {
         "Name": "BloodLeech",
@@ -195,7 +195,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Blood_Leech.png"
+        "Path": "ArtAssets/Items/60px-Blood_Leech"
     },
     {
         "Name": "BoilingWater",
@@ -204,7 +204,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Boiling_Water.png"
+        "Path": "ArtAssets/Items/60px-Boiling_Water"
     },
     {
         "Name": "Book",
@@ -213,7 +213,7 @@
         "BasePrice": 8,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Book.png"
+        "Path": "ArtAssets/Items/60px-Book"
     },
     {
         "Name": "BowlerHat",
@@ -222,7 +222,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": "Win a run with Entrepreneur",
-        "Path": "ArtAssets/Items/60px-Bowler_Hat.png"
+        "Path": "ArtAssets/Items/60px-Bowler_Hat"
     },
     {
         "Name": "BoxingGlove",
@@ -231,7 +231,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Boxing_Glove.png"
+        "Path": "ArtAssets/Items/60px-Boxing_Glove"
     },
     {
         "Name": "BrokenMouth",
@@ -240,7 +240,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Broken_Mouth.png"
+        "Path": "ArtAssets/Items/60px-Broken_Mouth"
     },
     {
         "Name": "Butterfly",
@@ -249,7 +249,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Butterfly.png"
+        "Path": "ArtAssets/Items/60px-Butterfly"
     },
     {
         "Name": "Cake",
@@ -258,7 +258,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cake.png"
+        "Path": "ArtAssets/Items/60px-Cake"
     },
     {
         "Name": "Campfire",
@@ -267,7 +267,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Campfire.png"
+        "Path": "ArtAssets/Items/60px-Campfire"
     },
     {
         "Name": "Candle",
@@ -276,7 +276,7 @@
         "BasePrice": 65,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Candle.png"
+        "Path": "ArtAssets/Items/60px-Candle"
     },
     {
         "Name": "Cape",
@@ -285,7 +285,7 @@
         "BasePrice": 110,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cape.png"
+        "Path": "ArtAssets/Items/60px-Cape"
     },
     {
         "Name": "Chameleon",
@@ -294,7 +294,7 @@
         "BasePrice": 70,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Chameleon.png"
+        "Path": "ArtAssets/Items/60px-Chameleon"
     },
     {
         "Name": "Charcoal",
@@ -303,7 +303,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Charcoal.png"
+        "Path": "ArtAssets/Items/60px-Charcoal"
     },
     {
         "Name": "ClawTree",
@@ -312,7 +312,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Claw_Tree.png"
+        "Path": "ArtAssets/Items/60px-Claw_Tree"
     },
     {
         "Name": "Clover",
@@ -321,7 +321,7 @@
         "BasePrice": 65,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Clover.png"
+        "Path": "ArtAssets/Items/60px-Clover"
     },
     {
         "Name": "Coffee",
@@ -330,7 +330,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Coffee.png"
+        "Path": "ArtAssets/Items/60px-Coffee"
     },
     {
         "Name": "Cog",
@@ -339,7 +339,7 @@
         "BasePrice": 35,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cog.png"
+        "Path": "ArtAssets/Items/60px-Cog"
     },
     {
         "Name": "Compass",
@@ -348,7 +348,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": "Win a run with Explorer",
-        "Path": "ArtAssets/Items/60px-Compass.png"
+        "Path": "ArtAssets/Items/60px-Compass"
     },
     {
         "Name": "Coupon",
@@ -357,7 +357,7 @@
         "BasePrice": 15,
         "Limit": 5,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Coupon.png"
+        "Path": "ArtAssets/Items/60px-Coupon"
     },
     {
         "Name": "Crown",
@@ -366,7 +366,7 @@
         "BasePrice": 70,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Crown.png"
+        "Path": "ArtAssets/Items/60px-Crown"
     },
     {
         "Name": "CuteMonkey",
@@ -375,7 +375,7 @@
         "BasePrice": 25,
         "Limit": 13,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cute_Monkey.png"
+        "Path": "ArtAssets/Items/60px-Cute_Monkey"
     },
     {
         "Name": "Cyberball",
@@ -384,7 +384,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cyberball.png"
+        "Path": "ArtAssets/Items/60px-Cyberball"
     },
     {
         "Name": "CyclopsWorm",
@@ -393,7 +393,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Cyclops_Worm.png"
+        "Path": "ArtAssets/Items/60px-Cyclops_Worm"
     },
     {
         "Name": "DangerousBunny",
@@ -402,7 +402,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Dangerous_Bunny.png"
+        "Path": "ArtAssets/Items/60px-Dangerous_Bunny"
     },
     {
         "Name": "DefectiveSteroids",
@@ -411,7 +411,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Defective_Steroids.png"
+        "Path": "ArtAssets/Items/60px-Defective_Steroids"
     },
     {
         "Name": "Diploma",
@@ -420,7 +420,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Diploma.png"
+        "Path": "ArtAssets/Items/60px-Diploma"
     },
     {
         "Name": "DuctTape",
@@ -429,7 +429,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Duct_Tape.png"
+        "Path": "ArtAssets/Items/60px-Duct_Tape"
     },
     {
         "Name": "Dynamite",
@@ -438,7 +438,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Dynamite.png"
+        "Path": "ArtAssets/Items/60px-Dynamite"
     },
     {
         "Name": "EnergyBracelet",
@@ -447,7 +447,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Energy_Bracelet.png"
+        "Path": "ArtAssets/Items/60px-Energy_Bracelet"
     },
     {
         "Name": "Esty'sCouch",
@@ -456,7 +456,7 @@
         "BasePrice": 100,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Esty%27s_Couch.png"
+        "Path": "ArtAssets/Items/60px-Esty%27s_Couch"
     },
     {
         "Name": "Exoskeleton",
@@ -465,7 +465,7 @@
         "BasePrice": 90,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Exoskeleton.png"
+        "Path": "ArtAssets/Items/60px-Exoskeleton"
     },
     {
         "Name": "ExplosiveShells",
@@ -474,7 +474,7 @@
         "BasePrice": 100,
         "Limit": 1,
         "UnlockedBy": "Win a run with Artificer",
-        "Path": "ArtAssets/Items/60px-Explosive_Shells.png"
+        "Path": "ArtAssets/Items/60px-Explosive_Shells"
     },
     {
         "Name": "EyesSurgery",
@@ -483,7 +483,7 @@
         "BasePrice": 60,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Eyes_Surgery.png"
+        "Path": "ArtAssets/Items/60px-Eyes_Surgery"
     },
     {
         "Name": "Fertilizer",
@@ -492,7 +492,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Fertilizer.png"
+        "Path": "ArtAssets/Items/60px-Fertilizer"
     },
     {
         "Name": "Fin",
@@ -501,7 +501,7 @@
         "BasePrice": 65,
         "Limit": 0,
         "UnlockedBy": "Win a run with Speedy",
-        "Path": "ArtAssets/Items/60px-Fin.png"
+        "Path": "ArtAssets/Items/60px-Fin"
     },
     {
         "Name": "Focus",
@@ -510,7 +510,7 @@
         "BasePrice": 110,
         "Limit": 0,
         "UnlockedBy": "Win a run with One Armed",
-        "Path": "ArtAssets/Items/60px-Focus.png"
+        "Path": "ArtAssets/Items/60px-Focus"
     },
     {
         "Name": "FuelTank",
@@ -519,7 +519,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Fuel_Tank.png"
+        "Path": "ArtAssets/Items/60px-Fuel_Tank"
     },
     {
         "Name": "GamblingToken",
@@ -528,7 +528,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Gambling_Token.png"
+        "Path": "ArtAssets/Items/60px-Gambling_Token"
     },
     {
         "Name": "GentleAlien",
@@ -537,7 +537,7 @@
         "BasePrice": 30,
         "Limit": 10,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Gentle_Alien.png"
+        "Path": "ArtAssets/Items/60px-Gentle_Alien"
     },
     {
         "Name": "Glasses",
@@ -546,7 +546,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Glasses.png"
+        "Path": "ArtAssets/Items/60px-Glasses"
     },
     {
         "Name": "GlassCannon",
@@ -555,7 +555,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Glass_Cannon.png"
+        "Path": "ArtAssets/Items/60px-Glass_Cannon"
     },
     {
         "Name": "Gnome",
@@ -564,7 +564,7 @@
         "BasePrice": 100,
         "Limit": 0,
         "UnlockedBy": "Win a run with Bull",
-        "Path": "ArtAssets/Items/60px-Gnome.png"
+        "Path": "ArtAssets/Items/60px-Gnome"
     },
     {
         "Name": "GoatSkull",
@@ -573,7 +573,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Goat_Skull.png"
+        "Path": "ArtAssets/Items/60px-Goat_Skull"
     },
     {
         "Name": "GummyBerserker",
@@ -582,7 +582,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Gummy_Berserker.png"
+        "Path": "ArtAssets/Items/60px-Gummy_Berserker"
     },
     {
         "Name": "Handcuffs",
@@ -591,7 +591,7 @@
         "BasePrice": 80,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Handcuffs.png"
+        "Path": "ArtAssets/Items/60px-Handcuffs"
     },
     {
         "Name": "HeadInjury",
@@ -600,7 +600,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Head_Injury.png"
+        "Path": "ArtAssets/Items/60px-Head_Injury"
     },
     {
         "Name": "HeavyBullets",
@@ -609,7 +609,7 @@
         "BasePrice": 100,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Heavy_Bullets.png"
+        "Path": "ArtAssets/Items/60px-Heavy_Bullets"
     },
     {
         "Name": "Hedgehog",
@@ -618,7 +618,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Hedgehog.png"
+        "Path": "ArtAssets/Items/60px-Hedgehog"
     },
     {
         "Name": "Helmet",
@@ -627,7 +627,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Helmet.png"
+        "Path": "ArtAssets/Items/60px-Helmet"
     },
     {
         "Name": "HuntingTrophy",
@@ -636,7 +636,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": "Win a run with Crazy",
-        "Path": "ArtAssets/Items/60px-Hunting_Trophy.png"
+        "Path": "ArtAssets/Items/60px-Hunting_Trophy"
     },
     {
         "Name": "Injection",
@@ -645,7 +645,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Injection.png"
+        "Path": "ArtAssets/Items/60px-Injection"
     },
     {
         "Name": "Insanity",
@@ -654,7 +654,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Insanity.png"
+        "Path": "ArtAssets/Items/60px-Insanity"
     },
     {
         "Name": "JetPack",
@@ -663,7 +663,7 @@
         "BasePrice": 100,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Jet_Pack.png"
+        "Path": "ArtAssets/Items/60px-Jet_Pack"
     },
     {
         "Name": "Landmines",
@@ -672,7 +672,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Landmines.png"
+        "Path": "ArtAssets/Items/60px-Landmines"
     },
     {
         "Name": "LeatherVest",
@@ -681,7 +681,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Leather_Vest.png"
+        "Path": "ArtAssets/Items/60px-Leather_Vest"
     },
     {
         "Name": "Lemonade",
@@ -690,7 +690,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Lemonade.png"
+        "Path": "ArtAssets/Items/60px-Lemonade"
     },
     {
         "Name": "Lens",
@@ -699,7 +699,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Lens.png"
+        "Path": "ArtAssets/Items/60px-Lens"
     },
     {
         "Name": "LittleFrog",
@@ -708,7 +708,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Little_Frog.png"
+        "Path": "ArtAssets/Items/60px-Little_Frog"
     },
     {
         "Name": "LittleMuscleyDude",
@@ -717,7 +717,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Little_Muscley_Dude.png"
+        "Path": "ArtAssets/Items/60px-Little_Muscley_Dude"
     },
     {
         "Name": "LostDuck",
@@ -726,7 +726,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Lost_Duck.png"
+        "Path": "ArtAssets/Items/60px-Lost_Duck"
     },
     {
         "Name": "LuckyCharm",
@@ -735,7 +735,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": "Win a run with Lucky",
-        "Path": "ArtAssets/Items/60px-Lucky_Charm.png"
+        "Path": "ArtAssets/Items/60px-Lucky_Charm"
     },
     {
         "Name": "LumberjackShirt",
@@ -744,7 +744,7 @@
         "BasePrice": 15,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Lumberjack_Shirt.png"
+        "Path": "ArtAssets/Items/60px-Lumberjack_Shirt"
     },
     {
         "Name": "Mammoth",
@@ -753,7 +753,7 @@
         "BasePrice": 115,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Mammoth.png"
+        "Path": "ArtAssets/Items/60px-Mammoth"
     },
     {
         "Name": "Mastery",
@@ -762,7 +762,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Mastery.png"
+        "Path": "ArtAssets/Items/60px-Mastery"
     },
     {
         "Name": "Medal",
@@ -771,7 +771,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Medal.png"
+        "Path": "ArtAssets/Items/60px-Medal"
     },
     {
         "Name": "Medikit",
@@ -780,7 +780,7 @@
         "BasePrice": 90,
         "Limit": 0,
         "UnlockedBy": "Win a run with Doctor",
-        "Path": "ArtAssets/Items/60px-Medikit.png"
+        "Path": "ArtAssets/Items/60px-Medikit"
     },
     {
         "Name": "MetalDetector",
@@ -789,7 +789,7 @@
         "BasePrice": 40,
         "Limit": 20,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Metal_Detector.png"
+        "Path": "ArtAssets/Items/60px-Metal_Detector"
     },
     {
         "Name": "MetalPlate",
@@ -798,7 +798,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Metal_Plate.png"
+        "Path": "ArtAssets/Items/60px-Metal_Plate"
     },
     {
         "Name": "Missile",
@@ -807,7 +807,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Missile.png"
+        "Path": "ArtAssets/Items/60px-Missile"
     },
     {
         "Name": "Mouse",
@@ -816,7 +816,7 @@
         "BasePrice": 55,
         "Limit": 5,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Mouse.png"
+        "Path": "ArtAssets/Items/60px-Mouse"
     },
     {
         "Name": "Mushroom",
@@ -825,7 +825,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Mushroom.png"
+        "Path": "ArtAssets/Items/60px-Mushroom"
     },
     {
         "Name": "Mutation",
@@ -834,7 +834,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Mutation.png"
+        "Path": "ArtAssets/Items/60px-Mutation"
     },
     {
         "Name": "NightGoggles",
@@ -843,7 +843,7 @@
         "BasePrice": 90,
         "Limit": 0,
         "UnlockedBy": "Win a run with Ranger",
-        "Path": "ArtAssets/Items/60px-Night_Goggles.png"
+        "Path": "ArtAssets/Items/60px-Night_Goggles"
     },
     {
         "Name": "Octopus",
@@ -852,7 +852,7 @@
         "BasePrice": 105,
         "Limit": 0,
         "UnlockedBy": "Win a run with Mutant",
-        "Path": "ArtAssets/Items/60px-Octopus.png"
+        "Path": "ArtAssets/Items/60px-Octopus"
     },
     {
         "Name": "Padding",
@@ -861,7 +861,7 @@
         "BasePrice": 45,
         "Limit": 0,
         "UnlockedBy": "Win a run with Saver",
-        "Path": "ArtAssets/Items/60px-Padding.png"
+        "Path": "ArtAssets/Items/60px-Padding"
     },
     {
         "Name": "Panda",
@@ -870,7 +870,7 @@
         "BasePrice": 100,
         "Limit": 0,
         "UnlockedBy": "Win a run with Pacifist",
-        "Path": "ArtAssets/Items/60px-Panda.png"
+        "Path": "ArtAssets/Items/60px-Panda"
     },
     {
         "Name": "PeacefulBee",
@@ -879,7 +879,7 @@
         "BasePrice": 18,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Peaceful_Bee.png"
+        "Path": "ArtAssets/Items/60px-Peaceful_Bee"
     },
     {
         "Name": "Pencil",
@@ -888,7 +888,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Pencil.png"
+        "Path": "ArtAssets/Items/60px-Pencil"
     },
     {
         "Name": "PiggyBank",
@@ -897,7 +897,7 @@
         "BasePrice": 40,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Piggy_Bank.png"
+        "Path": "ArtAssets/Items/60px-Piggy_Bank"
     },
     {
         "Name": "Plant",
@@ -906,7 +906,7 @@
         "BasePrice": 10,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Plant.png"
+        "Path": "ArtAssets/Items/60px-Plant"
     },
     {
         "Name": "PlasticExplosive",
@@ -915,7 +915,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Plastic_Explosive.png"
+        "Path": "ArtAssets/Items/60px-Plastic_Explosive"
     },
     {
         "Name": "PoisonousTonic",
@@ -924,7 +924,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Poisonous_Tonic.png"
+        "Path": "ArtAssets/Items/60px-Poisonous_Tonic"
     },
     {
         "Name": "Potato",
@@ -933,7 +933,7 @@
         "BasePrice": 85,
         "Limit": 0,
         "UnlockedBy": "Win a run with Well Rounded",
-        "Path": "ArtAssets/Items/60px-Potato.png"
+        "Path": "ArtAssets/Items/60px-Potato"
     },
     {
         "Name": "PowerGenerator",
@@ -942,7 +942,7 @@
         "BasePrice": 50,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Power_Generator.png"
+        "Path": "ArtAssets/Items/60px-Power_Generator"
     },
     {
         "Name": "PropellerHat",
@@ -951,7 +951,7 @@
         "BasePrice": 28,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Propeller_Hat.png"
+        "Path": "ArtAssets/Items/60px-Propeller_Hat"
     },
     {
         "Name": "Pumpkin",
@@ -960,7 +960,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Pumpkin.png"
+        "Path": "ArtAssets/Items/60px-Pumpkin"
     },
     {
         "Name": "RecyclingMachine",
@@ -969,7 +969,7 @@
         "BasePrice": 35,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Recycling_Machine.png"
+        "Path": "ArtAssets/Items/60px-Recycling_Machine"
     },
     {
         "Name": "Retromation'sHoodie",
@@ -978,7 +978,7 @@
         "BasePrice": 100,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Retromation%27s_Hoodie.png"
+        "Path": "ArtAssets/Items/60px-Retromation%27s_Hoodie"
     },
     {
         "Name": "Ricochet",
@@ -987,7 +987,7 @@
         "BasePrice": 100,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Ricochet.png"
+        "Path": "ArtAssets/Items/60px-Ricochet"
     },
     {
         "Name": "RipAndTear",
@@ -996,7 +996,7 @@
         "BasePrice": 65,
         "Limit": 10,
         "UnlockedBy": "Win a run with Loud",
-        "Path": "ArtAssets/Items/60px-Rip_and_Tear.png"
+        "Path": "ArtAssets/Items/60px-Rip_and_Tear"
     },
     {
         "Name": "Ritual",
@@ -1005,7 +1005,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": "Win a run with Ghost",
-        "Path": "ArtAssets/Items/60px-Ritual.png"
+        "Path": "ArtAssets/Items/60px-Ritual"
     },
     {
         "Name": "RobotArm",
@@ -1014,7 +1014,7 @@
         "BasePrice": 90,
         "Limit": 0,
         "UnlockedBy": "Win a run with Engineer",
-        "Path": "ArtAssets/Items/60px-Robot_Arm.png"
+        "Path": "ArtAssets/Items/60px-Robot_Arm"
     },
     {
         "Name": "SadTomato",
@@ -1023,7 +1023,7 @@
         "BasePrice": 50,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Sad_Tomato.png"
+        "Path": "ArtAssets/Items/60px-Sad_Tomato"
     },
     {
         "Name": "Scar",
@@ -1032,7 +1032,7 @@
         "BasePrice": 30,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Scar.png"
+        "Path": "ArtAssets/Items/60px-Scar"
     },
     {
         "Name": "ScaredSausage",
@@ -1041,7 +1041,7 @@
         "BasePrice": 25,
         "Limit": 4,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Scared_Sausage.png"
+        "Path": "ArtAssets/Items/60px-Scared_Sausage"
     },
     {
         "Name": "Scope",
@@ -1050,7 +1050,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Scope.png"
+        "Path": "ArtAssets/Items/60px-Scope"
     },
     {
         "Name": "ShadyPotion",
@@ -1059,7 +1059,7 @@
         "BasePrice": 48,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Shady_Potion.png"
+        "Path": "ArtAssets/Items/60px-Shady_Potion"
     },
     {
         "Name": "Shmoop",
@@ -1068,7 +1068,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Shmoop.png"
+        "Path": "ArtAssets/Items/60px-Shmoop"
     },
     {
         "Name": "Sifd'sRelic",
@@ -1077,7 +1077,7 @@
         "BasePrice": 100,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Sifd%27s_Relic.png"
+        "Path": "ArtAssets/Items/60px-Sifd%27s_Relic"
     },
     {
         "Name": "SmallMagazine",
@@ -1086,7 +1086,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Small_Magazine.png"
+        "Path": "ArtAssets/Items/60px-Small_Magazine"
     },
     {
         "Name": "Snail",
@@ -1095,7 +1095,7 @@
         "BasePrice": 40,
         "Limit": 1,
         "UnlockedBy": "Win a run with Old",
-        "Path": "ArtAssets/Items/60px-Snail.png"
+        "Path": "ArtAssets/Items/60px-Snail"
     },
     {
         "Name": "Snake",
@@ -1104,7 +1104,7 @@
         "BasePrice": 25,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Snake.png"
+        "Path": "ArtAssets/Items/60px-Snake"
     },
     {
         "Name": "Spider",
@@ -1113,7 +1113,7 @@
         "BasePrice": 120,
         "Limit": 0,
         "UnlockedBy": "Win a run with Gladiator",
-        "Path": "ArtAssets/Items/60px-Spider.png"
+        "Path": "ArtAssets/Items/60px-Spider"
     },
     {
         "Name": "Statue",
@@ -1122,7 +1122,7 @@
         "BasePrice": 85,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Statue.png"
+        "Path": "ArtAssets/Items/60px-Statue"
     },
     {
         "Name": "Sunglasses",
@@ -1131,7 +1131,7 @@
         "BasePrice": 50,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Sunglasses.png"
+        "Path": "ArtAssets/Items/60px-Sunglasses"
     },
     {
         "Name": "TerrifiedOnion",
@@ -1140,7 +1140,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Terrified_Onion.png"
+        "Path": "ArtAssets/Items/60px-Terrified_Onion"
     },
     {
         "Name": "Toolbox",
@@ -1149,7 +1149,7 @@
         "BasePrice": 55,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Toolbox.png"
+        "Path": "ArtAssets/Items/60px-Toolbox"
     },
     {
         "Name": "Torture",
@@ -1158,7 +1158,7 @@
         "BasePrice": 110,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Torture.png"
+        "Path": "ArtAssets/Items/60px-Torture"
     },
     {
         "Name": "ToxicSludge",
@@ -1167,7 +1167,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Toxic_Sludge.png"
+        "Path": "ArtAssets/Items/60px-Toxic_Sludge"
     },
     {
         "Name": "Tractor",
@@ -1176,7 +1176,7 @@
         "BasePrice": 70,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Tractor.png"
+        "Path": "ArtAssets/Items/60px-Tractor"
     },
     {
         "Name": "Tree",
@@ -1185,7 +1185,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Claw_Tree.png"
+        "Path": "ArtAssets/Items/60px-Claw_Tree"
     },
     {
         "Name": "TriangleOfPower",
@@ -1194,7 +1194,7 @@
         "BasePrice": 65,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Triangle_of_Power.png"
+        "Path": "ArtAssets/Items/60px-Triangle_of_Power"
     },
     {
         "Name": "Turret",
@@ -1203,7 +1203,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Explosive_Turret.png"
+        "Path": "ArtAssets/Items/60px-Explosive_Turret"
     },
     {
         "Name": "IncendiaryTurret",
@@ -1212,7 +1212,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Incendiary_Turret.png"
+        "Path": "ArtAssets/Items/60px-Incendiary_Turret"
     },
     {
         "Name": "MedicalTurret",
@@ -1221,7 +1221,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Medical_Turret.png"
+        "Path": "ArtAssets/Items/60px-Medical_Turret"
     },
     {
         "Name": "LaserTurret",
@@ -1230,7 +1230,7 @@
         "BasePrice": 65,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Laser_Turret.png"
+        "Path": "ArtAssets/Items/60px-Laser_Turret"
     },
     {
         "Name": "ExplosiveTurret",
@@ -1239,7 +1239,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Explosive_Turret.png"
+        "Path": "ArtAssets/Items/60px-Explosive_Turret"
     },
     {
         "Name": "Tyler",
@@ -1248,7 +1248,7 @@
         "BasePrice": 75,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Tyler.png"
+        "Path": "ArtAssets/Items/60px-Tyler"
     },
     {
         "Name": "UglyTooth",
@@ -1257,7 +1257,7 @@
         "BasePrice": 25,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Ugly_Tooth.png"
+        "Path": "ArtAssets/Items/60px-Ugly_Tooth"
     },
     {
         "Name": "VigilanteRing",
@@ -1266,7 +1266,7 @@
         "BasePrice": 92,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Vigilante_Ring.png"
+        "Path": "ArtAssets/Items/60px-Vigilante_Ring"
     },
     {
         "Name": "WanderingBot",
@@ -1275,7 +1275,7 @@
         "BasePrice": 60,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Wandering_Bot.png"
+        "Path": "ArtAssets/Items/60px-Wandering_Bot"
     },
     {
         "Name": "WarriorHelmet",
@@ -1284,7 +1284,7 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Warrior_Helmet.png"
+        "Path": "ArtAssets/Items/60px-Warrior_Helmet"
     },
     {
         "Name": "WeirdFood",
@@ -1293,7 +1293,7 @@
         "BasePrice": 20,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Weird_Food.png"
+        "Path": "ArtAssets/Items/60px-Weird_Food"
     },
     {
         "Name": "WeirdGhost",
@@ -1302,7 +1302,7 @@
         "BasePrice": 12,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Weird_Ghost.png"
+        "Path": "ArtAssets/Items/60px-Weird_Ghost"
     },
     {
         "Name": "Wheat",
@@ -1311,7 +1311,7 @@
         "BasePrice": 85,
         "Limit": 0,
         "UnlockedBy": "Win a run with Farmer",
-        "Path": "ArtAssets/Items/60px-Wheat.png"
+        "Path": "ArtAssets/Items/60px-Wheat"
     },
     {
         "Name": "Wheelbarrow",
@@ -1320,7 +1320,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Wheelbarrow.png"
+        "Path": "ArtAssets/Items/60px-Wheelbarrow"
     },
     {
         "Name": "Whetstone",
@@ -1329,7 +1329,7 @@
         "BasePrice": 40,
         "Limit": 0,
         "UnlockedBy": "Win a run with Sick",
-        "Path": "ArtAssets/Items/60px-Whetstone.png"
+        "Path": "ArtAssets/Items/60px-Whetstone"
     },
     {
         "Name": "WhiteFlag",
@@ -1338,7 +1338,7 @@
         "BasePrice": 40,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-White_Flag.png"
+        "Path": "ArtAssets/Items/60px-White_Flag"
     },
     {
         "Name": "Wings",
@@ -1347,7 +1347,7 @@
         "BasePrice": 85,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Wings.png"
+        "Path": "ArtAssets/Items/60px-Wings"
     },
     {
         "Name": "Wisdom",
@@ -1356,7 +1356,7 @@
         "BasePrice": 85,
         "Limit": 1,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Wisdom.png"
+        "Path": "ArtAssets/Items/60px-Wisdom"
     },
     {
         "Name": "WolfHelmet",
@@ -1365,6 +1365,6 @@
         "BasePrice": 80,
         "Limit": 0,
         "UnlockedBy": null,
-        "Path": "ArtAssets/Items/60px-Wolf_Helmet.png"
+        "Path": "ArtAssets/Items/60px-Wolf_Helmet"
     }
 ]

@@ -1,0 +1,6 @@
+Label {
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
