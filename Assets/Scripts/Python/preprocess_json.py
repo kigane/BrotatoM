@@ -101,15 +101,23 @@ def preprocess_jsons(part):
             spacial_dispose(part, v)
 
             # 把key转换为C#变量名形式
+            # 和一些特殊值处理(null)
             new_dic = {}
             for key, val in v.items():
+                newKey = key
                 if key == "+hp/wave":
                     newKey = "HpIncreasePerWave"
                 elif key == "+dmg/wave":
                     newKey = "DamageIncreasePerWave"
+                elif key == "Name":
+                    newKey = "".join([s.capitalize() for s in key.split()])
+                    val = "".join([s.capitalize() for s in val.split()])
+                elif key == "Limit":
+                    if val is None:
+                        val = 0
                 else:
                     newKey = "".join([s.capitalize() for s in key.split()])
-                new_dic[newKey] = v[key]
+                new_dic[newKey] = val
 
             config_lst.append(new_dic)
             if os.path.exists(RESOURCES_DIR + v["Path"]):
@@ -131,11 +139,11 @@ def preprocess_jsons(part):
 if __name__ == "__main__":
     parts = [
         # "Characters",
-        # "Items",
+        "Items",
         # "Weapons",
         # "Enemies",
         # "Dangers",
-        "Stats",
+        # "Stats",
     ]
     for part in parts:
         preprocess_jsons(part)

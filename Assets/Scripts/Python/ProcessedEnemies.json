@@ -16,7 +16,7 @@
         "FirstWaveD1": 0
     },
     {
-        "Name": "Baby Alien",
+        "Name": "BabyAlien",
         "Behavior": "Chases the character, deals damage on touch",
         "Health": 3,
         "HpIncreasePerWave": 2,
@@ -144,7 +144,7 @@
         "FirstWaveD1": 4
     },
     {
-        "Name": "Corrupted Tree",
+        "Name": "CorruptedTree",
         "Behavior": "Stands in place, creates circling projectiles that deals damage",
         "Health": 15,
         "HpIncreasePerWave": 13,
@@ -192,7 +192,7 @@
         "FirstWaveD1": 0
     },
     {
-        "Name": "Helmet Alien",
+        "Name": "HelmetAlien",
         "Behavior": "Chases the character, deals damage on touch",
         "Health": 8,
         "HpIncreasePerWave": 3,
@@ -208,7 +208,7 @@
         "FirstWaveD1": 10
     },
     {
-        "Name": "Fin Alien",
+        "Name": "FinAlien",
         "Behavior": "Chases the character, deals damage on touch",
         "Health": 12,
         "HpIncreasePerWave": 2,
@@ -256,7 +256,7 @@
         "FirstWaveD1": 0
     },
     {
-        "Name": "Horned Bruiser",
+        "Name": "HornedBruiser",
         "Behavior": "Chases the character, can charge with cooldown of 2.5-3.5 seconds, damages on touch",
         "Health": 30,
         "HpIncreasePerWave": 22,
@@ -272,7 +272,7 @@
         "FirstWaveD1": 8
     },
     {
-        "Name": "Horned Charger",
+        "Name": "HornedCharger",
         "Behavior": "Chases the character, can charge with cooldown of 2.5-3.5 seconds, damages on touch",
         "Health": 12,
         "HpIncreasePerWave": 5,
@@ -288,7 +288,7 @@
         "FirstWaveD1": 0
     },
     {
-        "Name": "Slasher Egg",
+        "Name": "SlasherEgg",
         "Behavior": "Stays still, dies and spawns a Slasher after 5 seconds unless killed",
         "Health": 15,
         "HpIncreasePerWave": 5,

@@ -82,7 +82,7 @@ class MyDoCreateScriptAsset : EndNameEditAction
         string resourceFile)
     {
         string fullPath = Path.GetFullPath(pathName);
-        StreamReader streamReader = new StreamReader(resourceFile);
+        StreamReader streamReader = new(resourceFile);
         string text = streamReader.ReadToEnd();
         streamReader.Close();
         string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(pathName);
@@ -90,10 +90,10 @@ class MyDoCreateScriptAsset : EndNameEditAction
         text = Regex.Replace(text, "#NAME#", fileNameWithoutExtension);
         bool encoderShouldEmitUTF8Identifier = true;
         bool throwOnInvalidBytes = false;
-        UTF8Encoding encoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier,
+        UTF8Encoding encoding = new(encoderShouldEmitUTF8Identifier,
             throwOnInvalidBytes);
         bool append = false;
-        StreamWriter streamWriter = new StreamWriter(fullPath, append, encoding);
+        StreamWriter streamWriter = new(fullPath, append, encoding);
         streamWriter.Write(text);
         streamWriter.Close();
         AssetDatabase.ImportAsset(pathName);

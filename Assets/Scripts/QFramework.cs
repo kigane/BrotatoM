@@ -290,18 +290,18 @@ namespace QFramework
 
     public abstract class AbstractModel : IModel
     {
-        private IArchitecture mArchitecturel;
+        private IArchitecture mArchitecture;
 
         // 显示实现接口,AbstractModel的子类就不能调用GetArchitecture方法了
         // 限制了在Model中使用其持有的Architecture对象做一些不符合规范的事情，如发送Command
         IArchitecture IBelongToArchitecture.GetArchitecture()
         {
-            return mArchitecturel;
+            return mArchitecture;
         }
 
         void ICanSetArchitecture.SetArchitecture(IArchitecture architecture)
         {
-            mArchitecturel = architecture;
+            mArchitecture = architecture;
         }
 
         void IModel.Init()

@@ -1,6 +1,6 @@
 [
     {
-        "Name": "Cacti Club",
+        "Name": "CactiClub",
         "Class": [
             "Primitive",
             "Heavy"
@@ -127,7 +127,7 @@
         ]
     },
     {
-        "Name": "Circular Saw",
+        "Name": "CircularSaw",
         "Class": [
             "Blade",
             "Medical"
@@ -191,7 +191,7 @@
         ]
     },
     {
-        "Name": "Thief Dagger",
+        "Name": "ThiefDagger",
         "Class": [
             "Precise"
         ],
@@ -317,7 +317,7 @@
         ]
     },
     {
-        "Name": "Flaming Brass Knuckles",
+        "Name": "FlamingBrassKnuckles",
         "Class": [
             "Unarmed",
             "Elemental"
@@ -381,7 +381,7 @@
         ]
     },
     {
-        "Name": "Ghost Axe",
+        "Name": "GhostAxe",
         "Class": [
             "Ethereal"
         ],
@@ -444,7 +444,7 @@
         ]
     },
     {
-        "Name": "Ghost Flint",
+        "Name": "GhostFlint",
         "Class": [
             "Ethereal"
         ],
@@ -761,7 +761,7 @@
         ]
     },
     {
-        "Name": "Lightning Shiv",
+        "Name": "LightningShiv",
         "Class": [
             "Precise",
             "Elemental"
@@ -889,7 +889,7 @@
         ]
     },
     {
-        "Name": "Plasma Sledgehammer",
+        "Name": "PlasmaSledgehammer",
         "Class": [
             "Elemental",
             "Explosive"
@@ -953,7 +953,7 @@
         ]
     },
     {
-        "Name": "Power Fist",
+        "Name": "PowerFist",
         "Class": [
             "Unarmed",
             "Explosive"
@@ -1272,7 +1272,7 @@
         ]
     },
     {
-        "Name": "Spiky Shield",
+        "Name": "SpikyShield",
         "Class": [
             "Medieval",
             "Blunt"
@@ -1463,7 +1463,7 @@
         ]
     },
     {
-        "Name": "Thunder Sword",
+        "Name": "ThunderSword",
         "Class": [
             "Blade",
             "Elemental"

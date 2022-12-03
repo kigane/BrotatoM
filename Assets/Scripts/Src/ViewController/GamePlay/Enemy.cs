@@ -39,7 +39,7 @@ namespace BrotatoM
                     dropPos.x += Random.Range(-0.5f, 0.5f);
                     dropPos.y += Random.Range(-0.5f, 0.5f);
                     GameObject mHarvestGO = Resources.Load<GameObject>("Prefabs/Harvesting");
-                    var harvesting = Instantiate(mHarvestGO, dropPos, mHarvestGO.transform.rotation);
+                    Instantiate(mHarvestGO, dropPos, mHarvestGO.transform.rotation);
                 }
                 else
                 { //TODO 击退

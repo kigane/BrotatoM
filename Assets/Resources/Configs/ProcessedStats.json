@@ -1,6 +1,6 @@
 [
     {
-        "Name": "Max HP",
+        "Name": "MaxHp",
         "Effects": "Amount of damage you can take before dying",
         "Limit": "No limit",
         "NegativeStatEffect": "Can't go negative",
@@ -8,7 +8,7 @@
         "PathBig": "ArtAssets/Stats/60px-Max_HP.png"
     },
     {
-        "Name": "HP Regeneration",
+        "Name": "HpRegeneration",
         "Effects": "You regenerate 0.0x HP every second. Unless you have torture where you regenerate 3 HP every second.",
         "Limit": "No limit",
         "NegativeStatEffect": "Acts like the stat is at 0",
@@ -16,7 +16,7 @@
         "PathBig": "ArtAssets/Stats/60px-HP_Regeneration.png"
     },
     {
-        "Name": "Life Steal",
+        "Name": "LifeSteal",
         "Effects": "Your attacks have a x% chance to heal you for 1HP.",
         "Limit": "10HP/second",
         "NegativeStatEffect": "Act like the stat is 0",
@@ -32,7 +32,7 @@
         "PathBig": "ArtAssets/Stats/60px-Damage.png"
     },
     {
-        "Name": "Melee Damage",
+        "Name": "MeleeDamage",
         "Effects": "Your melee attacks deal x additional damage.",
         "Limit": "No limit",
         "NegativeStatEffect": "Makes your melee attacks deal x less damage down to a minimum of 1 damage",
@@ -40,7 +40,7 @@
         "PathBig": "ArtAssets/Stats/60px-Melee_Damage.png"
     },
     {
-        "Name": "Ranged Damage",
+        "Name": "RangedDamage",
         "Effects": "Your ranged attacks deal x additional damage.",
         "Limit": "No limit",
         "NegativeStatEffect": "Your ranged attacks deal x less damage down to a minimum of 1 damage.",
@@ -48,7 +48,7 @@
         "PathBig": "ArtAssets/Stats/60px-Ranged_Damage.png"
     },
     {
-        "Name": "Elemental Damage",
+        "Name": "ElementalDamage",
         "Effects": "Makes you elemental attacks deal x damage.",
         "Limit": "No limit",
         "NegativeStatEffect": "Your elemental attacks deal x less damage down to a minimum of 1",
@@ -56,7 +56,7 @@
         "PathBig": "ArtAssets/Stats/60px-Elemental_Damage.png"
     },
     {
-        "Name": "Attack Speed",
+        "Name": "AttackSpeed",
         "Effects": "You attack x% faster. Also applies to Ranged Weapons but not engineering turrets or mines",
         "Limit": "No limit",
         "NegativeStatEffect": "You attack x% slower.",
@@ -64,7 +64,7 @@
         "PathBig": "ArtAssets/Stats/60px-Attack_Speed.png"
     },
     {
-        "Name": "Crit Chance",
+        "Name": "CritChance",
         "Effects": "Your weapons have an x increased chance to deal a critical hit.",
         "Limit": "No limit",
         "NegativeStatEffect": "Your weapons have an x decreased chance to do a critical hit damage this can stop your weapons from inflicting a critical hit",

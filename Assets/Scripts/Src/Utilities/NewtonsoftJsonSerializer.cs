@@ -21,7 +21,6 @@ namespace BrotatoM
         public void ReadJsonToDictionary<T>(string path, Dictionary<string, T> dict) where T : IConfigItem
         {
             string jsonText = Resources.Load<TextAsset>(path).text;
-            Debug.Log("WeaponConfigModel OnInit");
             T[] items = JsonConvert.DeserializeObject<T[]>(jsonText);
             for (int i = 0; i < items.Length; i++)
             {

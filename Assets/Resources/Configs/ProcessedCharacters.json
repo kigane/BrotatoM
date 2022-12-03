@@ -1,6 +1,6 @@
 [
     {
-        "Name": "Well Rounded",
+        "Name": "WellRounded",
         "Stats": "+5 Max Hp +5% Speed +8 Harvesting",
         "UnlockedBy": "Unlocked by default",
         "Unlocks": "Potato",
@@ -182,7 +182,7 @@
         "Path": "ArtAssets/Characters/60px-Artificer.png"
     },
     {
-        "Name": "One Armed",
+        "Name": "OneArmed",
         "Stats": "+200% Attack Speed Damage modifications are increased by 100% You can only equip one weapon at a time",
         "UnlockedBy": "Win a run in Danger 0",
         "Unlocks": "Focus",

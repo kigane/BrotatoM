@@ -43,7 +43,7 @@ namespace BrotatoM
         }
 
         public float CurrentSeconds { get; private set; }
-        private LinkedList<DelayTask> mDelayTasks = new();
+        private readonly LinkedList<DelayTask> mDelayTasks = new();
 
         public void AddDelayTask(float delayTime, Action onDelayFinish)
         {
