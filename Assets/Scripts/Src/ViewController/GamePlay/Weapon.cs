@@ -42,6 +42,10 @@ namespace BrotatoM
             // 原来Bullet是Gun的子对象，Instantiate出来的会在根节点，因此缩放需要调整。
             bullet.transform.localScale = mBullet.transform.lossyScale;
             bullet.SetActive(true);
+            // 直接在这里设置子弹速度和方向
+            var rig = bullet.GetComponent<Rigidbody2D>();
+            rig.velocity = 6 * (transform.rotation * Vector3.right).normalized;
+            Destroy(bullet, 3f);
         }
 
         /// <summary>

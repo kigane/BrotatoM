@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 154272172}
   - component: {fileID: 154272176}
-  - component: {fileID: 154272175}
   - component: {fileID: 154272174}
   - component: {fileID: 154272173}
   m_Layer: 0
@@ -195,20 +194,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000044703484, y: -0.00000047683716}
   m_Size: {x: 1.0000001, y: 2.0000002}
   m_Direction: 0
---- !u!114 &154272175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 154272171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!212 &154272176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -271,7 +256,6 @@ GameObject:
   m_Component:
   - component: {fileID: 265216929}
   - component: {fileID: 265216932}
-  - component: {fileID: 265216931}
   - component: {fileID: 265216930}
   m_Layer: 0
   m_Name: BabyAlien (1)
@@ -321,19 +305,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5908499, y: 0.48856223}
   m_EdgeRadius: 0
---- !u!114 &265216931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265216928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!212 &265216932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -396,7 +367,6 @@ GameObject:
   m_Component:
   - component: {fileID: 488660877}
   - component: {fileID: 488660880}
-  - component: {fileID: 488660879}
   - component: {fileID: 488660878}
   m_Layer: 0
   m_Name: BabyAlien (2)
@@ -446,19 +416,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5908499, y: 0.48856223}
   m_EdgeRadius: 0
---- !u!114 &488660879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488660876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!212 &488660880
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -870,7 +827,6 @@ GameObject:
   m_Component:
   - component: {fileID: 687009846}
   - component: {fileID: 687009850}
-  - component: {fileID: 687009849}
   - component: {fileID: 687009848}
   - component: {fileID: 687009847}
   m_Layer: 0
@@ -932,20 +888,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000044703484, y: -0.00000047683716}
   m_Size: {x: 1.0000001, y: 2.0000002}
   m_Direction: 0
---- !u!114 &687009849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687009845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!212 &687009850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1107,7 +1049,6 @@ GameObject:
   m_Component:
   - component: {fileID: 853952664}
   - component: {fileID: 853952668}
-  - component: {fileID: 853952667}
   - component: {fileID: 853952666}
   - component: {fileID: 853952665}
   m_Layer: 0
@@ -1169,20 +1110,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000044703484, y: -0.00000047683716}
   m_Size: {x: 1.0000001, y: 2.0000002}
   m_Direction: 0
---- !u!114 &853952667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853952663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!212 &853952668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1428,7 +1355,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1250188968}
   - component: {fileID: 1250188969}
-  - component: {fileID: 1250188970}
   - component: {fileID: 1250188971}
   m_Layer: 0
   m_Name: BabyAlien
@@ -1504,19 +1430,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1250188970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250188967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!61 &1250188971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1553,7 +1466,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1263598901}
   - component: {fileID: 1263598904}
-  - component: {fileID: 1263598903}
   - component: {fileID: 1263598902}
   m_Layer: 0
   m_Name: BabyAlien (3)
@@ -1603,19 +1515,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5908499, y: 0.48856223}
   m_EdgeRadius: 0
---- !u!114 &1263598903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263598900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!212 &1263598904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1739,7 +1638,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1366574917}
   - component: {fileID: 1366574921}
-  - component: {fileID: 1366574920}
   - component: {fileID: 1366574919}
   - component: {fileID: 1366574918}
   m_Layer: 0
@@ -1801,20 +1699,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000044703484, y: -0.00000047683716}
   m_Size: {x: 1.0000001, y: 2.0000002}
   m_Direction: 0
---- !u!114 &1366574920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366574916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!212 &1366574921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2011,7 +1895,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1492291979}
   - component: {fileID: 1492291983}
-  - component: {fileID: 1492291982}
   - component: {fileID: 1492291981}
   - component: {fileID: 1492291980}
   m_Layer: 0
@@ -2073,20 +1956,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000044703484, y: -0.00000047683716}
   m_Size: {x: 1.0000001, y: 2.0000002}
   m_Direction: 0
---- !u!114 &1492291982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492291978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!212 &1492291983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2248,7 +2117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1710072500}
   - component: {fileID: 1710072501}
-  - component: {fileID: 1710072502}
   - component: {fileID: 1710072503}
   - component: {fileID: 1710072504}
   m_Layer: 0
@@ -2325,20 +2193,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1710072502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710072499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db6a519258b2a744aedee1e02fde27a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 1, y: 0}
 --- !u!70 &1710072503
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
