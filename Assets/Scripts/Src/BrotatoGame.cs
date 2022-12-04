@@ -17,6 +17,7 @@ namespace BrotatoM
             RegisterModel(new StatConfigModel("Configs/ProcessedStats"));
             RegisterModel(new CharacterConfigModel("Configs/ProcessedCharacters"));
             RegisterModel(new DangerConfigModel("Configs/ProcessedDangers"));
+            RegisterModel(new UpgradeConfigModel("Configs/ProcessedUpgrades"));
 
             // 工具层
             RegisterUtility<IJsonSerializer>(new NewtonsoftJsonSerializer());

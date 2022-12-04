@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="icon" style="flex-grow: 1; background-image: resource(&apos;ArtAssets/Characters/60px-Chunky&apos;);" />
+</ui:UXML>

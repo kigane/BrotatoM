@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="icon" src="project://database/Assets/Resources/UI/Template/icon.uxml?fileID=9197481963319205126&amp;guid=93df0c4d953c9144892998dac2bec37d&amp;type=3#icon" />
     <ui:Template name="attr-select-container" src="project://database/Assets/Resources/UI/Template/attr-select-container.uxml?fileID=9197481963319205126&amp;guid=622f548d147da164592cebe1900f465c&amp;type=3#attr-select-container" />
     <Style src="project://database/Assets/Resources/UI/Uss/MainScreenStyle.uss?fileID=7433441132597879392&amp;guid=0fe60f7d64bc45d4084e9b2f3b732140&amp;type=3#MainScreenStyle" />
     <ui:VisualElement name="head-container" style="flex-basis: 25%; flex-direction: row;">
@@ -24,8 +25,12 @@
             <ui:Label text="升级！" display-tooltip-when-elided="true" name="prompt" style="-unity-text-align: middle-center; font-size: 80px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;" />
         </ui:VisualElement>
         <ui:VisualElement name="pickup-container" style="flex-grow: 1;">
-            <ui:VisualElement name="levelup" style="flex-basis: 50%;" />
-            <ui:VisualElement name="boxes" style="flex-basis: 50%;" />
+            <ui:VisualElement name="levelup" style="flex-basis: 45%; flex-direction: row; align-items: stretch; justify-content: flex-end;">
+                <ui:Instance template="icon" name="icon" style="flex-basis: 25%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="boxes" style="flex-basis: 45%; flex-direction: row; justify-content: flex-end;">
+                <ui:Instance template="icon" name="icon" style="flex-basis: 25%;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="body-container" style="flex-grow: 1; flex-direction: row;">

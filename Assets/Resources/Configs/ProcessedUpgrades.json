@@ -1,0 +1,450 @@
+[
+    {
+        "Name": "Back_I",
+        "Rarity": 1,
+        "Ability": "DodgeStat",
+        "Value": 0.03,
+        "Path": "ArtAssets/Upgrades/Back_I"
+    }, 
+    {
+        "Name": "Back_II",
+        "Rarity": 2,
+        "Ability": "DodgeStat",
+        "Value": 0.06,
+        "Path": "ArtAssets/Upgrades/Back_II"
+    },
+    {
+        "Name": "Back_III",
+        "Rarity": 3,
+        "Ability": "DodgeStat",
+        "Value": 0.09,
+        "Path": "ArtAssets/Upgrades/Back_III"
+    },
+    {
+        "Name": "Back_IV",
+        "Rarity": 4,
+        "Ability": "DodgeStat",
+        "Value": 0.12,
+        "Path": "ArtAssets/Upgrades/Back_IV"
+    },
+    {
+        "Name": "Brain_I",
+        "Rarity": 1,
+        "Ability": "ElementalDamage",
+        "Value": 1,
+        "Path": "ArtAssets/Upgrades/Brain_I"
+    },
+    {
+        "Name": "Brain_II",
+        "Rarity": 2,
+        "Ability": "ElementalDamage",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Brain_II"
+    },
+    {
+        "Name": "Brain_III",
+        "Rarity": 3,
+        "Ability": "ElementalDamage",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Brain_III"
+    },
+    {
+        "Name": "Brain_IV",
+        "Rarity": 4,
+        "Ability": "ElementalDamage",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Brain_IV"
+    },
+    {
+        "Name": "Chest_I",
+        "Rarity": 1,
+        "Ability": "Armor",
+        "Value": 1,
+        "Path": "ArtAssets/Upgrades/Chest_I"
+    },
+    {
+        "Name": "Chest_II",
+        "Rarity": 2,
+        "Ability": "Armor",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Chest_II"
+    },
+    {
+        "Name": "Chest_III",
+        "Rarity": 3,
+        "Ability": "Armor",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Chest_III"
+    },
+    {
+        "Name": "Chest_IV",
+        "Rarity": 4,
+        "Ability": "Armor",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Chest_IV"
+    },
+    {
+        "Name": "Eyes_I",
+        "Rarity": 1,
+        "Ability": "Range",
+        "Value": 15,
+        "Path": "ArtAssets/Upgrades/Eyes_I"
+    },
+    {
+        "Name": "Eyes_II",
+        "Rarity": 2,
+        "Ability": "Range",
+        "Value": 30,
+        "Path": "ArtAssets/Upgrades/Eyes_II"
+    },
+    {
+        "Name": "Eyes_III",
+        "Rarity": 3,
+        "Ability": "Range",
+        "Value": 45,
+        "Path": "ArtAssets/Upgrades/Eyes_III"
+    },
+    {
+        "Name": "Eyes_IV",
+        "Rarity": 4,
+        "Ability": "Range",
+        "Value": 60,
+        "Path": "ArtAssets/Upgrades/Eyes_IV"
+    },
+    {
+        "Name": "Fingers_I",
+        "Rarity": 1,
+        "Ability": "CritChance",
+        "Value": 0.03,
+        "Path": "ArtAssets/Upgrades/Fingers_I"
+    },
+    {
+        "Name": "Fingers_II",
+        "Rarity": 2,
+        "Ability": "CritChance",
+        "Value": 0.05,
+        "Path": "ArtAssets/Upgrades/Fingers_II"
+    },
+    {
+        "Name": "Fingers_III",
+        "Rarity": 3,
+        "Ability": "CritChance",
+        "Value": 0.07,
+        "Path": "ArtAssets/Upgrades/Fingers_III"
+    },
+    {
+        "Name": "Fingers_IV",
+        "Rarity": 4,
+        "Ability": "CritChance",
+        "Value": 0.09,
+        "Path": "ArtAssets/Upgrades/Fingers_IV"
+    },
+    {
+        "Name": "Forearms_I",
+        "Rarity": 1,
+        "Ability": "MeleeDamage",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Forearms_I"
+    },
+    {
+        "Name": "Forearms_II",
+        "Rarity": 2,
+        "Ability": "MeleeDamage",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Forearms_II"
+    },
+    {
+        "Name": "Forearms_III",
+        "Rarity": 3,
+        "Ability": "MeleeDamage",
+        "Value": 6,
+        "Path": "ArtAssets/Upgrades/Forearms_III"
+    },
+    {
+        "Name": "Forearms_IV",
+        "Rarity": 4,
+        "Ability": "MeleeDamage",
+        "Value": 8,
+        "Path": "ArtAssets/Upgrades/Forearms_IV"
+    },
+    {
+        "Name": "Hands_I",
+        "Rarity": 1,
+        "Ability": "Harvesting",
+        "Value": 5,
+        "Path": "ArtAssets/Upgrades/Hands_I"
+    },
+    {
+        "Name": "Hands_II",
+        "Rarity": 2,
+        "Ability": "Harvesting",
+        "Value": 8,
+        "Path": "ArtAssets/Upgrades/Hands_II"
+    },
+    {
+        "Name": "Hands_III",
+        "Rarity": 3,
+        "Ability": "Harvesting",
+        "Value": 10,
+        "Path": "ArtAssets/Upgrades/Hands_III"
+    },
+    {
+        "Name": "Hands_IV",
+        "Rarity": 4,
+        "Ability": "Harvesting",
+        "Value": 12,
+        "Path": "ArtAssets/Upgrades/Hands_IV"
+    },
+    {
+        "Name": "Heart_I",
+        "Rarity": 1,
+        "Ability": "MaxHp",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Heart_I"
+    },
+    {
+        "Name": "Heart_II",
+        "Rarity": 2,
+        "Ability": "MaxHp",
+        "Value": 6,
+        "Path": "ArtAssets/Upgrades/Heart_II"
+    },
+    {
+        "Name": "Heart_III",
+        "Rarity": 3,
+        "Ability": "MaxHp",
+        "Value": 9,
+        "Path": "ArtAssets/Upgrades/Heart_III"
+    },
+    {
+        "Name": "Heart_IV",
+        "Rarity": 4,
+        "Ability": "MaxHp",
+        "Value": 12,
+        "Path": "ArtAssets/Upgrades/Heart_IV"
+    },
+    {
+        "Name": "Legs_I",
+        "Rarity": 1,
+        "Ability": "SpeedStat",
+        "Value": 0.03,
+        "Path": "ArtAssets/Upgrades/Legs_I"
+    },
+    {
+        "Name": "Legs_II",
+        "Rarity": 2,
+        "Ability": "SpeedStat",
+        "Value": 0.06,
+        "Path": "ArtAssets/Upgrades/Legs_II"
+    },
+    {
+        "Name": "Legs_III",
+        "Rarity": 3,
+        "Ability": "SpeedStat",
+        "Value": 0.09,
+        "Path": "ArtAssets/Upgrades/Legs_III"
+    },
+    {
+        "Name": "Legs_IV",
+        "Rarity": 4,
+        "Ability": "SpeedStat",
+        "Value": 0.12,
+        "Path": "ArtAssets/Upgrades/Legs_IV"
+    },
+    {
+        "Name": "Lungs_I",
+        "Rarity": 1,
+        "Ability": "HpRegeneration",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Lungs_I"
+    },
+    {
+        "Name": "Lungs_II",
+        "Rarity": 2,
+        "Ability": "HpRegeneration",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Lungs_II"
+    },
+    {
+        "Name": "Lungs_III",
+        "Rarity": 3,
+        "Ability": "HpRegeneration",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Lungs_III"
+    },
+    {
+        "Name": "Lungs_IV",
+        "Rarity": 4,
+        "Ability": "HpRegeneration",
+        "Value": 5,
+        "Path": "ArtAssets/Upgrades/Lungs_IV"
+    },
+    {
+        "Name": "Nose_I",
+        "Rarity": 1,
+        "Ability": "Luck",
+        "Value": 5,
+        "Path": "ArtAssets/Upgrades/Nose_I"
+    },
+    {
+        "Name": "Nose_II",
+        "Rarity": 2,
+        "Ability": "Luck",
+        "Value": 10,
+        "Path": "ArtAssets/Upgrades/Nose_II"
+    },
+    {
+        "Name": "Nose_III",
+        "Rarity": 3,
+        "Ability": "Luck",
+        "Value": 15,
+        "Path": "ArtAssets/Upgrades/Nose_III"
+    },
+    {
+        "Name": "Nose_IV",
+        "Rarity": 4,
+        "Ability": "Luck",
+        "Value": 20,
+        "Path": "ArtAssets/Upgrades/Nose_IV"
+    },
+    {
+        "Name": "Reflexes_I",
+        "Rarity": 1,
+        "Ability": "AttackSpeed",
+        "Value": 0.05,
+        "Path": "ArtAssets/Upgrades/Reflexes_I"
+    },
+    {
+        "Name": "Reflexes_II",
+        "Rarity": 2,
+        "Ability": "AttackSpeed",
+        "Value": 0.1,
+        "Path": "ArtAssets/Upgrades/Reflexes_II"
+    },
+    {
+        "Name": "Reflexes_III",
+        "Rarity": 3,
+        "Ability": "AttackSpeed",
+        "Value": 0.15,
+        "Path": "ArtAssets/Upgrades/Reflexes_III"
+    },
+    {
+        "Name": "Reflexes_IV",
+        "Rarity": 4,
+        "Ability": "AttackSpeed",
+        "Value": 0.2,
+        "Path": "ArtAssets/Upgrades/Reflexes_IV"
+    },
+    {
+        "Name": "Shoulders_I",
+        "Rarity": 1,
+        "Ability": "RangedDamage",
+        "Value": 1,
+        "Path": "ArtAssets/Upgrades/Shoulders_I"
+    },
+    {
+        "Name": "Shoulders_II",
+        "Rarity": 2,
+        "Ability": "RangedDamage",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Shoulders_II"
+    },
+    {
+        "Name": "Shoulders_III",
+        "Rarity": 3,
+        "Ability": "RangedDamage",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Shoulders_III"
+    },
+    {
+        "Name": "Shoulders_IV",
+        "Rarity": 4,
+        "Ability": "RangedDamage",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Shoulders_IV"
+    },
+    {
+        "Name": "Skull_I",
+        "Rarity": 1,
+        "Ability": "EngineeringStat",
+        "Value": 2,
+        "Path": "ArtAssets/Upgrades/Skull_I"
+    },
+    {
+        "Name": "Skull_II",
+        "Rarity": 2,
+        "Ability": "EngineeringStat",
+        "Value": 3,
+        "Path": "ArtAssets/Upgrades/Skull_II"
+    },
+    {
+        "Name": "Skull_III",
+        "Rarity": 3,
+        "Ability": "EngineeringStat",
+        "Value": 4,
+        "Path": "ArtAssets/Upgrades/Skull_III"
+    },
+    {
+        "Name": "Skull_IV",
+        "Rarity": 4,
+        "Ability": "EngineeringStat",
+        "Value": 5,
+        "Path": "ArtAssets/Upgrades/Skull_IV"
+    },
+    {
+        "Name": "Teeth_I",
+        "Rarity": 1,
+        "Ability": "LifeSteal",
+        "Value": 0.01,
+        "Path": "ArtAssets/Upgrades/Teeth_I"
+    },
+    {
+        "Name": "Teeth_II",
+        "Rarity": 2,
+        "Ability": "LifeSteal",
+        "Value": 0.02,
+        "Path": "ArtAssets/Upgrades/Teeth_II"
+    },
+    {
+        "Name": "Teeth_III",
+        "Rarity": 3,
+        "Ability": "LifeSteal",
+        "Value": 0.03,
+        "Path": "ArtAssets/Upgrades/Teeth_III"
+    },
+    {
+        "Name": "Teeth_IV",
+        "Rarity": 4,
+        "Ability": "LifeSteal",
+        "Value": 0.04,
+        "Path": "ArtAssets/Upgrades/Teeth_IV"
+    },
+    {
+        "Name": "Triceps_I",
+        "Rarity": 1,
+        "Ability": "Damage",
+        "Value": 0.05,
+        "Path": "ArtAssets/Upgrades/Triceps_I"
+    },
+    {
+        "Name": "Triceps_II",
+        "Rarity": 2,
+        "Ability": "Damage",
+        "Value": 0.08,
+        "Path": "ArtAssets/Upgrades/Triceps_II"
+    },
+    {
+        "Name": "Triceps_III",
+        "Rarity": 3,
+        "Ability": "Damage",
+        "Value": 0.12,
+        "Path": "ArtAssets/Upgrades/Triceps_III"
+    },
+    {
+        "Name": "Triceps_IV",
+        "Rarity": 4,
+        "Ability": "Damage",
+        "Value": 0.16,
+        "Path": "ArtAssets/Upgrades/Triceps_IV"
+    }
+]

@@ -20,7 +20,7 @@ namespace BrotatoM
         protected override void OnInit()
         {
             base.OnInit();
-            VerifyLogs("0");
+            // VerifyLogs("0");
         }
 
         private void VerifyLogs(string name)

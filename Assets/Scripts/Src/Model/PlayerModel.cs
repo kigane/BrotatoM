@@ -18,8 +18,8 @@ namespace BrotatoM
         public BindableProperty<float> HarvestBag { get; }
 
         // 属性栏
-        public BindableProperty<float> MaxHP { get; }
-        public BindableProperty<float> HPRegeneration { get; }
+        public BindableProperty<float> MaxHp { get; }
+        public BindableProperty<float> HpRegeneration { get; }
         public BindableProperty<float> LifeSteal { get; }
         public BindableProperty<float> Damage { get; }
         public BindableProperty<float> MeleeDamage { get; }
@@ -43,6 +43,11 @@ namespace BrotatoM
         public BindableProperty<float> EnemiesSpawnRate { get; }
         public BindableProperty<float> TreeSpawnRate { get; }
         public BindableProperty<int> CharacterId { get; }
+        /// <summary>
+        /// 升级点数，决定升级界面的显示与消失
+        /// </summary>
+        /// <value></value>
+        public BindableProperty<int> UpgradePoint { get; }
     }
 
     public class PlayerModel : AbstractModel, IPlayerModel
@@ -56,8 +61,8 @@ namespace BrotatoM
         public BindableProperty<float> HarvestBag { get; } = new() { Value = 0 };
 
         // 属性栏
-        public BindableProperty<float> MaxHP { get; } = new() { Value = 15 };
-        public BindableProperty<float> HPRegeneration { get; } = new() { Value = 0 };
+        public BindableProperty<float> MaxHp { get; } = new() { Value = 15 };
+        public BindableProperty<float> HpRegeneration { get; } = new() { Value = 0 };
         public BindableProperty<float> LifeSteal { get; } = new() { Value = 0 };
         public BindableProperty<float> Damage { get; } = new() { Value = 0 };
         public BindableProperty<float> MeleeDamage { get; } = new() { Value = 0 };
@@ -77,7 +82,7 @@ namespace BrotatoM
         public BindableProperty<float> EnemiesSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<float> TreeSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<int> CharacterId { get; } = new() { Value = 0 };
-
+        public BindableProperty<int> UpgradePoint { get; } = new() { Value = 0 };
         
 
         protected override void OnInit()
