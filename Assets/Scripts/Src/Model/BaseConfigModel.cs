@@ -1,6 +1,7 @@
 using QFramework;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 namespace BrotatoM
 {
@@ -8,10 +9,17 @@ namespace BrotatoM
     {
         protected string mConfigPath;
         protected Dictionary<string, T> mDict = new();
+        protected T[] mItems;
 
         public BaseConfigModel(string path)
         {
             mConfigPath = path;
+        }
+
+        protected override void OnInit()
+        {
+            this.GetUtility<IJsonSerializer>().ReadJsonToDictionary(mConfigPath, mDict);
+            mItems = mDict.Values.ToArray();
         }
 
         public T GetConfigItemByName(string name)
@@ -19,9 +27,17 @@ namespace BrotatoM
             return mDict[name];
         }
 
-        protected override void OnInit()
+        public T[] GetAllConfigItems()
         {
-            this.GetUtility<IJsonSerializer>().ReadJsonToDictionary(mConfigPath, mDict);
+            return mItems;
+        }
+
+        public T GetConfigItemById(int i)
+        {
+            if (i < 0 || i >= mItems.Length)
+                throw new System.IndexOutOfRangeException("Character Id is out of range!");
+
+            return mItems[i];
         }
 
         protected string ArrLogMsg<T1>(T1[] arr)

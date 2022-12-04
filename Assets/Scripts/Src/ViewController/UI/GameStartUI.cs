@@ -3,14 +3,33 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using System;
 using QFramework;
+using UnityEngine.InputSystem;
 
 namespace BrotatoM
 {
     public class GameStartUI : BrotatoGameController
     {
+        public UIDocument[] UIPanels;
         private VisualElement mRootElement;
         private readonly Action[] mBtnActions = new Action[4];
-        public UIDocument characterSelectUI;
+        private PlayerControl mPlayerControl;
+        private int mCurrPanelIndex = 0;
+
+        private void Awake()
+        {
+            mPlayerControl = new PlayerControl();
+            this.RegisterEvent<NextPanelEvent>(e =>
+            {
+                // 0.开始界面 1.选人界面 2.选武器界面 3.难度界面
+                if (mCurrPanelIndex + 1 == 4)
+                    SceneManager.LoadScene("MainScene");
+                else
+                {
+                    ShowUIPanel(mCurrPanelIndex + 1);
+                }
+
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+        }
 
         private void Start()
         {
@@ -45,10 +64,30 @@ namespace BrotatoM
             });
         }
 
+        private void OnEnable()
+        {
+            mPlayerControl.Enable();
+            mPlayerControl.Player.Return.performed += OnReturn;
+        }
+
+        private void OnReturn(InputAction.CallbackContext obj)
+        {
+            if (mCurrPanelIndex == 0) // 在开始界面按esc
+                return;
+            else if (mCurrPanelIndex < 0) // 设置界面，和成就界面index分别设为-1, -2
+            {
+                ShowUIPanel(0);
+            }
+            else // 1.选人界面 2.选武器界面 3.难度界面
+            {
+                ShowUIPanel(mCurrPanelIndex - 1);
+            }
+        }
+
         private void OnClickStartBtn()
         {
             // characterSelectUI.SetActive(true);
-            characterSelectUI.sortingOrder = 6;
+            ShowUIPanel(1);
             // SceneManager.LoadScene("MainScene");
         }
 
@@ -71,6 +110,23 @@ namespace BrotatoM
 #else //打包出来的环境下
             Application.Quit();
 #endif
+        }
+
+        private void ShowUIPanel(int index)
+        {
+            for (int i = 0; i < UIPanels.Length; i++)
+            {
+                if (index == i)
+                {
+                    UIPanels[i].sortingOrder = 9;
+                }
+                else
+                {
+                    UIPanels[i].sortingOrder = 0;
+                }
+            }
+
+            mCurrPanelIndex = index;
         }
     }
 }

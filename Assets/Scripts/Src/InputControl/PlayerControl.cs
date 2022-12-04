@@ -37,6 +37,15 @@ namespace BrotatoM
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Return"",
+                    ""type"": ""Button"",
+                    ""id"": ""c65bab74-382e-46af-aed4-2ddbd68e2e2f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -149,6 +158,17 @@ namespace BrotatoM
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b26635a-f9aa-4516-a59a-b68525be095e"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Return"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -158,6 +178,7 @@ namespace BrotatoM
             // Player
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+            m_Player_Return = m_Player.FindAction("Return", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -218,11 +239,13 @@ namespace BrotatoM
         private readonly InputActionMap m_Player;
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Move;
+        private readonly InputAction m_Player_Return;
         public struct PlayerActions
         {
             private @PlayerControl m_Wrapper;
             public PlayerActions(@PlayerControl wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Player_Move;
+            public InputAction @Return => m_Wrapper.m_Player_Return;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -235,6 +258,9 @@ namespace BrotatoM
                     @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                    @Return.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReturn;
+                    @Return.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReturn;
+                    @Return.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReturn;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -242,6 +268,9 @@ namespace BrotatoM
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
+                    @Return.started += instance.OnReturn;
+                    @Return.performed += instance.OnReturn;
+                    @Return.canceled += instance.OnReturn;
                 }
             }
         }
@@ -249,6 +278,7 @@ namespace BrotatoM
         public interface IPlayerActions
         {
             void OnMove(InputAction.CallbackContext context);
+            void OnReturn(InputAction.CallbackContext context);
         }
     }
 }

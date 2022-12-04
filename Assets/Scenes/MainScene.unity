@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 265216929}
   - component: {fileID: 265216932}
   - component: {fileID: 265216930}
+  - component: {fileID: 265216933}
   m_Layer: 0
   m_Name: BabyAlien (1)
   m_TagString: Untagged
@@ -357,6 +358,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &265216933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265216928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
 --- !u!1 &488660876
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +382,7 @@ GameObject:
   - component: {fileID: 488660877}
   - component: {fileID: 488660880}
   - component: {fileID: 488660878}
+  - component: {fileID: 488660881}
   m_Layer: 0
   m_Name: BabyAlien (2)
   m_TagString: Untagged
@@ -468,6 +483,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &488660881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488660876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
 --- !u!1 &515798055
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 3
+  mRange: 6
 --- !u!212 &515798058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -986,7 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 3
+  mRange: 6
 --- !u!212 &725625616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1344,7 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 8
+  mRange: 6
 --- !u!1 &1250188967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1384,7 @@ GameObject:
   - component: {fileID: 1250188968}
   - component: {fileID: 1250188969}
   - component: {fileID: 1250188971}
+  - component: {fileID: 1250188972}
   m_Layer: 0
   m_Name: BabyAlien
   m_TagString: Untagged
@@ -1456,6 +1485,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5908499, y: 0.48856223}
   m_EdgeRadius: 0
+--- !u!114 &1250188972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250188967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
 --- !u!1 &1263598900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1509,7 @@ GameObject:
   - component: {fileID: 1263598901}
   - component: {fileID: 1263598904}
   - component: {fileID: 1263598902}
+  - component: {fileID: 1263598905}
   m_Layer: 0
   m_Name: BabyAlien (3)
   m_TagString: Untagged
@@ -1567,6 +1610,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1263598905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263598900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec3561d73629974e888e0bed8c59795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
 --- !u!1 &1289895776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,7 +1853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 3
+  mRange: 6
 --- !u!212 &1415537233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2054,7 +2110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 3
+  mRange: 6
 --- !u!212 &1690325993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2276,7 +2332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ad7463d8ce4c545aa659d44a44a401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mRange: 3
+  mRange: 6
 --- !u!212 &2056206300
 SpriteRenderer:
   m_ObjectHideFlags: 0

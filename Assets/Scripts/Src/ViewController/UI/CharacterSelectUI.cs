@@ -12,7 +12,7 @@ namespace BrotatoM
         // 当开始游戏时，CharacterSelectUI GO被SetActivate(true)时，被调用
         private void OnEnable()
         {
-            mCharacterConfigItems = this.GetModel<CharacterConfigModel>().GetAllCharacterConfig();
+            mCharacterConfigItems = this.GetModel<CharacterConfigModel>().GetAllConfigItems();
 
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
             if (mCharacterConfigItems.Length == 0)
@@ -58,6 +58,7 @@ namespace BrotatoM
             //TODO 记录选中角色
             Debug.Log("选择了角色: " + mCharacterConfigItems[i].Name);
             // 切换到武器面板
+            this.SendCommand<NextPanelCommand>();
         }
     }
 }
