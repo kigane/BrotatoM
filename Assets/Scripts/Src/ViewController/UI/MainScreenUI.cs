@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 using QFramework;
 using System.Collections;
 using System;
+using UnityEngine.InputSystem;
 // using DG.Tweening;
 
 namespace BrotatoM
@@ -10,20 +11,32 @@ namespace BrotatoM
     public class MainScreenUI : BrotatoGameController
     {
         private VisualElement mRootElement;
-        private VisualElement mPromptElement;
         private VisualElement mBodyContainer;
+        private VisualElement mLevelUpContainer;
+        private Label mPromptLabel;
         private Label mHarvestLabel;
         private Label mHarvestBagLabel;
         private Label mTimeLabel;
         private IPlayerModel mPlayerModel;
+        private PlayerControl mPlayerControl;
+        private ITimeSystem mTimeSystem;
+        private GameState mGameState = GameState.PLAY;
+
+        private void Awake()
+        {
+            mPlayerControl = new PlayerControl();
+            mTimeSystem = this.GetSystem<ITimeSystem>();
+        }
 
         private void Start()
         {
+            #region UI处理
+            // 取得UI元素的引用
             mPlayerModel = this.GetModel<IPlayerModel>();
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
 
-            mPromptElement = mRootElement.Q<Label>("prompt");
-            mPromptElement.style.display = DisplayStyle.None;
+            mPromptLabel = mRootElement.Q<Label>("prompt");
+            mPromptLabel.style.display = DisplayStyle.None;
 
             mBodyContainer = mRootElement.Q("body-container");
             mBodyContainer.style.display = DisplayStyle.None;
@@ -36,17 +49,20 @@ namespace BrotatoM
             mHarvestBagLabel.text = mPlayerModel.HarvestBag.Value.ToString();
 
             mTimeLabel = mRootElement.Q<Label>("time");
-
-            // 倒计时
-            StartCoroutine(CountDown(20));
+            mLevelUpContainer = mRootElement.Q("levelup");
+            mLevelUpContainer.Clear();
 
             // 设置属性图标
             var mAttrIcon = mRootElement.Query("attr-icon").First();
             mAttrIcon.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("ArtAssets/Stats/20px-Ranged_Damage"));
 
-            // UI Toolkit在第一帧还没有计算出各个元素的width,height，值都为NaN
+            // UI Toolkit在第一帧还没有计算出各个元素的width, height，值都为NaN
             // 需要等待一帧后才能获取到实际值
             StartCoroutine(MainScreenUIInitialization());
+            #endregion
+
+            //FIXME 倒计时。 20=>18
+            mTimeSystem.AddCountDownTask(20);
 
             #region 注册值变更事件
             mPlayerModel.HP.Register(value =>
@@ -66,19 +82,53 @@ namespace BrotatoM
             #endregion
 
             #region 注册事件处理函数
-            this.RegisterEvent<UpgradeEvent>(OnUpgrade);
+            // 升级
+            this.RegisterEvent<UpgradeEvent>(e =>
+            {
+                Log.Info("升级!");
+                // icon为UI Builder中的模板元素
+                var icon = new Icon("ArtAssets/Characters/60px-Mutant");
+                icon.style.flexBasis = Length.Percent(25);
+                mLevelUpContainer.Add(icon);
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            this.RegisterEvent<CountDownIntervalEvent>(e =>
+            {
+                mTimeLabel.text = e.Seconds.ToString();
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            this.RegisterEvent<CountDownOverEvent>(e =>
+            {
+                mPromptLabel.text = "升级!";
+                mPromptLabel.style.display = DisplayStyle.Flex;
+                this.SendCommand<WaveOverCommand>();
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
             #endregion
         }
 
-        private void OnDestroy()
+        private void OnEnable()
         {
-            // 注销事件处理函数
-            this.UnRegisterEvent<UpgradeEvent>(OnUpgrade);
+            mPlayerControl.Enable();
+            mPlayerControl.Player.Return.performed += OnReturn;
         }
 
-        private void OnUpgrade(UpgradeEvent obj)
+        private void OnReturn(InputAction.CallbackContext obj)
         {
-            throw new NotImplementedException();
+            if (mGameState == GameState.PLAY)
+            {
+                // 显示暂停界面
+                Log.Info("游戏暂停");
+                mBodyContainer.style.display = DisplayStyle.Flex;
+                mTimeSystem.Stop();
+                mGameState = GameState.STOPPED;
+            }
+            else if (mGameState == GameState.STOPPED)
+            {
+                Log.Info("游戏继续");
+                mBodyContainer.style.display = DisplayStyle.None;
+                mTimeSystem.Resume();
+                mGameState = GameState.PLAY;
+            }
         }
 
         private IEnumerator MainScreenUIInitialization()
@@ -98,19 +148,6 @@ namespace BrotatoM
             var bar = mRootElement.Q(barName);
             float barLength = bar.parent.worldBound.width - 10;
             bar.style.width = progress * barLength;
-        }
-
-        private IEnumerator CountDown(int seconds)
-        {
-            mTimeLabel.text = seconds.ToString();
-            while (seconds > 0)
-            {
-                yield return new WaitForSeconds(1);
-                seconds--;
-                mTimeLabel.text = seconds.ToString();
-            }
-
-            // 一波结束命令
         }
     }
 }
