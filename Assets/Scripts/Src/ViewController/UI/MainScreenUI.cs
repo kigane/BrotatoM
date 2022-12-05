@@ -50,14 +50,6 @@ namespace BrotatoM
             mHarvestBagLabel = mRootElement.Q<Label>("stock-amount");
             mHarvestBagLabel.text = mPlayerModel.HarvestBag.Value.ToString();
 
-            // 属性栏
-            mAttrPanel = mRootElement.Q("attrs");
-            mAttrPanel.Clear();
-
-            // 设置属性图标
-            var mAttrIcon = mRootElement.Query("attr-icon").First();
-            mAttrIcon.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("ArtAssets/Stats/20px-Ranged_Damage"));
-
             // 倒计时
             mTimeLabel = mRootElement.Q<Label>("time");
             mTimeLabel.text = "5";
@@ -65,13 +57,18 @@ namespace BrotatoM
             // 升级界面
             mLevelUpContainer = mRootElement.Q("levelup");
             mLevelUpContainer.Clear();
-            //TODO 生成属性行
+
+            // 属性栏
+            mAttrPanel = mRootElement.Q("attrs");
+            mAttrPanel.Clear();
+
+            // 生成属性行
             mNeedShowProperties = this.SendQuery(new NeedShowPropertiesQuery());
-            Log.Debug(mNeedShowProperties.ToString());
             AttrRow attrRow;
             for (int i = 0; i < mNeedShowProperties.Length; i++)
             {
-                // attrRow = AttrRow()
+                attrRow = new AttrRow(mNeedShowProperties[i]);
+                mAttrPanel.Add(attrRow);
             }
 
             // UI Toolkit在第一帧还没有计算出各个元素的width, height，值都为NaN
