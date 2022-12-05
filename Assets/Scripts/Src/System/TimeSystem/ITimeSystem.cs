@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BrotatoM
 {
@@ -48,6 +49,11 @@ namespace BrotatoM
         public class TimeSystemUpdateBehaviour : MonoBehaviour
         {
             public Action OnUpdate;
+
+            private void Start()
+            {
+                DontDestroyOnLoad(gameObject);
+            }
 
             private void Update()
             {
@@ -125,8 +131,10 @@ namespace BrotatoM
                 if (countDownTask.IntervalTime <= 0)
                 {
                     countDownTask.IntervalTime += countDownTask.SendEventInterval;
-                    // countDownTask.OnInterval((int)countDownTask.TotalTime);
-                    this.SendEvent(new CountDownIntervalEvent() { Seconds = (int)countDownTask.TotalTime });
+                    this.SendEvent(new CountDownIntervalEvent()
+                    {
+                        Seconds = GetNearestSeconds(countDownTask.TotalTime)
+                    });
                 }
 
                 if (countDownTask.TotalTime <= 0)
@@ -163,6 +171,12 @@ namespace BrotatoM
 
                 currNode = currNode.Next;
             }
+        }
+
+        // 获取最近的秒数
+        private int GetNearestSeconds(float time)
+        {
+            return Mathf.Abs(time - (int)time) > 0.9 ? (int)time + 1 : (int)time;
         }
     }
 }

@@ -13,6 +13,7 @@ namespace BrotatoM
         private VisualElement mRootElement;
         private VisualElement mBodyContainer;
         private VisualElement mLevelUpContainer;
+        private VisualElement mAttrPanel;
         private Label mPromptLabel;
         private Label mHarvestLabel;
         private Label mHarvestBagLabel;
@@ -21,6 +22,7 @@ namespace BrotatoM
         private PlayerControl mPlayerControl;
         private ITimeSystem mTimeSystem;
         private GameState mGameState = GameState.PLAY;
+        private AttrInfo[] mNeedShowProperties;
 
         private void Awake()
         {
@@ -48,21 +50,37 @@ namespace BrotatoM
             mHarvestBagLabel = mRootElement.Q<Label>("stock-amount");
             mHarvestBagLabel.text = mPlayerModel.HarvestBag.Value.ToString();
 
-            mTimeLabel = mRootElement.Q<Label>("time");
-            mLevelUpContainer = mRootElement.Q("levelup");
-            mLevelUpContainer.Clear();
+            // 属性栏
+            mAttrPanel = mRootElement.Q("attrs");
+            mAttrPanel.Clear();
 
             // 设置属性图标
             var mAttrIcon = mRootElement.Query("attr-icon").First();
             mAttrIcon.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>("ArtAssets/Stats/20px-Ranged_Damage"));
+
+            // 倒计时
+            mTimeLabel = mRootElement.Q<Label>("time");
+            mTimeLabel.text = "5";
+
+            // 升级界面
+            mLevelUpContainer = mRootElement.Q("levelup");
+            mLevelUpContainer.Clear();
+            //TODO 生成属性行
+            mNeedShowProperties = this.SendQuery(new NeedShowPropertiesQuery());
+            Log.Debug(mNeedShowProperties.ToString());
+            AttrRow attrRow;
+            for (int i = 0; i < mNeedShowProperties.Length; i++)
+            {
+                // attrRow = AttrRow()
+            }
 
             // UI Toolkit在第一帧还没有计算出各个元素的width, height，值都为NaN
             // 需要等待一帧后才能获取到实际值
             StartCoroutine(MainScreenUIInitialization());
             #endregion
 
-            //FIXME 倒计时。 20=>18
-            mTimeSystem.AddCountDownTask(20);
+            // 倒计时
+            mTimeSystem.AddCountDownTask(5);
 
             #region 注册值变更事件
             mPlayerModel.HP.Register(value =>

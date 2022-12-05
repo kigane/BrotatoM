@@ -2,28 +2,28 @@
     {
         "Name": "Back_I",
         "Rarity": 1,
-        "Ability": "DodgeStat",
+        "Ability": "Dodge",
         "Value": 0.03,
         "Path": "ArtAssets/Upgrades/Back_I"
-    }, 
+    },
     {
         "Name": "Back_II",
         "Rarity": 2,
-        "Ability": "DodgeStat",
+        "Ability": "Dodge",
         "Value": 0.06,
         "Path": "ArtAssets/Upgrades/Back_II"
     },
     {
         "Name": "Back_III",
         "Rarity": 3,
-        "Ability": "DodgeStat",
+        "Ability": "Dodge",
         "Value": 0.09,
         "Path": "ArtAssets/Upgrades/Back_III"
     },
     {
         "Name": "Back_IV",
         "Rarity": 4,
-        "Ability": "DodgeStat",
+        "Ability": "Dodge",
         "Value": 0.12,
         "Path": "ArtAssets/Upgrades/Back_IV"
     },
@@ -226,28 +226,28 @@
     {
         "Name": "Legs_I",
         "Rarity": 1,
-        "Ability": "SpeedStat",
+        "Ability": "Speed",
         "Value": 0.03,
         "Path": "ArtAssets/Upgrades/Legs_I"
     },
     {
         "Name": "Legs_II",
         "Rarity": 2,
-        "Ability": "SpeedStat",
+        "Ability": "Speed",
         "Value": 0.06,
         "Path": "ArtAssets/Upgrades/Legs_II"
     },
     {
         "Name": "Legs_III",
         "Rarity": 3,
-        "Ability": "SpeedStat",
+        "Ability": "Speed",
         "Value": 0.09,
         "Path": "ArtAssets/Upgrades/Legs_III"
     },
     {
         "Name": "Legs_IV",
         "Rarity": 4,
-        "Ability": "SpeedStat",
+        "Ability": "Speed",
         "Value": 0.12,
         "Path": "ArtAssets/Upgrades/Legs_IV"
     },
@@ -366,28 +366,28 @@
     {
         "Name": "Skull_I",
         "Rarity": 1,
-        "Ability": "EngineeringStat",
+        "Ability": "Engineering",
         "Value": 2,
         "Path": "ArtAssets/Upgrades/Skull_I"
     },
     {
         "Name": "Skull_II",
         "Rarity": 2,
-        "Ability": "EngineeringStat",
+        "Ability": "Engineering",
         "Value": 3,
         "Path": "ArtAssets/Upgrades/Skull_II"
     },
     {
         "Name": "Skull_III",
         "Rarity": 3,
-        "Ability": "EngineeringStat",
+        "Ability": "Engineering",
         "Value": 4,
         "Path": "ArtAssets/Upgrades/Skull_III"
     },
     {
         "Name": "Skull_IV",
         "Rarity": 4,
-        "Ability": "EngineeringStat",
+        "Ability": "Engineering",
         "Value": 5,
         "Path": "ArtAssets/Upgrades/Skull_IV"
     },
