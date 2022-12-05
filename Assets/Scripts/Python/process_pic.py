@@ -8,7 +8,7 @@ ic.configureOutput(
     prefix=lambda: datetime.now().strftime("%y-%m-%d %H:%M:%S | "), includeContext=False
 )
 
-IMG_PATH = "C:/UnityProjects/Projects/BrotatoM/Assets/Resources/ArtAssets/Upgrades/"
+IMG_PATH = "D:/Games/Unity/BrotatoM/Assets/Resources/ArtAssets/Upgrades/"
 
 str_to_num_dict = {
     "I": 1,
@@ -18,7 +18,7 @@ str_to_num_dict = {
 }
 
 name_to_ability_dict = {
-    "Back": "DodgeStat",
+    "Back": "Dodge",
     "Brain": "ElementalDamage",
     "Chest": "Armor",
     "Eyes": "Range",
@@ -26,12 +26,12 @@ name_to_ability_dict = {
     "Forearms": "MeleeDamage",
     "Hands": "Harvesting",
     "Heart": "MaxHp",
-    "Legs": "SpeedStat",
+    "Legs": "Speed",
     "Lungs": "HpRegeneration",
     "Nose": "Luck",
     "Reflexes": "AttackSpeed",
     "Shoulders": "RangedDamage",
-    "Skull": "EngineeringStat",
+    "Skull": "Engineering",
     "Teeth": "LifeSteal",
     "Triceps": "Damage",
 }

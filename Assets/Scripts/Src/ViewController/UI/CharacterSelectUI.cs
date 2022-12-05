@@ -28,6 +28,7 @@ namespace BrotatoM
             InfoButton characterBtn;
             for (int i = 0; i < mCharacterConfigItems.Length; i++)
             {
+                // new出来的是UI Builder中的模板元素
                 characterBtn = new InfoButton(mCharacterConfigItems[i].Path, i, OnClick, OnHover);
                 characterBtn.style.flexBasis = Length.Percent(9);
                 if (i < 11)

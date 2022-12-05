@@ -12,6 +12,7 @@ public class ChangeScriptTemplate : MonoBehaviour
     private const string MONO_SCRIPT = "Assets/Editor/ScriptTemplates/MonoTemplate.cs.txt";
     private const string SIMPLE_SCRIPT = "Assets/Editor/ScriptTemplates/SimpleTemplate.cs.txt";
     private const string COMMAND_SCRIPT = "Assets/Editor/ScriptTemplates/Command.cs.txt";
+    private const string UI_TEMPLATE_SCRIPT = "Assets/Editor/ScriptTemplates/UITemplateClass.cs.txt";
 
     [MenuItem("Assets/MyCreate/SimpleMonoScript", false, 1)]
     public static void CreateMyScript()
@@ -47,6 +48,18 @@ public class ChangeScriptTemplate : MonoBehaviour
             locationPath + "/Command.cs", // 新建文件的路径
             null,
             COMMAND_SCRIPT); // 模板文件路径
+    }
+
+    [MenuItem("Assets/MyCreate/UITemplateClass", false, 1)]
+    public static void CreateUITemplateScript()
+    {
+        string locationPath = GetSelectedPathOrFallback();
+        ProjectWindowUtil.StartNameEditingIfProjectWindowExists(
+            0,
+            ScriptableObject.CreateInstance<MyDoCreateScriptAsset>(), // 回调，处理模板中的宏
+            locationPath + "/UITemplateClass.cs", // 新建文件的路径
+            null,
+            UI_TEMPLATE_SCRIPT); // 模板文件路径
     }
 
     // 获取当前在Project视图中选中的文件夹

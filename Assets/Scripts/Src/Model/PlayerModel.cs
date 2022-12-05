@@ -27,11 +27,11 @@ namespace BrotatoM
         public BindableProperty<float> ElementalDamage { get; }
         public BindableProperty<float> AttackSpeed { get; }
         public BindableProperty<float> CritChance { get; }
-        public BindableProperty<float> EngineeringStat { get; }
-        public BindableProperty<float> RangeStat { get; }
+        public BindableProperty<float> Engineering { get; }
+        public BindableProperty<float> Range { get; }
         public BindableProperty<float> Armor { get; }
-        public BindableProperty<float> DodgeStat { get; }
-        public BindableProperty<float> SpeedStat { get; }
+        public BindableProperty<float> Dodge { get; }
+        public BindableProperty<float> Speed { get; }
         public BindableProperty<float> Luck { get; }
         /// <summary>
         /// 每回合收获
@@ -70,11 +70,11 @@ namespace BrotatoM
         public BindableProperty<float> ElementalDamage { get; } = new() { Value = 0 };
         public BindableProperty<float> AttackSpeed { get; } = new() { Value = 0 };
         public BindableProperty<float> CritChance { get; } = new() { Value = 0 };
-        public BindableProperty<float> EngineeringStat { get; } = new() { Value = 0 };
-        public BindableProperty<float> RangeStat { get; } = new() { Value = 0 };
+        public BindableProperty<float> Engineering { get; } = new() { Value = 0 };
+        public BindableProperty<float> Range { get; } = new() { Value = 0 };
         public BindableProperty<float> Armor { get; } = new() { Value = 0 };
-        public BindableProperty<float> DodgeStat { get; } = new() { Value = 0 };
-        public BindableProperty<float> SpeedStat { get; } = new() { Value = 0 };
+        public BindableProperty<float> Dodge { get; } = new() { Value = 0 };
+        public BindableProperty<float> Speed { get; } = new() { Value = 0 };
         public BindableProperty<float> Luck { get; } = new() { Value = 0 };
         public BindableProperty<float> Harvesting { get; } = new() { Value = 0 };
 

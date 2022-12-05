@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BrotatoM
 {
@@ -9,6 +10,9 @@ namespace BrotatoM
     {
         float CurrentSeconds { get; }
         void AddDelayTask(float delayTime, Action onDelayFinish);
+        void AddCountDownTask(float totalTime, float interval = 1.0f);
+        void Stop();
+        void Resume();
     }
 
     public class DelayTask
@@ -18,6 +22,16 @@ namespace BrotatoM
         public float StartSeconds { get; set; }
         public float FinishSeconds { get; set; }
         public DelayTaskState State { get; set; }
+    }
+
+    public class CountDownTask
+    {
+        // 总时间
+        public float TotalTime { get; set; }
+        // 事件发送间隔时间
+        public float SendEventInterval { get; set; }
+        // 间隔计时器
+        public float IntervalTime { get; set; }
     }
 
     public enum DelayTaskState
@@ -36,6 +50,11 @@ namespace BrotatoM
         {
             public Action OnUpdate;
 
+            private void Start()
+            {
+                DontDestroyOnLoad(gameObject);
+            }
+
             private void Update()
             {
                 OnUpdate?.Invoke();
@@ -44,6 +63,8 @@ namespace BrotatoM
 
         public float CurrentSeconds { get; private set; }
         private readonly LinkedList<DelayTask> mDelayTasks = new();
+        private readonly LinkedList<CountDownTask> mCountDownTasks = new();
+        private bool mStopped = false;
 
         public void AddDelayTask(float delayTime, Action onDelayFinish)
         {
@@ -55,6 +76,28 @@ namespace BrotatoM
             };
 
             mDelayTasks.AddLast(delayTask);
+        }
+
+        public void AddCountDownTask(float totalTime, float interval = 1.0f)
+        {
+            var countDownTask = new CountDownTask()
+            {
+                TotalTime = totalTime,
+                SendEventInterval = interval,
+                IntervalTime = interval
+            };
+
+            mCountDownTasks.AddLast(countDownTask);
+        }
+
+        public void Stop()
+        {
+            mStopped = true;
+        }
+
+        public void Resume()
+        {
+            mStopped = false;
         }
 
         protected override void OnInit()
@@ -70,11 +113,40 @@ namespace BrotatoM
 
         private void OnUpdate()
         {
+            // 暂停
+            if (mStopped)
+                return;
+
             // 计时
             CurrentSeconds += Time.deltaTime;
 
-            var currNode = mDelayTasks.First;
+            var currCountDownNode = mCountDownTasks.First;
+            while (currCountDownNode != null)
+            {
+                var countDownTask = currCountDownNode.Value;
+                // 计时
+                countDownTask.TotalTime -= Time.deltaTime;
+                countDownTask.IntervalTime -= Time.deltaTime;
 
+                if (countDownTask.IntervalTime <= 0)
+                {
+                    countDownTask.IntervalTime += countDownTask.SendEventInterval;
+                    this.SendEvent(new CountDownIntervalEvent()
+                    {
+                        Seconds = GetNearestSeconds(countDownTask.TotalTime)
+                    });
+                }
+
+                if (countDownTask.TotalTime <= 0)
+                {
+                    this.SendEvent<CountDownOverEvent>();
+                    mCountDownTasks.Remove(currCountDownNode);
+                }
+
+                currCountDownNode = currCountDownNode.Next;
+            }
+
+            var currNode = mDelayTasks.First;
             while (currNode != null)
             {
                 var delayTask = currNode.Value;
@@ -99,6 +171,12 @@ namespace BrotatoM
 
                 currNode = currNode.Next;
             }
+        }
+
+        // 获取最近的秒数
+        private int GetNearestSeconds(float time)
+        {
+            return Mathf.Abs(time - (int)time) > 0.9 ? (int)time + 1 : (int)time;
         }
     }
 }
