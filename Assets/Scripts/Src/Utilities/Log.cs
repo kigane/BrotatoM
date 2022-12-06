@@ -1,43 +1,77 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 
 namespace BrotatoM
 {
     public class Log
     {
-        [Conditional("Debug")]
-        public static void Debug(string message, int size = -1)
+        private static string ConstructArrayMessage(object[] arr)
+        {
+            string msg = "[ ";
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == arr.Length - 1)
+                    msg += arr[i].ToString() + " ]";
+                else
+                    msg += arr[i].ToString() + ", ";
+            }
+            return msg;
+        }
+
+        private static void LogWithColorAndSize(string message, string color, int size)
         {
             if (size == -1)
-                UnityEngine.Debug.Log("<color=cyan>" + message + "</color>");
+                UnityEngine.Debug.Log($"<color={color}>" + message + "</color>");
             else
-                UnityEngine.Debug.Log($"<size={size}><color=cyan>" + message + "</color></size>");
+                UnityEngine.Debug.Log($"<size={size}><color={color}>" + message + "</color></size>");
+        }
+
+        [Conditional("Debug")]
+        public static void Debug(object message, int size = -1)
+        {
+            LogWithColorAndSize(message.ToString(), "cyan", size);
+        }
+
+        [Conditional("Debug")]
+        public static void Debug(object[] message, int size = -1)
+        {
+            LogWithColorAndSize(ConstructArrayMessage(message), "cyan", size);
         }
 
         [Conditional("Debug"), Conditional("Info")]
-        public static void Info(string message, int size = -1)
+        public static void Info(object message, int size = -1)
         {
-            if (size == -1)
-                UnityEngine.Debug.Log("<color=green>" + message + "</color>");
-            else
-                UnityEngine.Debug.Log($"<size={size}><color=green>" + message + "</color></size>");
+            LogWithColorAndSize(message.ToString(), "green", size);
+        }
+
+        [Conditional("Debug"), Conditional("Info")]
+        public static void Info(object[] message, int size = -1)
+        {
+            LogWithColorAndSize(ConstructArrayMessage(message), "green", size);
         }
 
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning")]
-        public static void Warning(string message, int size = -1)
+        public static void Warning(object message, int size = -1)
         {
-            if (size == -1)
-                UnityEngine.Debug.Log("<color=yellow>" + message + "</color>");
-            else
-                UnityEngine.Debug.Log($"<size={size}><color=yellow>" + message + "</color></size>");
+            LogWithColorAndSize(message.ToString(), "yellow", size);
+        }
+
+        [Conditional("Debug"), Conditional("Info"), Conditional("Warning")]
+        public static void Warning(object[] message, int size = -1)
+        {
+            LogWithColorAndSize(ConstructArrayMessage(message), "yellow", size);
         }
 
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning"), Conditional("Error")]
-        public static void Error(string message, int size = -1)
+        public static void Error(object message, int size = -1)
         {
-            if (size == -1)
-                UnityEngine.Debug.Log("<color=red>" + message + "</color>");
-            else
-                UnityEngine.Debug.Log($"<size={size}><color=red>" + message + "</color></size>");
+            LogWithColorAndSize(message.ToString(), "red", size);
+        }
+
+        [Conditional("Debug"), Conditional("Info"), Conditional("Warning"), Conditional("Error")]
+        public static void Error(object[] message, int size = -1)
+        {
+            LogWithColorAndSize(ConstructArrayMessage(message), "red", size);
         }
     }
 }

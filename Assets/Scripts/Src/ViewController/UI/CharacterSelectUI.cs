@@ -57,7 +57,7 @@ namespace BrotatoM
         private void OnClick(int i)
         {
             //TODO 记录选中角色
-            Debug.Log("选择了角色: " + mCharacterConfigItems[i].Name);
+            Log.Debug("选择了角色: " + mCharacterConfigItems[i].Name);
             // 切换到武器面板
             this.SendCommand<NextPanelCommand>();
         }

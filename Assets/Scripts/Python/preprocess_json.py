@@ -15,6 +15,7 @@ def name_to_path(name: str, part: str):
     ):
         if name in path:  # 匹配路径, Unity的资源加载不需要后缀
             return base_path + path.replace(".png", "")
+        # TODO AttackSpeed, Range
 
 
 def spacial_dispose(part: str, v: dict):

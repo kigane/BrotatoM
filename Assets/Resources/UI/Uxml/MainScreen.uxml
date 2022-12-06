@@ -36,7 +36,7 @@
     </ui:VisualElement>
     <ui:VisualElement name="body-container" style="flex-grow: 1; flex-direction: row;">
         <ui:VisualElement name="levelup-container" style="flex-basis: 80%;">
-            <ui:VisualElement name="attrs-select-container" style="flex-direction: row; flex-basis: 60%;">
+            <ui:VisualElement name="attrs-select-container" style="flex-direction: row; flex-basis: 60%; padding-top: 3%;">
                 <ui:Instance template="attr-select-container" name="attr-select-container" style="flex-grow: 0; flex-basis: 25%;" />
             </ui:VisualElement>
             <ui:VisualElement name="refresh-container" style="flex-basis: 10%;">

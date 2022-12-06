@@ -45,8 +45,8 @@ namespace BrotatoM
                 // :hover 的替代方案。 鼠标移动上去变成白底黑字，离开则恢复为黑底白字。
                 btn.RegisterCallback<MouseOverEvent>((type) =>
                 {
-                    // Debug.Log(type); // type = MouseOverEvent 即注册的事件
-                    Debug.Log(optionsElement.IndexOf(btn));
+                    // Log.Debug(type); // type = MouseOverEvent 即注册的事件
+                    Log.Debug(optionsElement.IndexOf(btn));
                     btn.style.backgroundColor = new Color(1f, 1f, 1f, 0.8f);
                     btn.style.color = new Color(0, 0, 0, 0.8f);
                 });
@@ -93,17 +93,17 @@ namespace BrotatoM
 
         private void OnClickSettingsBtn()
         {
-            Debug.Log("show settings UI");
+            Log.Debug("show settings UI");
         }
 
         private void OnClickProgressBtn()
         {
-            Debug.Log("show Progress UI");
+            Log.Debug("show Progress UI");
         }
 
         private void OnClickQuitBtn()
         {
-            Debug.Log("quit");
+            Log.Debug("quit");
             // 退出游戏
 #if UNITY_EDITOR // 编辑器环境
             UnityEditor.EditorApplication.isPlaying = false;

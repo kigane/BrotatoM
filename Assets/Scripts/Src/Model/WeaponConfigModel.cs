@@ -26,7 +26,7 @@ namespace BrotatoM
     {
         public WeaponConfigModel(string path) : base(path)
         {
-            // Debug.Log(mConfigPath);
+            // Log.Debug(mConfigPath);
         }
 
         protected override void OnInit()
@@ -53,7 +53,7 @@ namespace BrotatoM
             msg += ArrLogMsg(item.CritMultiplicator) + ", ";
             msg += item.SpecialEffects + ", ";
             msg += item.Path + ")";
-            Debug.Log(msg);
+            Log.Debug(msg);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace BrotatoM
             msg += item.Limit + ", ";
             msg += item.UnlockedBy + ", ";
             msg += item.Path + ")";
-            Debug.Log(msg);
+            Log.Debug(msg);
         }
     }
 }

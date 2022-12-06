@@ -55,8 +55,19 @@ namespace BrotatoM
             mTimeLabel.text = "5";
 
             // 升级界面
-            mLevelUpContainer = mRootElement.Q("levelup");
+            mLevelUpContainer = mRootElement.Q("attrs-select-container");
             mLevelUpContainer.Clear();
+            mLevelUpContainer.style.flexDirection = FlexDirection.Row;
+
+            var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
+            UpgradeContainer upgradeContainer;
+            for (int i = 0; i < 4; i++)
+            {
+                upgradeContainer = new UpgradeContainer(upgradeItems[i]);
+                upgradeContainer.style.flexBasis = Length.Percent(25);
+                upgradeContainer.style.marginLeft = Length.Percent(0.5f);
+                mLevelUpContainer.Add(upgradeContainer);
+            }
 
             // 属性栏
             mAttrPanel = mRootElement.Q("attrs");
@@ -68,8 +79,27 @@ namespace BrotatoM
             for (int i = 0; i < mNeedShowProperties.Length; i++)
             {
                 attrRow = new AttrRow(mNeedShowProperties[i]);
+                attrRow.style.flexBasis = Length.Percent(6.5f);
                 mAttrPanel.Add(attrRow);
             }
+
+            mRootElement.Query<Button>().ForEach(btn =>
+            {
+                var rawBackgroundColor = btn.style.backgroundColor;
+                var rawColor = btn.style.color;
+                // :hover 的替代方案。 鼠标移动上去变成白底黑字，离开则恢复为黑底白字。
+                btn.RegisterCallback<MouseOverEvent>((type) =>
+                {
+                    btn.style.backgroundColor = new Color(1f, 1f, 1f, 0.8f);
+                    btn.style.color = new Color(0, 0, 0, 0.8f);
+                });
+
+                btn.RegisterCallback<MouseLeaveEvent>((type) =>
+                {
+                    btn.style.backgroundColor = rawBackgroundColor;
+                    btn.style.color = rawColor;
+                });
+            });
 
             // UI Toolkit在第一帧还没有计算出各个元素的width, height，值都为NaN
             // 需要等待一帧后才能获取到实际值
@@ -132,17 +162,19 @@ namespace BrotatoM
             if (mGameState == GameState.PLAY)
             {
                 // 显示暂停界面
-                Log.Info("游戏暂停");
+                Log.Info("游戏暂停", 16);
                 mBodyContainer.style.display = DisplayStyle.Flex;
                 mTimeSystem.Stop();
                 mGameState = GameState.STOPPED;
+                Time.timeScale = 0;
             }
             else if (mGameState == GameState.STOPPED)
             {
-                Log.Info("游戏继续");
+                Log.Info("游戏继续", 16);
                 mBodyContainer.style.display = DisplayStyle.None;
                 mTimeSystem.Resume();
                 mGameState = GameState.PLAY;
+                Time.timeScale = 1;
             }
         }
 

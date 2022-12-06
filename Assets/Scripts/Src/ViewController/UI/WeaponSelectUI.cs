@@ -57,7 +57,7 @@ namespace BrotatoM
         private void OnClick(int i)
         {
             //TODO 记录选中武器
-            Debug.Log("选择了武器: " + mWeaponConfigItems[i].Name);
+            Log.Debug("选择了武器: " + mWeaponConfigItems[i].Name);
             // 切换到难度选择面板
             this.SendCommand<NextPanelCommand>();
         }

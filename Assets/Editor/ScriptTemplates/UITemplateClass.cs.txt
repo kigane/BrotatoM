@@ -15,9 +15,15 @@ namespace BrotatoM
         public #NAME#() 
         { 
             mTemplateContainer = Resources.Load<VisualTreeAsset>("UI/Template/xxx").Instantiate();
-            mTemplateContainer.style.flexGrow = 1.0f;
+            mTemplateContainer.style.flexGrow = 1;
 
             hierarchy.Add(mTemplateContainer);
+        }
+        
+        // 有参构造函数
+        public #NAME#(string path) : this()
+        { 
+            //TODO
         }
 
     }

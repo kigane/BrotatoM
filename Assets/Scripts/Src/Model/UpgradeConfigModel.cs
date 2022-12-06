@@ -21,7 +21,7 @@ namespace BrotatoM
         protected override void OnInit()
         {
             base.OnInit();
-            VerifyLogs("Back_I");
+            // VerifyLogs("Back_I");
         }
 
         private void VerifyLogs(string name)
@@ -33,7 +33,7 @@ namespace BrotatoM
             msg += item.Ability + ", ";
             msg += item.Value + ", ";
             msg += item.Path + ")";
-            Debug.Log(msg);
+            Log.Debug(msg);
         }
     }
 }

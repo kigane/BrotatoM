@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="attr-select-container" style="flex-basis: initial; background-color: rgb(0, 0, 0); margin-left: 0; margin-top: 10%; margin-bottom: 2%; flex-grow: 1;">
+    <ui:VisualElement name="attr-select-container" style="flex-basis: auto; background-color: rgb(0, 0, 0); margin-left: 0; margin-top: 10%; margin-bottom: 2%; flex-grow: 1; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;">
         <ui:VisualElement name="name-row" style="flex-basis: 50%; flex-direction: row;">
             <ui:VisualElement name="attr-pic" style="flex-basis: 50%; background-image: resource(&apos;Example/bochi&apos;); border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom: 2%;" />
             <ui:VisualElement name="name-container" style="flex-basis: 50%;">

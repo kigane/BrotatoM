@@ -35,7 +35,7 @@ namespace BrotatoM
             msg += item.NegativeStatEffect + ", ";
             msg += item.Path + ", ";
             msg += item.PathBig + ")";
-            Debug.Log(msg);
+            Log.Debug(msg);
         }
     }
 }

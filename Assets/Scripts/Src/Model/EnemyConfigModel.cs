@@ -49,7 +49,7 @@ namespace BrotatoM
             msg += item.FirstWave + ", ";
             msg += item.FirstWaveD1 + ", ";
             msg += item.Path + ")";
-            Debug.Log(msg);
+            Log.Debug(msg);
         }
     }
 }

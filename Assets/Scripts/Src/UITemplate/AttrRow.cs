@@ -15,7 +15,6 @@ namespace BrotatoM
         public AttrRow()
         {
             mTemplateContainer = Resources.Load<VisualTreeAsset>("UI/Template/attr-container").Instantiate();
-            mTemplateContainer.style.flexBasis = Length.Percent(6);
 
             hierarchy.Add(mTemplateContainer);
         }
@@ -26,6 +25,5 @@ namespace BrotatoM
             mTemplateContainer.Q<Label>("attr-name-text").text = attrInfo.name;
             mTemplateContainer.Q<Label>("attr-value-text").text = attrInfo.value.ToString();
         }
-
     }
 }

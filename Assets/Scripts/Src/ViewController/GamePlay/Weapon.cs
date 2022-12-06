@@ -80,7 +80,7 @@ namespace BrotatoM
                 angle = Vector3.Angle(Vector3.left, targetDir);
                 angle = (180 - angle) * Mathf.Sign(targetDir.y);
             }
-            // Debug.Log(angle);
+            // Log.Debug(angle);
             // 旋转武器
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
             // 翻转y轴
