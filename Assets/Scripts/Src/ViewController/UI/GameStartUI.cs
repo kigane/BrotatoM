@@ -86,9 +86,7 @@ namespace BrotatoM
 
         private void OnClickStartBtn()
         {
-            // characterSelectUI.SetActive(true);
             ShowUIPanel(1);
-            // SceneManager.LoadScene("MainScene");
         }
 
         private void OnClickSettingsBtn()

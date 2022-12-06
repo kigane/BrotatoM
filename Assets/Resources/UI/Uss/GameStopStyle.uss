@@ -1,0 +1,25 @@
+#inventory-container > Button {
+    background-color: rgb(0, 0, 0);
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px;
+    -unity-text-align: middle-center;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    margin-top: 1%;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+#attrs-container > Label {
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    font-size: 66px;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-text-align: middle-left;
+}

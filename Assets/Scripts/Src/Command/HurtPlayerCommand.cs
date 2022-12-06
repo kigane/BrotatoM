@@ -14,8 +14,8 @@ namespace BrotatoM
 
         protected override void OnExecute()
         {
-            var playerModel = this.GetModel<IPlayerModel>();
-            playerModel.HP.Value -= mDamage;
+            var playerSystem = this.GetSystem<IPlayerSystem>();
+            playerSystem.HP.Value -= mDamage;
         }
     }
 }

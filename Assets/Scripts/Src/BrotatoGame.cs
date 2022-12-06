@@ -8,9 +8,9 @@ namespace BrotatoM
         {
             // 系统层
             RegisterSystem<ITimeSystem>(new TimeSystem());
+            RegisterSystem<IPlayerSystem>(new PlayerSystem());
 
             // 模型层
-            RegisterModel<IPlayerModel>(new PlayerModel());
             RegisterModel(new WeaponConfigModel("Configs/ProcessedWeapons"));
             RegisterModel(new EnemyConfigModel("Configs/ProcessedEnemies"));
             RegisterModel(new ItemConfigModel("Configs/ProcessedItems"));

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace BrotatoM
 {
@@ -49,11 +48,6 @@ namespace BrotatoM
         public class TimeSystemUpdateBehaviour : MonoBehaviour
         {
             public Action OnUpdate;
-
-            private void Start()
-            {
-                DontDestroyOnLoad(gameObject);
-            }
 
             private void Update()
             {
@@ -105,6 +99,7 @@ namespace BrotatoM
             // 创建一个GO用于挂载TimeSystemUpdateBehaviour
             var updateBehaviourGO = new GameObject(nameof(TimeSystemUpdateBehaviour));
             var updateBehaviour = updateBehaviourGO.AddComponent<TimeSystemUpdateBehaviour>();
+            updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
 
             updateBehaviour.OnUpdate += OnUpdate;
 

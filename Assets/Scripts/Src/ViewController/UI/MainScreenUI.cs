@@ -2,23 +2,23 @@
 using UnityEngine.UIElements;
 using QFramework;
 using System.Collections;
-using System;
 using UnityEngine.InputSystem;
-// using DG.Tweening;
 
 namespace BrotatoM
 {
     public class MainScreenUI : BrotatoGameController
     {
+        public UIDocument stopScreenUI;
         private VisualElement mRootElement;
         private VisualElement mBodyContainer;
         private VisualElement mLevelUpContainer;
+        private VisualElement mUpgradeContainer;
         private VisualElement mAttrPanel;
         private Label mPromptLabel;
         private Label mHarvestLabel;
         private Label mHarvestBagLabel;
         private Label mTimeLabel;
-        private IPlayerModel mPlayerModel;
+        private IPlayerSystem mPlayerSystem;
         private PlayerControl mPlayerControl;
         private ITimeSystem mTimeSystem;
         private GameState mGameState = GameState.PLAY;
@@ -34,7 +34,7 @@ namespace BrotatoM
         {
             #region UI处理
             // 取得UI元素的引用
-            mPlayerModel = this.GetModel<IPlayerModel>();
+            mPlayerSystem = this.GetSystem<IPlayerSystem>();
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
 
             mPromptLabel = mRootElement.Q<Label>("prompt");
@@ -45,19 +45,22 @@ namespace BrotatoM
 
             // 收获
             mHarvestLabel = mRootElement.Q<Label>("stuff-amount");
-            mHarvestLabel.text = mPlayerModel.Harvest.Value.ToString();
+            mHarvestLabel.text = mPlayerSystem.Harvest.Value.ToString();
             // 收获袋
             mHarvestBagLabel = mRootElement.Q<Label>("stock-amount");
-            mHarvestBagLabel.text = mPlayerModel.HarvestBag.Value.ToString();
+            mHarvestBagLabel.text = mPlayerSystem.HarvestBag.Value.ToString();
 
             // 倒计时
             mTimeLabel = mRootElement.Q<Label>("time");
             mTimeLabel.text = "5";
 
             // 升级界面
-            mLevelUpContainer = mRootElement.Q("attrs-select-container");
+            mLevelUpContainer = mRootElement.Q("levelup");
             mLevelUpContainer.Clear();
-            mLevelUpContainer.style.flexDirection = FlexDirection.Row;
+
+            mUpgradeContainer = mRootElement.Q("attrs-select-container");
+            mUpgradeContainer.Clear();
+            mUpgradeContainer.style.flexDirection = FlexDirection.Row;
 
             var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
             UpgradeContainer upgradeContainer;
@@ -66,7 +69,7 @@ namespace BrotatoM
                 upgradeContainer = new UpgradeContainer(upgradeItems[i]);
                 upgradeContainer.style.flexBasis = Length.Percent(25);
                 upgradeContainer.style.marginLeft = Length.Percent(0.5f);
-                mLevelUpContainer.Add(upgradeContainer);
+                mUpgradeContainer.Add(upgradeContainer);
             }
 
             // 属性栏
@@ -110,17 +113,17 @@ namespace BrotatoM
             mTimeSystem.AddCountDownTask(5);
 
             #region 注册值变更事件
-            mPlayerModel.HP.Register(value =>
+            mPlayerSystem.HP.Register(value =>
             {
-                UpdateBar("health-bar", value / mPlayerModel.MaxHp.Value);
+                UpdateBar("health-bar", value / mPlayerSystem.MaxHp.Value);
             });
 
-            mPlayerModel.Exp.Register(value =>
+            mPlayerSystem.Exp.Register(value =>
             {
-                UpdateBar("exp-bar", value / mPlayerModel.CurrMaxExp.Value);
+                UpdateBar("exp-bar", value / mPlayerSystem.CurrMaxExp.Value);
             });
 
-            mPlayerModel.Harvest.Register(value =>
+            mPlayerSystem.Harvest.Register(value =>
             {
                 mRootElement.Q<Label>("stuff-amount").text = value.ToString();
             });
@@ -137,16 +140,22 @@ namespace BrotatoM
                 mLevelUpContainer.Add(icon);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
+            // 倒计时
             this.RegisterEvent<CountDownIntervalEvent>(e =>
             {
                 mTimeLabel.text = e.Seconds.ToString();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
+            // 一波结束
             this.RegisterEvent<CountDownOverEvent>(e =>
             {
-                mPromptLabel.text = "升级!";
+                mPromptLabel.text = "通过!";
                 mPromptLabel.style.display = DisplayStyle.Flex;
-                this.SendCommand<WaveOverCommand>();
+                this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
+                {
+                    mPromptLabel.text = "升级!";
+                    this.SendCommand<WaveOverCommand>();
+                });
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
             #endregion
         }
@@ -163,7 +172,8 @@ namespace BrotatoM
             {
                 // 显示暂停界面
                 Log.Info("游戏暂停", 16);
-                mBodyContainer.style.display = DisplayStyle.Flex;
+                stopScreenUI.gameObject.SetActive(true);
+                // mBodyContainer.style.display = DisplayStyle.Flex;
                 mTimeSystem.Stop();
                 mGameState = GameState.STOPPED;
                 Time.timeScale = 0;
@@ -171,7 +181,8 @@ namespace BrotatoM
             else if (mGameState == GameState.STOPPED)
             {
                 Log.Info("游戏继续", 16);
-                mBodyContainer.style.display = DisplayStyle.None;
+                stopScreenUI.gameObject.SetActive(false);
+                // mBodyContainer.style.display = DisplayStyle.None;
                 mTimeSystem.Resume();
                 mGameState = GameState.PLAY;
                 Time.timeScale = 1;
@@ -181,8 +192,8 @@ namespace BrotatoM
         private IEnumerator MainScreenUIInitialization()
         {
             yield return null; // 等待一帧
-            UpdateBar("health-bar", mPlayerModel.HP.Value / mPlayerModel.MaxHp.Value);
-            UpdateBar("exp-bar", mPlayerModel.Exp.Value / mPlayerModel.CurrMaxExp.Value);
+            UpdateBar("health-bar", mPlayerSystem.HP.Value / mPlayerSystem.MaxHp.Value);
+            UpdateBar("exp-bar", mPlayerSystem.Exp.Value / mPlayerSystem.CurrMaxExp.Value);
         }
 
         /// <summary>

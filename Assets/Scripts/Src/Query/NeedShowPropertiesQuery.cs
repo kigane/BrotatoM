@@ -35,13 +35,13 @@ namespace BrotatoM
 
         protected override AttrInfo[] OnDo()
         {
-            var playerModel = this.GetModel<IPlayerModel>();
+            var playerSystem = this.GetSystem<IPlayerSystem>();
             var statsModel = this.GetModel<StatConfigModel>();
-            Type t = Type.GetType("BrotatoM.PlayerModel", true);
+            Type t = Type.GetType("BrotatoM.PlayerSystem", true);
             for (int i = 0; i < attrs.Length; i++)
             {
                 properties[i].name = attrs[i];
-                properties[i].value = ((BindableProperty<float>)t.GetProperty(attrs[i]).GetValue(playerModel)).Value;
+                properties[i].value = ((BindableProperty<float>)t.GetProperty(attrs[i]).GetValue(playerSystem)).Value;
                 properties[i].path = statsModel.GetConfigItemByName(attrs[i]).Path;
             }
             return properties;

@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="attr-container" src="project://database/Assets/Resources/UI/Template/attr-container.uxml?fileID=9197481963319205126&amp;guid=171013c2d53bc11439cd2f852d9a1d76&amp;type=3#attr-container" />
+    <Style src="project://database/Assets/Resources/UI/Uss/GameStopStyle.uss?fileID=7433441132597879392&amp;guid=cdcdeae434662264b9ba019465429a02&amp;type=3#GameStopStyle" />
+    <ui:VisualElement name="root-container" style="flex-direction: row; flex-grow: 1; padding-left: 5%; padding-right: 5%; padding-top: 8%; padding-bottom: 8%; background-color: rgba(0, 0, 0, 0.8);">
+        <ui:VisualElement name="inventory-container" style="flex-basis: 33%; justify-content: center; padding-right: 2%;">
+            <ui:Button text="继续" display-tooltip-when-elided="true" name="continue" />
+            <ui:Button text="重新开始" display-tooltip-when-elided="true" name="restart" />
+            <ui:Button text="设置" display-tooltip-when-elided="true" name="settings" />
+            <ui:Button text="返回主菜单" display-tooltip-when-elided="true" name="return" style="-unity-font-style: normal; -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); translate: 0 0; scale: 1 1; rotate: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="attrs-container" style="flex-basis: 33%; padding-left: 5%;">
+            <ui:Label text="危险1" display-tooltip-when-elided="true" name="danger-level" />
+            <ui:Label text="武器" display-tooltip-when-elided="true" name="weapons" />
+            <ui:VisualElement name="weapon-container" style="flex-basis: 30%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                <ui:VisualElement name="first-row" style="flex-basis: 50%; flex-direction: row;">
+                    <ui:VisualElement name="weapon-btn" style="flex-basis: 25%; background-image: resource(&apos;ArtAssets/Weapons/60px-Double_Barrel_Shotgun&apos;); background-color: rgb(0, 0, 0); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; padding-right: 0; margin-right: 2%;" />
+                    <ui:VisualElement name="weapon-btn" style="flex-basis: 25%; background-image: resource(&apos;ArtAssets/Weapons/60px-Double_Barrel_Shotgun&apos;); background-color: rgb(0, 0, 0); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="道具" display-tooltip-when-elided="true" name="items" />
+            <ui:VisualElement name="items-container" style="flex-basis: 30%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                <ui:VisualElement name="first-row" style="flex-basis: 50%; flex-direction: row;">
+                    <ui:VisualElement name="weapon-btn" style="flex-basis: 25%; background-image: resource(&apos;ArtAssets/Weapons/60px-Double_Barrel_Shotgun&apos;); background-color: rgb(0, 0, 0); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; padding-right: 0; margin-right: 2%;" />
+                    <ui:VisualElement name="weapon-btn" style="flex-basis: 25%; background-image: resource(&apos;ArtAssets/Weapons/60px-Double_Barrel_Shotgun&apos;); background-color: rgb(0, 0, 0); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="attrs-container" style="flex-basis: 33%;">
+            <ui:Label text="属性" display-tooltip-when-elided="true" name="attr-title" style="flex-basis: 15%;" />
+            <ui:VisualElement name="attrs" style="flex-basis: 85%; padding-right: 5%;">
+                <ui:Instance template="attr-container" name="attr-container" style="flex-basis: 6.5%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

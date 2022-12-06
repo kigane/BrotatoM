@@ -1,8 +1,10 @@
-﻿using QFramework;
+﻿using System.Collections.Generic;
+using QFramework;
+using UnityEngine;
 
 namespace BrotatoM
 {
-    public interface IPlayerModel : IModel
+    public interface IPlayerSystem : ISystem
     {
         // 状态栏
         public BindableProperty<float> HP { get; }
@@ -48,9 +50,16 @@ namespace BrotatoM
         /// </summary>
         /// <value></value>
         public BindableProperty<int> UpgradePoint { get; }
+
+        public BindableProperty<int> CurrWave { get; }
+        public int DangerLevel { get; set; }
+        public WeaponInfo[] CurrWeapons { get; }
+        public List<int> CurrItems { get; }
+
+        public void AddItem(int itemId);
     }
 
-    public class PlayerModel : AbstractModel, IPlayerModel
+    public class PlayerSystem : AbstractSystem, IPlayerSystem
     {
         // 状态栏
         public BindableProperty<float> HP { get; } = new() { Value = 15 };
@@ -83,11 +92,36 @@ namespace BrotatoM
         public BindableProperty<float> TreeSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<int> CharacterId { get; } = new() { Value = 0 };
         public BindableProperty<int> UpgradePoint { get; } = new() { Value = 0 };
-        
+
+        private readonly WeaponInfo[] mWeaponInfos = new WeaponInfo[6];
+        private readonly List<int> mItems = new();
+        public BindableProperty<int> CurrWave { get; } = new BindableProperty<int>()
+        {
+            Value = 1
+        };
+        public int DangerLevel { get; set; }
+        public WeaponInfo[] CurrWeapons => mWeaponInfos;
+        public List<int> CurrItems => mItems;
 
         protected override void OnInit()
         {
+            // 创建一个GO用于挂载TimeSystemUpdateBehaviour
+            var updateBehaviourGO = new GameObject("GameManager");
+            updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
+        }
 
+        // 装备道具
+        public void AddItem(int itemId)
+        {
+            // 增加属性
+
+            // 显示到道具栏
+            mItems.Add(itemId);
+        }
+
+        public bool HasItem(int itemId)
+        {
+            return mItems.Contains(itemId);
         }
     }
 }
