@@ -17,9 +17,11 @@ namespace BrotatoM
             mCharacterConfigItems = this.GetModel<CharacterConfigModel>().GetAllConfigItems();
 
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
-            if (mCharacterConfigItems.Length == 0)
-                return;
+            GenerateCharacterIcons();
+        }
 
+        private void GenerateCharacterIcons()
+        {
             var firstRow = mRootElement.Q("first-row");
             var secondRow = mRootElement.Q("second-row");
             var thirdRow = mRootElement.Q("third-row");
@@ -58,10 +60,10 @@ namespace BrotatoM
 
         private void OnClick(int i)
         {
-            //TODO 记录选中角色
             Log.Debug("选择了角色: " + mCharacterConfigItems[i].Name);
             mPlayerSystem.CurrItems.Clear();
-            mPlayerSystem.AddItem(i);
+            mPlayerSystem.AddItem(152 + i);
+            mPlayerSystem.CharacterId = i;
             // 切换到武器面板
             this.SendCommand<NextPanelCommand>();
         }

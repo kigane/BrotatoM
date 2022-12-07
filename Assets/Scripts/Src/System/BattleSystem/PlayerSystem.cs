@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using QFramework;
 using UnityEngine;
 
@@ -44,19 +45,23 @@ namespace BrotatoM
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; }
         public BindableProperty<float> TreeSpawnRate { get; }
-        public BindableProperty<int> CharacterId { get; }
+        public int CharacterId { get; set; }
         /// <summary>
         /// 升级点数，决定升级界面的显示与消失
         /// </summary>
         /// <value></value>
-        public BindableProperty<int> UpgradePoint { get; }
+        public int UpgradePoint { get; set; }
 
         public BindableProperty<int> CurrWave { get; }
         public int DangerLevel { get; set; }
-        public WeaponInfo[] CurrWeapons { get; }
+        public List<WeaponInfo> CurrWeapons { get; }
         public List<int> CurrItems { get; }
 
         public void AddItem(int itemId);
+        public bool HasItem(int itemId);
+        public void AddWeapon(WeaponConfigItem weaponConfigItem, int rarity = 0);
+        public bool CanBuyWeapon(string name, int rarity = 0);
+        public void AddFloatValueByPropertyName(string name, float value);
     }
 
     public class PlayerSystem : AbstractSystem, IPlayerSystem
@@ -90,38 +95,97 @@ namespace BrotatoM
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<float> TreeSpawnRate { get; } = new() { Value = 1 };
-        public BindableProperty<int> CharacterId { get; } = new() { Value = 0 };
-        public BindableProperty<int> UpgradePoint { get; } = new() { Value = 0 };
+        public int CharacterId { get; set; }
+        public int UpgradePoint { get; set; }
 
-        private readonly WeaponInfo[] mWeaponInfos = new WeaponInfo[6];
+        private readonly List<WeaponInfo> mWeaponInfos = new();
         private readonly List<int> mItems = new();
-        public BindableProperty<int> CurrWave { get; } = new BindableProperty<int>()
-        {
-            Value = 1
-        };
+        public BindableProperty<int> CurrWave { get; set; } = new() { Value = 1 };
         public int DangerLevel { get; set; }
-        public WeaponInfo[] CurrWeapons => mWeaponInfos;
+        public List<WeaponInfo> CurrWeapons => mWeaponInfos;
         public List<int> CurrItems => mItems;
+
+        private ItemConfigItem[] mItemConfigs;
 
         protected override void OnInit()
         {
             // 创建一个GO用于挂载TimeSystemUpdateBehaviour
             var updateBehaviourGO = new GameObject("GameManager");
             updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
+            mItemConfigs = this.GetModel<ItemConfigModel>().GetAllConfigItems();
         }
 
-        // 装备道具
+        /// <summary>
+        /// 装备道具和角色
+        /// 角色编号从152开始
+        /// </summary>
+        /// <param name="itemId">道具编号</param>
         public void AddItem(int itemId)
         {
             // 增加属性
+            MaxHp.Value += mItemConfigs[itemId].MaxHp;
+            HpRegeneration.Value += mItemConfigs[itemId].HpRegeneration;
+            LifeSteal.Value += mItemConfigs[itemId].LifeSteal;
+            Damage.Value += mItemConfigs[itemId].Damage;
+            MeleeDamage.Value += mItemConfigs[itemId].MeleeDamage;
+            RangedDamage.Value += mItemConfigs[itemId].RangedDamage;
+            ElementalDamage.Value += mItemConfigs[itemId].ElementalDamage;
+            AttackSpeed.Value += mItemConfigs[itemId].AttackSpeed;
+            CritChance.Value += mItemConfigs[itemId].MaxHp;
+            Engineering.Value += mItemConfigs[itemId].Engineering;
+            Range.Value += mItemConfigs[itemId].Range;
+            Armor.Value += mItemConfigs[itemId].Armor;
+            Dodge.Value += mItemConfigs[itemId].Dodge;
+            Speed.Value += mItemConfigs[itemId].Speed;
+            Luck.Value += mItemConfigs[itemId].Luck;
+            Harvesting.Value += mItemConfigs[itemId].Harvesting;
 
             // 显示到道具栏
             mItems.Add(itemId);
         }
 
+        public void AddWeapon(WeaponConfigItem weaponConfigItem, int rarity = 0)
+        {
+            // TODO 武器升级
+            WeaponInfo weaponInfo = new(weaponConfigItem, rarity);
+            // 人物属性影响武器效果
+            weaponInfo.CritChance += CritChance.Value;
+            if (weaponInfo.CritChance > 1)
+                weaponInfo.CritChance = 1;
+
+            weaponInfo.Damage += weaponInfo.DamageModifier * MeleeDamage.Value;
+            weaponInfo.Damage *= 1 + Damage.Value;
+
+            weaponInfo.Range += Range.Value;
+            weaponInfo.Lifesteal += LifeSteal.Value;
+
+            // 武器上限
+            CurrWeapons.Add(weaponInfo);
+        }
+
+        public bool CanBuyWeapon(string name, int rarity = 0)
+        {
+            if (CurrWeapons.Count < 6)
+                return true;
+
+            for (int i = 0; i < CurrWeapons.Count; i++)
+            {
+                if (CurrWeapons.Exists(x => x.Name == name))
+                    return true;
+            }
+
+            return false;
+        }
+
         public bool HasItem(int itemId)
         {
             return mItems.Contains(itemId);
+        }
+
+        public void AddFloatValueByPropertyName(string name, float value)
+        {
+            Type t = Type.GetType("BrotatoM.PlayerSystem");
+            ((BindableProperty<float>)t.GetProperty(name).GetValue(this)).Value += value;
         }
     }
 }

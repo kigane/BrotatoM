@@ -13,7 +13,7 @@ namespace BrotatoM
             // 模型层
             RegisterModel(new WeaponConfigModel("Configs/ProcessedWeapons"));
             RegisterModel(new EnemyConfigModel("Configs/ProcessedEnemies"));
-            RegisterModel(new ItemConfigModel("Configs/ProcessedItems"));
+            RegisterModel(new ItemConfigModel("Configs/Items"));
             RegisterModel(new StatConfigModel("Configs/ProcessedStats"));
             RegisterModel(new CharacterConfigModel("Configs/ProcessedCharacters"));
             RegisterModel(new DangerConfigModel("Configs/ProcessedDangers"));

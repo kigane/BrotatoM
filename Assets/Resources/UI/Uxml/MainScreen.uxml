@@ -40,7 +40,7 @@
                 <ui:Instance template="attr-select-container" name="attr-select-container" style="flex-grow: 0; flex-basis: 25%;" />
             </ui:VisualElement>
             <ui:VisualElement name="refresh-container" style="flex-basis: 10%;">
-                <ui:Button text="刷新 -2 豆" display-tooltip-when-elided="true" style="margin-left: 40%; margin-right: 40%; margin-top: 1%; margin-bottom: 1%; background-color: rgb(0, 0, 0); border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+                <ui:Button text="刷新 -2 豆" display-tooltip-when-elided="true" name="refresh-btn" style="margin-left: 40%; margin-right: 40%; margin-top: 1%; margin-bottom: 1%; background-color: rgb(0, 0, 0); border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="attrs-container" style="flex-grow: 1; background-color: rgba(2, 2, 2, 0.7); margin-bottom: 10%; margin-right: 2%; margin-left: 1%;">

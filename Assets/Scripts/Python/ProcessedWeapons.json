@@ -1652,5 +1652,1211 @@
             2,
             2
         ]
+    },
+    {
+        "Name": "Crossbow",
+        "Class": [
+            "Precise",
+            "Medieval"
+        ],
+        "Damage": [
+            8,
+            10,
+            12,
+            15
+        ],
+        "AttackSpeed": [
+            1.13,
+            1.13,
+            1.13,
+            1.13
+        ],
+        "Range": [
+            350,
+            350,
+            350,
+            350
+        ],
+        "Knockback": [
+            8,
+            8,
+            8,
+            8
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces up to 1/2/3/4 times on critical hit",
+        "BasePrice": [
+            18,
+            36,
+            66,
+            140
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Crossbow",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "CritChance": [
+            0.3,
+            0.35,
+            0.4,
+            0.45
+        ],
+        "CritMultiplicator": [
+            1.5,
+            1.75,
+            2,
+            2.25
+        ]
+    },
+    {
+        "Name": "DoubleBarrelShotgun",
+        "Class": [
+            "Gun"
+        ],
+        "Damage": [
+            3,
+            6,
+            9,
+            12
+        ],
+        "AttackSpeed": [
+            1.37,
+            1.28,
+            1.2,
+            1.12
+        ],
+        "Range": [
+            350,
+            350,
+            350,
+            350
+        ],
+        "Knockback": [
+            8,
+            8,
+            8,
+            8
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces 2/2/2/3 enemy dealing -30%/-30%/-30%/-15% less to rest of the enemies",
+        "BasePrice": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Double_Barrel_Shotgun",
+        "DamageModifier": [
+            0.8,
+            0.85,
+            0.9,
+            1
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Flamethrower",
+        "Class": [
+            "Elemental",
+            "Heavy"
+        ],
+        "Damage": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "AttackSpeed": [
+            0,
+            0.12,
+            0.12,
+            0.09
+        ],
+        "Range": [
+            0,
+            300,
+            350,
+            400
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Deals -/3x5/6x6/10x10(100%) burning damage  Pierces 99 enemies dealing 1 damage",
+        "BasePrice": [
+            0,
+            56,
+            103,
+            207
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Flamethrower",
+        "DamageModifier": [
+            0,
+            0.1,
+            0.1,
+            0.1
+        ],
+        "CritChance": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "CritMultiplicator": [
+            0,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "GhostScepter",
+        "Class": [
+            "Ethereal"
+        ],
+        "Damage": [
+            10,
+            14,
+            18,
+            25
+        ],
+        "AttackSpeed": [
+            1.03,
+            0.98,
+            0.93,
+            0.87
+        ],
+        "Range": [
+            300,
+            350,
+            400,
+            450
+        ],
+        "Knockback": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "+1 Max HP for every 20/18/16/12 kills in a wave with this weapon",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Ghost_Scepter",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "LaserGun",
+        "Class": [
+            "Gun"
+        ],
+        "Damage": [
+            30,
+            45,
+            60,
+            90
+        ],
+        "AttackSpeed": [
+            2.15,
+            2.07,
+            1.98,
+            1.82
+        ],
+        "Range": [
+            500,
+            500,
+            500,
+            500
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces 1 enemy dealing -25% less to the second enemy",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Laser_Gun",
+        "DamageModifier": [
+            4,
+            4.5,
+            5,
+            6
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "MedicalGun",
+        "Class": [
+            "Medical",
+            "Gun"
+        ],
+        "Damage": [
+            10,
+            15,
+            20,
+            30
+        ],
+        "AttackSpeed": [
+            0.95,
+            0.87,
+            0.78,
+            0.62
+        ],
+        "Range": [
+            400,
+            400,
+            400,
+            400
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0.4,
+            0.45,
+            0.5,
+            0.6
+        ],
+        "SpecialEffects": null,
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Medical_Gun",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Minigun",
+        "Class": [
+            "Heavy",
+            "Gun"
+        ],
+        "Damage": [
+            0,
+            0,
+            1,
+            3
+        ],
+        "AttackSpeed": [
+            0,
+            0,
+            0.09,
+            0.06
+        ],
+        "Range": [
+            0,
+            0,
+            400,
+            450
+        ],
+        "Knockback": [
+            0,
+            0,
+            3,
+            3
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces 1 enemy dealing -50% less to the second enemy",
+        "BasePrice": [
+            0,
+            0,
+            127,
+            255
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Minigun",
+        "DamageModifier": [
+            0,
+            0,
+            0.5,
+            0.75
+        ],
+        "CritChance": [
+            0,
+            0,
+            0.01,
+            0.03
+        ],
+        "CritMultiplicator": [
+            0,
+            0,
+            1.75,
+            2
+        ]
+    },
+    {
+        "Name": "NuclearLauncher",
+        "Class": [
+            "Heavy",
+            "Explosive"
+        ],
+        "Damage": [
+            0,
+            0,
+            60,
+            120
+        ],
+        "AttackSpeed": [
+            0,
+            0,
+            2.12,
+            2.12
+        ],
+        "Range": [
+            0,
+            0,
+            800,
+            800
+        ],
+        "Knockback": [
+            0,
+            0,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Projectiles explode on hit",
+        "BasePrice": [
+            0,
+            0,
+            144,
+            289
+        ],
+        "UnlockedBy": "Win a run with Soldier",
+        "Path": "ArtAssets/Weapons/60px-Nuclear_Launcher",
+        "DamageModifier": [
+            0,
+            0,
+            1,
+            1
+        ],
+        "CritChance": [
+            0,
+            0,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            0,
+            0,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Obliterator",
+        "Class": [
+            "Heavy"
+        ],
+        "Damage": [
+            0,
+            0,
+            250,
+            350
+        ],
+        "AttackSpeed": [
+            0,
+            0,
+            3.23,
+            3.23
+        ],
+        "Range": [
+            0,
+            0,
+            800,
+            1000
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces through enemies",
+        "BasePrice": [
+            0,
+            0,
+            127,
+            255
+        ],
+        "UnlockedBy": "Win a run with Demon",
+        "Path": "ArtAssets/Weapons/60px-Obliterator",
+        "DamageModifier": [
+            0,
+            0,
+            10,
+            15
+        ],
+        "CritChance": [
+            0,
+            0,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            0,
+            0,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Pistol",
+        "Class": [
+            "Gun"
+        ],
+        "Damage": [
+            12,
+            20,
+            30,
+            50
+        ],
+        "AttackSpeed": [
+            1.2,
+            1.12,
+            1.03,
+            0.87
+        ],
+        "Range": [
+            400,
+            400,
+            400,
+            400
+        ],
+        "Knockback": [
+            15,
+            15,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Pierces 1 enemy dealing -50% less to the second enemy",
+        "BasePrice": [
+            10,
+            22,
+            45,
+            91
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Pistol",
+        "DamageModifier": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "PotatoThrower",
+        "Class": [
+            "Support"
+        ],
+        "Damage": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "AttackSpeed": [
+            0,
+            0.45,
+            0.37,
+            0.25
+        ],
+        "Range": [
+            0,
+            500,
+            500,
+            500
+        ],
+        "Knockback": [
+            0,
+            20,
+            25,
+            30
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": null,
+        "BasePrice": [
+            0,
+            36,
+            69,
+            139
+        ],
+        "UnlockedBy": "Win a run with Chunky",
+        "Path": "ArtAssets/Weapons/60px-Potato_Thrower",
+        "DamageModifier": [
+            0,
+            0.25,
+            0.25,
+            0.25
+        ],
+        "CritChance": [
+            0,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            0,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "RocketLauncher",
+        "Class": [
+            "Heavy",
+            "Explosive"
+        ],
+        "Damage": [
+            0,
+            30,
+            50,
+            80
+        ],
+        "AttackSpeed": [
+            0,
+            1.78,
+            1.37,
+            1.03
+        ],
+        "Range": [
+            0,
+            500,
+            550,
+            600
+        ],
+        "Knockback": [
+            0,
+            15,
+            15,
+            15
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Projectiles explode on hit",
+        "BasePrice": [
+            0,
+            56,
+            103,
+            207
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Rocket_Launcher",
+        "DamageModifier": [
+            0,
+            1,
+            1,
+            1
+        ],
+        "CritChance": [
+            0,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            0,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Shredder",
+        "Class": [
+            "Gun",
+            "Explosive"
+        ],
+        "Damage": [
+            5,
+            10,
+            15,
+            25
+        ],
+        "AttackSpeed": [
+            1.3,
+            1.22,
+            1.13,
+            1.05
+        ],
+        "Range": [
+            450,
+            450,
+            450,
+            450
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "50%/65%/80%/100% chance for projectiles to explode on hit dealing 75%/80%/85%/90% damage  Pierces 3 enemies dealing 100% damage",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Shredder",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Shuriken",
+        "Class": [
+            "Precise"
+        ],
+        "Damage": [
+            6,
+            8,
+            10,
+            15
+        ],
+        "AttackSpeed": [
+            0.87,
+            0.83,
+            0.8,
+            0.7
+        ],
+        "Range": [
+            350,
+            350,
+            350,
+            350
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Critical hits bounces 1/2/3/4 times",
+        "BasePrice": [
+            12,
+            26,
+            52,
+            105
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Shuriken",
+        "DamageModifier": [
+            0.25,
+            0.34,
+            0.42,
+            0.5
+        ],
+        "CritChance": [
+            0.35,
+            0.38,
+            0.41,
+            0.45
+        ],
+        "CritMultiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "Slingshot",
+        "Class": [
+            "Primitive"
+        ],
+        "Damage": [
+            10,
+            15,
+            20,
+            30
+        ],
+        "AttackSpeed": [
+            1.22,
+            1.13,
+            1.05,
+            0.97
+        ],
+        "Range": [
+            300,
+            300,
+            300,
+            300
+        ],
+        "Knockback": [
+            5,
+            5,
+            5,
+            5
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Bounces 1/2/3/4 times",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Slingshot",
+        "DamageModifier": [
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Smg",
+        "Class": [
+            "Gun"
+        ],
+        "Damage": [
+            3,
+            4,
+            5,
+            8
+        ],
+        "AttackSpeed": [
+            0.17,
+            0.17,
+            0.17,
+            0.15
+        ],
+        "Range": [
+            400,
+            400,
+            400,
+            400
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": null,
+        "BasePrice": [
+            20,
+            39,
+            74,
+            149
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-SMG",
+        "DamageModifier": [
+            0.5,
+            0.6,
+            0.7,
+            0.8
+        ],
+        "CritChance": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+        ],
+        "CritMultiplicator": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+    },
+    {
+        "Name": "SniperGun",
+        "Class": [
+            "Gun",
+            "Precise"
+        ],
+        "Damage": [
+            0,
+            0,
+            50,
+            80
+        ],
+        "AttackSpeed": [
+            0,
+            0,
+            2.4,
+            2.4
+        ],
+        "Range": [
+            0,
+            0,
+            800,
+            1000
+        ],
+        "Knockback": [
+            0,
+            0,
+            30,
+            30
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Hitting an enemy spawns 5/8 projectiles dealing 5 +(10%/15%)",
+        "BasePrice": [
+            0,
+            0,
+            115,
+            245
+        ],
+        "UnlockedBy": "Win a run with Hunter",
+        "Path": "ArtAssets/Weapons/60px-Sniper_Gun",
+        "DamageModifier": [
+            0,
+            0,
+            1,
+            1
+        ],
+        "CritChance": [
+            0,
+            0,
+            0.2,
+            0.2
+        ],
+        "CritMultiplicator": [
+            0,
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Taser",
+        "Class": [
+            "Support",
+            "Elemental"
+        ],
+        "Damage": [
+            5,
+            5,
+            5,
+            10
+        ],
+        "AttackSpeed": [
+            0.95,
+            0.95,
+            0.95,
+            0.95
+        ],
+        "Range": [
+            200,
+            200,
+            200,
+            200
+        ],
+        "Knockback": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Slows enemies in a radius around the projectile",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Taser",
+        "DamageModifier": [
+            0.8,
+            0.7,
+            0.6,
+            0.5
+        ],
+        "CritChance": [
+            0.03,
+            0.03,
+            0.03,
+            0.03
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
+    },
+    {
+        "Name": "Wand",
+        "Class": [
+            "Elemental"
+        ],
+        "Damage": [
+            1,
+            1,
+            1,
+            1
+        ],
+        "AttackSpeed": [
+            0.87,
+            0.78,
+            0.7,
+            0.53
+        ],
+        "Range": [
+            350,
+            375,
+            400,
+            425
+        ],
+        "Knockback": [
+            10,
+            10,
+            10,
+            10
+        ],
+        "Lifesteal": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "SpecialEffects": "Deals 3x3/5x4/8x5/12x6(100%) burning damage",
+        "BasePrice": [
+            15,
+            31,
+            61,
+            122
+        ],
+        "UnlockedBy": "Default",
+        "Path": "ArtAssets/Weapons/60px-Wand",
+        "DamageModifier": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+        ],
+        "CritChance": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "CritMultiplicator": [
+            2,
+            2,
+            2,
+            2
+        ]
     }
 ]

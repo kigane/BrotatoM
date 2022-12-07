@@ -6,7 +6,7 @@ namespace BrotatoM
     {
         private Transform mEnemyTransform;
         private GameObject mBullet;
-        public float mRange;
+        public float range;
         private float mShouldRotate;
         private float mCooldown = 0.5f;
         private bool needCooldown = false;
@@ -54,7 +54,7 @@ namespace BrotatoM
         private void RotateWeapon()
         {
             // 计算朝向
-            mEnemyTransform = FindNearestEnemyInRange(mRange);
+            mEnemyTransform = FindNearestEnemyInRange(range);
             if (!mEnemyTransform)
             {
                 // 回到原位

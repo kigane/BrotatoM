@@ -28,20 +28,20 @@ namespace BrotatoM
         {
             mPlayerControl = new PlayerControl();
             mTimeSystem = this.GetSystem<ITimeSystem>();
+            mPlayerSystem = this.GetSystem<IPlayerSystem>();
         }
 
         private void Start()
         {
             #region UI处理
             // 取得UI元素的引用
-            mPlayerSystem = this.GetSystem<IPlayerSystem>();
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
 
             mPromptLabel = mRootElement.Q<Label>("prompt");
-            mPromptLabel.style.display = DisplayStyle.None;
+            Hide(mPromptLabel);
 
             mBodyContainer = mRootElement.Q("body-container");
-            mBodyContainer.style.display = DisplayStyle.None;
+            Hide(mBodyContainer);
 
             // 收获
             mHarvestLabel = mRootElement.Q<Label>("stuff-amount");
@@ -52,31 +52,19 @@ namespace BrotatoM
 
             // 倒计时
             mTimeLabel = mRootElement.Q<Label>("time");
-            mTimeLabel.text = "5";
+            mTimeLabel.text = "10";
 
-            // 升级界面
+            // 升级图标
             mLevelUpContainer = mRootElement.Q("levelup");
             mLevelUpContainer.Clear();
 
-            mUpgradeContainer = mRootElement.Q("attrs-select-container");
-            mUpgradeContainer.Clear();
-            mUpgradeContainer.style.flexDirection = FlexDirection.Row;
-
-            var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
-            UpgradeContainer upgradeContainer;
-            for (int i = 0; i < 4; i++)
-            {
-                upgradeContainer = new UpgradeContainer(upgradeItems[i]);
-                upgradeContainer.style.flexBasis = Length.Percent(25);
-                upgradeContainer.style.marginLeft = Length.Percent(0.5f);
-                mUpgradeContainer.Add(upgradeContainer);
-            }
+            // 升级界面
+            ShowRandomUpgradeItems();
 
             // 属性栏
             mAttrPanel = mRootElement.Q("attrs");
             mAttrPanel.Clear();
 
-            // 生成属性行
             mNeedShowProperties = this.SendQuery(new NeedShowPropertiesQuery());
             AttrRow attrRow;
             for (int i = 0; i < mNeedShowProperties.Length; i++)
@@ -86,6 +74,7 @@ namespace BrotatoM
                 mAttrPanel.Add(attrRow);
             }
 
+            // 按钮hover
             mRootElement.Query<Button>().ForEach(btn =>
             {
                 var rawBackgroundColor = btn.style.backgroundColor;
@@ -104,13 +93,18 @@ namespace BrotatoM
                 });
             });
 
+            mRootElement.Q<Button>("refresh-btn").RegisterCallback<ClickEvent>((type) =>
+            {
+                ShowRandomUpgradeItems();
+            });
+
             // UI Toolkit在第一帧还没有计算出各个元素的width, height，值都为NaN
             // 需要等待一帧后才能获取到实际值
-            StartCoroutine(MainScreenUIInitialization());
+            StartCoroutine(UIBarsInitialization());
             #endregion
 
             // 倒计时
-            mTimeSystem.AddCountDownTask(5);
+            mTimeSystem.AddCountDownTask(10);
 
             #region 注册值变更事件
             mPlayerSystem.HP.Register(value =>
@@ -140,30 +134,84 @@ namespace BrotatoM
                 mLevelUpContainer.Add(icon);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
-            // 倒计时
+            // 倒计时读秒
             this.RegisterEvent<CountDownIntervalEvent>(e =>
             {
                 mTimeLabel.text = e.Seconds.ToString();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
-            // 一波结束
+            // 倒计时结束
             this.RegisterEvent<CountDownOverEvent>(e =>
             {
+                // 增加收获
+                mPlayerSystem.Harvest.Value += mPlayerSystem.Harvesting.Value;
+                //TODO 收集可收集物
                 mPromptLabel.text = "通过!";
-                mPromptLabel.style.display = DisplayStyle.Flex;
-                this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
+                Show(mPromptLabel);
+                if (mPlayerSystem.UpgradePoint > 0)
                 {
-                    mPromptLabel.text = "升级!";
-                    this.SendCommand<WaveOverCommand>();
-                });
+                    this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
+                    {
+                        mPromptLabel.text = "升级!";
+                        // 显示升级界面(根据UpgradePoint)
+                        Log.Debug("显示升级界面", 16);
+                        Show(mBodyContainer);
+                    });
+                }
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            // 刷新升级属性
+            this.RegisterEvent<RefreshUpgradeItemsEvent>(e =>
+            {
+                ShowRandomUpgradeItems();
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            // 进入商店界面
+
             #endregion
+        }
+
+        private void ShowRandomUpgradeItems()
+        {
+            mUpgradeContainer = mRootElement.Q("attrs-select-container");
+            mUpgradeContainer.Clear();
+            mUpgradeContainer.style.flexDirection = FlexDirection.Row;
+
+            var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
+            UpgradeContainer upgradeContainer;
+            for (int i = 0; i < 4; i++)
+            {
+                Log.Debug("Upgrade for: " + i);
+                // 会因为闭包引发问题，注册的所有函数的i都是4
+                // upgradeContainer = new UpgradeContainer(upgradeItems[i], () =>
+                // {
+                //     Log.Debug("Upgrade: " + i);
+                //     var item = upgradeItems[i];
+                //     Log.Debug($"选择了 {item.Name}: +{item.Value}{item.Ability}");
+                //     // 加能力
+                //     mPlayerSystem.AddFloatValueByPropertyName(item.Ability, item.Value);
+                //     mPlayerSystem.UpgradePoint--;
+                //     if (mPlayerSystem.UpgradePoint > 0)
+                //     {
+                //         GetRandomUpgradeItems();
+                //     }
+                // });
+                upgradeContainer = new UpgradeContainer(upgradeItems[i]);
+                upgradeContainer.style.flexBasis = Length.Percent(25);
+                upgradeContainer.style.marginLeft = Length.Percent(0.5f);
+                mUpgradeContainer.Add(upgradeContainer);
+            }
         }
 
         private void OnEnable()
         {
             mPlayerControl.Enable();
             mPlayerControl.Player.Return.performed += OnReturn;
+        }
+
+        private void OnDisable()
+        {
+            mPlayerControl.Player.Return.performed -= OnReturn;
         }
 
         private void OnReturn(InputAction.CallbackContext obj)
@@ -189,7 +237,7 @@ namespace BrotatoM
             }
         }
 
-        private IEnumerator MainScreenUIInitialization()
+        private IEnumerator UIBarsInitialization()
         {
             yield return null; // 等待一帧
             UpdateBar("health-bar", mPlayerSystem.HP.Value / mPlayerSystem.MaxHp.Value);
@@ -206,6 +254,16 @@ namespace BrotatoM
             var bar = mRootElement.Q(barName);
             float barLength = bar.parent.worldBound.width - 10;
             bar.style.width = progress * barLength;
+        }
+
+        private void Show(VisualElement el)
+        {
+            el.style.display = DisplayStyle.Flex;
+        }
+
+        private void Hide(VisualElement el)
+        {
+            el.style.display = DisplayStyle.None;
         }
     }
 }

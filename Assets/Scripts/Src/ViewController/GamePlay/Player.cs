@@ -1,20 +1,32 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using QFramework;
 
 namespace BrotatoM
 {
-    public class Player : MonoBehaviour
+    public class Player : BrotatoGameController
     {
         public float moveSpeed;
         private PlayerControl mPlayerControl;
         private SpriteRenderer mSpriteRenderer;
         private bool mFlipped;
+        private IPlayerSystem mPlayerSystem;
+        public Vector3[] weaponLocations;
 
         private void Awake()
         {
+            mPlayerSystem = this.GetSystem<IPlayerSystem>();
             mPlayerControl = new PlayerControl();
+
+            // 人物贴图
             mSpriteRenderer = GetComponent<SpriteRenderer>();
+            mSpriteRenderer.sprite = Resources.Load<Sprite>(this.SendQuery(new CharacterSpritePathQuery(mPlayerSystem.CharacterId)));
+
+            // 生成初始武器
+            GenerateWeapons();
+
+            //TODO 监听武器变更事件
         }
 
         private void Update()
@@ -38,6 +50,21 @@ namespace BrotatoM
         private void OnDisable()
         {
             mPlayerControl.Disable();
+        }
+
+        private void GenerateWeapons()
+        {
+            GameObject weaponPrefab = Resources.Load<GameObject>("Prefabs/Weapon");
+            for (int i = 0; i < mPlayerSystem.CurrWeapons.Count; i++)
+            {
+                WeaponInfo weaponInfo = mPlayerSystem.CurrWeapons[i];
+                var weapon = Instantiate(weaponPrefab, transform.position, Quaternion.identity, transform);
+                weapon.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+                weapon.transform.localPosition = weaponLocations[i];
+                weapon.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(weaponInfo.Path);
+                Log.Debug($"{weaponInfo.Name}: {weaponInfo.Range} Range");
+                weapon.GetComponent<Weapon>().range = weaponInfo.Range;
+            }
         }
 
         private void ChangeDirection(Vector2 moveDir)

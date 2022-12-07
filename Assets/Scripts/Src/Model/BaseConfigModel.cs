@@ -34,8 +34,9 @@ namespace BrotatoM
 
         public T GetConfigItemById(int i)
         {
+            Log.Debug($"{this} GetConfigItemById {i}");
             if (i < 0 || i >= mItems.Length)
-                throw new System.IndexOutOfRangeException("Character Id is out of range!");
+                Log.Error("Character Id is out of range!");
 
             return mItems[i];
         }

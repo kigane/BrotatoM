@@ -139,12 +139,12 @@ def preprocess_jsons(part):
 
 if __name__ == "__main__":
     parts = [
-        "Characters",
-        "Items",
+        # "Characters",
+        # "Items",
         "Weapons",
-        "Enemies",
-        "Dangers",
-        "Stats",
+        # "Enemies",
+        # "Dangers",
+        # "Stats",
     ]
     for part in parts:
         preprocess_jsons(part)

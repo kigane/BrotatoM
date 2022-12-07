@@ -1,10 +1,11 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UIElements;
+using QFramework;
 
 namespace BrotatoM
 {
-    public class UpgradeContainer : VisualElement
+    public class UpgradeContainer : VisualElement, IController
     {
         // 模板外套的根元素
         private readonly TemplateContainer mTemplateContainer;
@@ -29,8 +30,23 @@ namespace BrotatoM
             mTemplateContainer.Q<Label>("attr-description").text = item.Value + item.Ability;
             mTemplateContainer.Q<Button>("select-btn").clickable.clicked += () =>
             {
-                Log.Debug($"选择了 {item.Name}: +{item.Value}{item.Ability}");
+                var playerSystem = this.GetSystem<IPlayerSystem>();
+                playerSystem.AddFloatValueByPropertyName(item.Ability, item.Value);
+                playerSystem.UpgradePoint--;
+                if (playerSystem.UpgradePoint > 0)
+                {
+                    this.SendCommand<RefreshUpgradeItemsCommand>();
+                }
+                else
+                {
+                    this.SendCommand<WaveOverCommand>();
+                }
             };
+        }
+
+        public IArchitecture GetArchitecture()
+        {
+            return BrotatoGame.Interface;
         }
     }
 }

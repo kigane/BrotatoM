@@ -18,18 +18,20 @@ namespace BrotatoM
             return msg;
         }
 
-        private static void LogWithColorAndSize(string message, string color, int size)
+        private static void LogWithColorAndSize(object message, string color, int size)
         {
+            if (message is null)
+                Error("输入对象为空!");
             if (size == -1)
-                UnityEngine.Debug.Log($"<color={color}>" + message + "</color>");
+                UnityEngine.Debug.Log($"<color={color}>" + message.ToString() + "</color>");
             else
-                UnityEngine.Debug.Log($"<size={size}><color={color}>" + message + "</color></size>");
+                UnityEngine.Debug.Log($"<size={size}><color={color}>" + message.ToString() + "</color></size>");
         }
 
         [Conditional("Debug")]
         public static void Debug(object message, int size = -1)
         {
-            LogWithColorAndSize(message.ToString(), "cyan", size);
+            LogWithColorAndSize(message, "cyan", size);
         }
 
         [Conditional("Debug")]
@@ -41,7 +43,7 @@ namespace BrotatoM
         [Conditional("Debug"), Conditional("Info")]
         public static void Info(object message, int size = -1)
         {
-            LogWithColorAndSize(message.ToString(), "green", size);
+            LogWithColorAndSize(message, "green", size);
         }
 
         [Conditional("Debug"), Conditional("Info")]
@@ -53,7 +55,7 @@ namespace BrotatoM
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning")]
         public static void Warning(object message, int size = -1)
         {
-            LogWithColorAndSize(message.ToString(), "yellow", size);
+            LogWithColorAndSize(message, "yellow", size);
         }
 
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning")]
@@ -65,7 +67,7 @@ namespace BrotatoM
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning"), Conditional("Error")]
         public static void Error(object message, int size = -1)
         {
-            LogWithColorAndSize(message.ToString(), "red", size);
+            LogWithColorAndSize(message, "red", size);
         }
 
         [Conditional("Debug"), Conditional("Info"), Conditional("Warning"), Conditional("Error")]

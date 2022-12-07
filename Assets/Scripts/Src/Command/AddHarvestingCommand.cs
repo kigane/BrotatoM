@@ -16,7 +16,7 @@ namespace BrotatoM
                 var temp = playerSystem.CurrMaxExp.Value;
                 playerSystem.CurrMaxExp.Value *= 1.2f;
                 playerSystem.Exp.Value -= temp;
-                playerSystem.UpgradePoint.Value++;
+                playerSystem.UpgradePoint++;
                 this.SendEvent<UpgradeEvent>();
             }
         }

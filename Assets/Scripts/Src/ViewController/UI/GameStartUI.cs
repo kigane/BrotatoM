@@ -27,7 +27,6 @@ namespace BrotatoM
                 {
                     ShowUIPanel(mCurrPanelIndex + 1);
                 }
-
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
         }
 
@@ -68,6 +67,11 @@ namespace BrotatoM
         {
             mPlayerControl.Enable();
             mPlayerControl.Player.Return.performed += OnReturn;
+        }
+
+        private void OnDisable()
+        {
+            mPlayerControl.Player.Return.performed -= OnReturn;
         }
 
         private void OnReturn(InputAction.CallbackContext obj)
