@@ -6,11 +6,10 @@ using UnityEngine.InputSystem;
 
 namespace BrotatoM
 {
-    public class MainScreenUI : BrotatoGameController
+    public class MainScreenUI : BaseUI
     {
         public UIDocument stopScreenUI;
         public UIDocument shopScreenUI;
-        private VisualElement mRootElement;
         private VisualElement mBodyContainer;
         private VisualElement mLevelUpContainer;
         private VisualElement mUpgradeContainer;
@@ -32,12 +31,13 @@ namespace BrotatoM
             mPlayerSystem = this.GetSystem<IPlayerSystem>();
         }
 
-        private void Start()
+        protected override void OnUIEnable()
         {
+            mPlayerControl.Enable();
+            mPlayerControl.Player.Return.performed += OnReturn;
+
             #region UI处理
             // 取得UI元素的引用
-            mRootElement = GetComponent<UIDocument>().rootVisualElement;
-
             mPromptLabel = mRootElement.Q<Label>("prompt");
             Hide(mPromptLabel);
 
@@ -53,8 +53,8 @@ namespace BrotatoM
 
             // 倒计时
             mTimeLabel = mRootElement.Q<Label>("time");
-            mTimeLabel.text = Params.FIRST_WAVE_SECONDS.ToString();
-            mTimeSystem.AddCountDownTask(Params.FIRST_WAVE_SECONDS);
+            mTimeLabel.text = Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value].ToString();
+            mTimeSystem.AddCountDownTask(Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value]);
 
             // 升级图标
             mLevelUpContainer = mRootElement.Q("levelup");
@@ -76,24 +76,7 @@ namespace BrotatoM
                 mAttrPanel.Add(attrRow);
             }
 
-            // 按钮hover
-            mRootElement.Query<Button>().ForEach(btn =>
-            {
-                var rawBackgroundColor = btn.style.backgroundColor;
-                var rawColor = btn.style.color;
-                // :hover 的替代方案。 鼠标移动上去变成白底黑字，离开则恢复为黑底白字。
-                btn.RegisterCallback<MouseOverEvent>((type) =>
-                {
-                    btn.style.backgroundColor = new Color(1f, 1f, 1f, 0.8f);
-                    btn.style.color = new Color(0, 0, 0, 0.8f);
-                });
-
-                btn.RegisterCallback<MouseLeaveEvent>((type) =>
-                {
-                    btn.style.backgroundColor = rawBackgroundColor;
-                    btn.style.color = rawColor;
-                });
-            });
+            RegisterBtnHoverBehaviour();
 
             mRootElement.Q<Button>("refresh-btn").RegisterCallback<ClickEvent>((type) =>
             {
@@ -119,6 +102,11 @@ namespace BrotatoM
             mPlayerSystem.Harvest.Register(value =>
             {
                 mRootElement.Q<Label>("stuff-amount").text = value.ToString();
+            });
+
+            mPlayerSystem.CurrWave.Register(value =>
+            {
+                mRootElement.Q<Label>("wave").text = $"第{value}波";
             });
             #endregion
 
@@ -147,20 +135,21 @@ namespace BrotatoM
                 //TODO 收集可收集物
                 mPromptLabel.text = "通过!";
                 Show(mPromptLabel);
-                if (mPlayerSystem.UpgradePoint > 0)
+
+                this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
                 {
-                    this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
-                    {
+                    if (mPlayerSystem.UpgradePoint > 0)
+                    {// 升级
                         mPromptLabel.text = "升级!";
                         // 显示升级界面(根据UpgradePoint)
-                        Log.Debug("显示升级界面", 16);
                         Show(mBodyContainer);
-                    });
-                }
-                else
-                {
-                    shopScreenUI.gameObject.SetActive(true);
-                }
+                    }//TODO 开箱子，获得道具
+                    else
+                    {// 直接进商店
+                        shopScreenUI.gameObject.SetActive(true);
+                    }
+                });
+                // TODO 在延迟的一秒内,让敌人消失，并收集可收集物
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             // 刷新升级属性
@@ -174,13 +163,22 @@ namespace BrotatoM
             {
                 shopScreenUI.gameObject.SetActive(true);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
-            #endregion
-        }
 
-        private void OnEnable()
-        {
-            mPlayerControl.Enable();
-            mPlayerControl.Player.Return.performed += OnReturn;
+            // 出发按钮
+            this.RegisterEvent<NextWaveEvent>(e =>
+            {
+                shopScreenUI.gameObject.SetActive(false);
+                Hide(mBodyContainer);
+                Hide(mPromptLabel);
+                // 开始新一轮倒计时
+                mTimeSystem.AddCountDownTask(Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value]);
+                mTimeLabel.text = Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value].ToString();
+                // 升级图标清空
+                mLevelUpContainer.Clear();
+                //TODO 箱子图标清空
+                //TODO 每隔几秒生成一波敌人
+            });
+            #endregion
         }
 
         private void OnDisable()
@@ -221,7 +219,6 @@ namespace BrotatoM
             UpgradeContainer upgradeContainer;
             for (int i = 0; i < 4; i++)
             {
-                Log.Debug("Upgrade for: " + i);
                 // 会因为闭包引发问题，注册的所有函数的i都是4
                 // upgradeContainer = new UpgradeContainer(upgradeItems[i], () =>
                 // {

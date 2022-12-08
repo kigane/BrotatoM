@@ -6,9 +6,6 @@ namespace BrotatoM
     {
         protected override void OnExecute()
         {
-            Log.Debug("On WaveOverCommand");
-            var playerSystem = this.GetSystem<IPlayerSystem>();
-            playerSystem.CurrWave.Value++;
             this.SendEvent<WaveOverEvent>();
         }
     }

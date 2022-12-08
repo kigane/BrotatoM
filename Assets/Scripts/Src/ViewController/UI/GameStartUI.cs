@@ -18,16 +18,6 @@ namespace BrotatoM
         private void Awake()
         {
             mPlayerControl = new PlayerControl();
-            this.RegisterEvent<NextPanelEvent>(e =>
-            {
-                // 0.开始界面 1.选人界面 2.选武器界面 3.难度界面
-                if (mCurrPanelIndex + 1 == 4)
-                    SceneManager.LoadScene("MainScene");
-                else
-                {
-                    ShowUIPanel(mCurrPanelIndex + 1);
-                }
-            }).UnRegisterWhenGameObjectDestroyed(gameObject);
         }
 
         private void Start()
@@ -46,14 +36,14 @@ namespace BrotatoM
                 {
                     // Log.Debug(type); // type = MouseOverEvent 即注册的事件
                     Log.Debug(optionsElement.IndexOf(btn));
-                    btn.style.backgroundColor = new Color(1f, 1f, 1f, 0.8f);
-                    btn.style.color = new Color(0, 0, 0, 0.8f);
+                    btn.style.backgroundColor = UIColor.WHITE;
+                    btn.style.color = UIColor.BLACK;
                 });
 
                 btn.RegisterCallback<MouseLeaveEvent>((type) =>
                 {
-                    btn.style.backgroundColor = new Color(0, 0, 0, 0.8f);
-                    btn.style.color = new Color(1f, 1f, 1f, 0.8f);
+                    btn.style.backgroundColor = UIColor.BLACK;
+                    btn.style.color = UIColor.WHITE;
                 });
 
                 btn.RegisterCallback<ClickEvent>((type) =>
@@ -61,6 +51,17 @@ namespace BrotatoM
                     mBtnActions[optionsElement.IndexOf(btn)]();
                 });
             });
+
+            this.RegisterEvent<NextPanelEvent>(e =>
+            {
+                // 0.开始界面 1.选人界面 2.选武器界面 3.难度界面
+                if (mCurrPanelIndex + 1 == 4)
+                    SceneManager.LoadScene("MainScene");
+                else
+                {
+                    ShowUIPanel(mCurrPanelIndex + 1);
+                }
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
         }
 
         private void OnEnable()

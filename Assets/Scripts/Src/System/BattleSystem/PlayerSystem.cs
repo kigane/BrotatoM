@@ -63,6 +63,8 @@ namespace BrotatoM
         public void AddWeapon(WeaponConfigItem weaponConfigItem, int rarity = 0);
         public bool CanBuyWeapon(string name, int rarity = 0);
         public void AddFloatValueByPropertyName(string name, float value);
+        public BindableProperty<T> GetBindablePropertyByName<T>(string name);
+        public bool IsPercentValue(string name);
     }
 
     public class PlayerSystem : AbstractSystem, IPlayerSystem
@@ -134,7 +136,7 @@ namespace BrotatoM
             RangedDamage.Value += mItemConfigs[itemId].RangedDamage;
             ElementalDamage.Value += mItemConfigs[itemId].ElementalDamage;
             AttackSpeed.Value += mItemConfigs[itemId].AttackSpeed;
-            CritChance.Value += mItemConfigs[itemId].MaxHp;
+            CritChance.Value += mItemConfigs[itemId].CritChance;
             Engineering.Value += mItemConfigs[itemId].Engineering;
             Range.Value += mItemConfigs[itemId].Range;
             Armor.Value += mItemConfigs[itemId].Armor;
@@ -184,13 +186,24 @@ namespace BrotatoM
 
         public bool HasItem(int itemId)
         {
-            return mItems.Contains(itemId);
+            return CurrItems.Contains(itemId);
         }
 
         public void AddFloatValueByPropertyName(string name, float value)
         {
             Type t = Type.GetType("BrotatoM.PlayerSystem");
             ((BindableProperty<float>)t.GetProperty(name).GetValue(this)).Value += value;
+        }
+
+        public BindableProperty<T> GetBindablePropertyByName<T>(string name)
+        {
+            Type t = Type.GetType("BrotatoM.PlayerSystem");
+            return (BindableProperty<T>)t.GetProperty(name).GetValue(this);
+        }
+
+        public bool IsPercentValue(string name)
+        {
+            return Params.PERCENT_VALUES.Contains(name);
         }
     }
 }

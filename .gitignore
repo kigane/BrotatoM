@@ -23,6 +23,7 @@
 
 # Visual Studio cache directory
 .vs/
+.VSCodeCounter/
 
 # Gradle cache directory
 .gradle/

@@ -2,11 +2,11 @@
     <ui:Template name="attr-container" src="project://database/Assets/Resources/UI/Template/attr-container.uxml?fileID=9197481963319205126&amp;guid=171013c2d53bc11439cd2f852d9a1d76&amp;type=3#attr-container" />
     <Style src="project://database/Assets/Resources/UI/Uss/GameStopStyle.uss?fileID=7433441132597879392&amp;guid=cdcdeae434662264b9ba019465429a02&amp;type=3#GameStopStyle" />
     <ui:VisualElement name="root-container" style="flex-direction: row; flex-grow: 1; padding-left: 5%; padding-right: 5%; padding-top: 8%; padding-bottom: 8%; background-color: rgba(0, 0, 0, 0.8);">
-        <ui:VisualElement name="inventory-container" style="flex-basis: 33%; justify-content: center; padding-right: 2%;">
-            <ui:Button text="继续" display-tooltip-when-elided="true" name="continue" />
-            <ui:Button text="重新开始" display-tooltip-when-elided="true" name="restart" />
-            <ui:Button text="设置" display-tooltip-when-elided="true" name="settings" />
-            <ui:Button text="返回主菜单" display-tooltip-when-elided="true" name="return" style="-unity-font-style: normal; -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); translate: 0 0; scale: 1 1; rotate: 0;" />
+        <ui:VisualElement name="btns-container" style="flex-basis: 33%; justify-content: center; padding-right: 2%;">
+            <ui:Button text="继续" display-tooltip-when-elided="true" name="continue-btn" />
+            <ui:Button text="重新开始" display-tooltip-when-elided="true" name="restart-btn" />
+            <ui:Button text="设置" display-tooltip-when-elided="true" name="settings-btn" />
+            <ui:Button text="返回主菜单" display-tooltip-when-elided="true" name="return-btn" style="-unity-font-style: normal; -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); translate: 0 0; scale: 1 1; rotate: 0;" />
         </ui:VisualElement>
         <ui:VisualElement name="attrs-container" style="flex-basis: 33%; padding-left: 5%;">
             <ui:Label text="危险1" display-tooltip-when-elided="true" name="danger-level" />

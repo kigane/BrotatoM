@@ -1,5 +1,5 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace BrotatoM
 {
@@ -15,6 +15,20 @@ namespace BrotatoM
     public class Params
     {
         public static int ITEM_AMOUNT = 152;
-        public static int FIRST_WAVE_SECONDS = 1;
+        public static List<string> PERCENT_VALUES = new() {
+            "Damage",
+            "LifeSteal",
+            "AttackSpeed",
+            "CritChance",
+            "Dodge",
+            "Speed"
+        };
+
+        public static int[] WaveLastSeconds = new int[] {
+            20, 20, 20, 30, 30,
+            30, 30, 30, 30, 30,
+            40, 40, 40, 50, 50,
+            50, 50, 60, 60, 60
+        };
     }
 }
