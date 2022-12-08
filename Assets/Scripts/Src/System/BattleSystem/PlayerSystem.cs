@@ -56,6 +56,7 @@ namespace BrotatoM
         public int DangerLevel { get; set; }
         public List<WeaponInfo> CurrWeapons { get; }
         public List<int> CurrItems { get; }
+        public List<int> CurrLockIndices { get; }
 
         public void AddItem(int itemId);
         public bool HasItem(int itemId);
@@ -100,10 +101,12 @@ namespace BrotatoM
 
         private readonly List<WeaponInfo> mWeaponInfos = new();
         private readonly List<int> mItems = new();
+        private readonly List<int> mLockIndices = new();
         public BindableProperty<int> CurrWave { get; set; } = new() { Value = 1 };
         public int DangerLevel { get; set; }
         public List<WeaponInfo> CurrWeapons => mWeaponInfos;
         public List<int> CurrItems => mItems;
+        public List<int> CurrLockIndices => mLockIndices;
 
         private ItemConfigItem[] mItemConfigs;
 
@@ -142,6 +145,8 @@ namespace BrotatoM
 
             // 显示到道具栏
             mItems.Add(itemId);
+
+            this.SendEvent<AddItemEvent>();
         }
 
         public void AddWeapon(WeaponConfigItem weaponConfigItem, int rarity = 0)

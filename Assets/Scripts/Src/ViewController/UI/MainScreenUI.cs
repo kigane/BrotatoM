@@ -9,6 +9,7 @@ namespace BrotatoM
     public class MainScreenUI : BrotatoGameController
     {
         public UIDocument stopScreenUI;
+        public UIDocument shopScreenUI;
         private VisualElement mRootElement;
         private VisualElement mBodyContainer;
         private VisualElement mLevelUpContainer;
@@ -52,7 +53,8 @@ namespace BrotatoM
 
             // 倒计时
             mTimeLabel = mRootElement.Q<Label>("time");
-            mTimeLabel.text = "10";
+            mTimeLabel.text = Params.FIRST_WAVE_SECONDS.ToString();
+            mTimeSystem.AddCountDownTask(Params.FIRST_WAVE_SECONDS);
 
             // 升级图标
             mLevelUpContainer = mRootElement.Q("levelup");
@@ -102,9 +104,6 @@ namespace BrotatoM
             // 需要等待一帧后才能获取到实际值
             StartCoroutine(UIBarsInitialization());
             #endregion
-
-            // 倒计时
-            mTimeSystem.AddCountDownTask(10);
 
             #region 注册值变更事件
             mPlayerSystem.HP.Register(value =>
@@ -158,6 +157,10 @@ namespace BrotatoM
                         Show(mBodyContainer);
                     });
                 }
+                else
+                {
+                    shopScreenUI.gameObject.SetActive(true);
+                }
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             // 刷新升级属性
@@ -167,40 +170,11 @@ namespace BrotatoM
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             // 进入商店界面
-
-            #endregion
-        }
-
-        private void ShowRandomUpgradeItems()
-        {
-            mUpgradeContainer = mRootElement.Q("attrs-select-container");
-            mUpgradeContainer.Clear();
-            mUpgradeContainer.style.flexDirection = FlexDirection.Row;
-
-            var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
-            UpgradeContainer upgradeContainer;
-            for (int i = 0; i < 4; i++)
+            this.RegisterEvent<WaveOverEvent>(e =>
             {
-                Log.Debug("Upgrade for: " + i);
-                // 会因为闭包引发问题，注册的所有函数的i都是4
-                // upgradeContainer = new UpgradeContainer(upgradeItems[i], () =>
-                // {
-                //     Log.Debug("Upgrade: " + i);
-                //     var item = upgradeItems[i];
-                //     Log.Debug($"选择了 {item.Name}: +{item.Value}{item.Ability}");
-                //     // 加能力
-                //     mPlayerSystem.AddFloatValueByPropertyName(item.Ability, item.Value);
-                //     mPlayerSystem.UpgradePoint--;
-                //     if (mPlayerSystem.UpgradePoint > 0)
-                //     {
-                //         GetRandomUpgradeItems();
-                //     }
-                // });
-                upgradeContainer = new UpgradeContainer(upgradeItems[i]);
-                upgradeContainer.style.flexBasis = Length.Percent(25);
-                upgradeContainer.style.marginLeft = Length.Percent(0.5f);
-                mUpgradeContainer.Add(upgradeContainer);
-            }
+                shopScreenUI.gameObject.SetActive(true);
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+            #endregion
         }
 
         private void OnEnable()
@@ -234,6 +208,38 @@ namespace BrotatoM
                 mTimeSystem.Resume();
                 mGameState = GameState.PLAY;
                 Time.timeScale = 1;
+            }
+        }
+
+        private void ShowRandomUpgradeItems()
+        {
+            mUpgradeContainer = mRootElement.Q("attrs-select-container");
+            mUpgradeContainer.Clear();
+            mUpgradeContainer.style.flexDirection = FlexDirection.Row;
+
+            var upgradeItems = this.GetModel<UpgradeConfigModel>().GetAllConfigItems().GetRandomElements(4);
+            UpgradeContainer upgradeContainer;
+            for (int i = 0; i < 4; i++)
+            {
+                Log.Debug("Upgrade for: " + i);
+                // 会因为闭包引发问题，注册的所有函数的i都是4
+                // upgradeContainer = new UpgradeContainer(upgradeItems[i], () =>
+                // {
+                //     Log.Debug("Upgrade: " + i);
+                //     var item = upgradeItems[i];
+                //     Log.Debug($"选择了 {item.Name}: +{item.Value}{item.Ability}");
+                //     // 加能力
+                //     mPlayerSystem.AddFloatValueByPropertyName(item.Ability, item.Value);
+                //     mPlayerSystem.UpgradePoint--;
+                //     if (mPlayerSystem.UpgradePoint > 0)
+                //     {
+                //         GetRandomUpgradeItems();
+                //     }
+                // });
+                upgradeContainer = new UpgradeContainer(upgradeItems[i]);
+                upgradeContainer.style.flexBasis = Length.Percent(25);
+                upgradeContainer.style.marginLeft = Length.Percent(0.5f);
+                mUpgradeContainer.Add(upgradeContainer);
             }
         }
 

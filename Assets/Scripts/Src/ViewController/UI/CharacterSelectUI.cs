@@ -62,7 +62,7 @@ namespace BrotatoM
         {
             Log.Debug("选择了角色: " + mCharacterConfigItems[i].Name);
             mPlayerSystem.CurrItems.Clear();
-            mPlayerSystem.AddItem(152 + i);
+            mPlayerSystem.AddItem(Params.ITEM_AMOUNT + i);
             mPlayerSystem.CharacterId = i;
             // 切换到武器面板
             this.SendCommand<NextPanelCommand>();

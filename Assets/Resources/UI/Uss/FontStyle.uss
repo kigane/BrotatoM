@@ -1,0 +1,20 @@
+Button {
+    color: rgba(255, 255, 255, 0.8);
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+}
+
+Label {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    color: rgba(255, 255, 255, 0.8);
+    -unity-text-align: middle-left;
+}

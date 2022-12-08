@@ -3960,7 +3960,7 @@
         "Limit": 1,
         "UnlockedBy": "Unlocked by default",
         "Path": "ArtAssets/Characters/60px-Well_Rounded",
-        "MaxHp": 5,
+        "MaxHp": 0,
         "HpRegeneration": 0,
         "LifeSteal": 0,
         "Damage": 0,
@@ -3973,9 +3973,9 @@
         "Range": 0,
         "Armor": 0,
         "Dodge": 0,
-        "Speed": 0.05,
+        "Speed": 0,
         "Luck": 0,
-        "Harvesting": 8
+        "Harvesting": 0
     },
     {
         "Id": 153,

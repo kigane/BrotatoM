@@ -4,6 +4,7 @@ namespace BrotatoM
 {
     public class ItemConfigItem : IConfigItem
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public int Rarity { get; set; }
         public string Effects { get; set; }
@@ -39,13 +40,24 @@ namespace BrotatoM
         {
             base.OnInit();
             VerifyLogs("Exoskeleton");
-            VerifyLogs(mItems[152].Name);
+            VerifyLogs(mItems[Params.ITEM_AMOUNT].Name);
+        }
+
+        public ItemConfigItem[] GetAllBuyableItems()
+        {
+            ItemConfigItem[] buyableItems = new ItemConfigItem[Params.ITEM_AMOUNT];
+            for (int i = 0; i < Params.ITEM_AMOUNT; i++)
+            {
+                buyableItems[i] = mItems[i];
+            }
+            return buyableItems;
         }
 
         private void VerifyLogs(string name)
         {
             string msg = "Items-" + name + ": (";
             ItemConfigItem item = mDict[name];
+            msg += item.Id + ", ";
             msg += item.Name + ", ";
             msg += item.Rarity + ", ";
             msg += item.Effects + ", ";

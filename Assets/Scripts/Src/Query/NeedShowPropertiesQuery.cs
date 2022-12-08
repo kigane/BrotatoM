@@ -13,8 +13,8 @@ namespace BrotatoM
 
     public class NeedShowPropertiesQuery : AbstractQuery<AttrInfo[]>
     {
-        private AttrInfo[] properties = new AttrInfo[16];
-        private string[] attrs = new string[]{
+        private readonly AttrInfo[] properties = new AttrInfo[16];
+        private readonly string[] attrs = new string[]{
             "MaxHp",
             "HpRegeneration",
             "LifeSteal",

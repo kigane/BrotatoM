@@ -1,0 +1,31 @@
+#title-container Label {
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+Button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 32px;
+    -unity-text-align: middle-center;
+    color: rgba(255, 255, 255, 0.8);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    -unity-font: resource('Fonts/SmileySans-Oblique');
+    -unity-font-definition: resource('Fonts/SmileySans-Oblique SDF');
+}

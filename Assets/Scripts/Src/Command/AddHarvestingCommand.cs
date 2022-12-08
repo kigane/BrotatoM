@@ -8,7 +8,7 @@ namespace BrotatoM
         {
             var playerSystem = this.GetSystem<IPlayerSystem>();
             playerSystem.Harvest.Value++;
-            playerSystem.Exp.Value += 10;
+            playerSystem.Exp.Value += 15;
 
             // 升级
             if (playerSystem.Exp.Value >= playerSystem.CurrMaxExp.Value)

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Uss/FontStyle.uss?fileID=7433441132597879392&amp;guid=0fde499a05541be4a81834a78c32a3ef&amp;type=3#FontStyle" />
+    <ui:VisualElement name="item-panel" style="flex-basis: auto; margin-left: 0.5%; margin-right: 0.5%; margin-top: 0.5%; margin-bottom: 0.5%; flex-grow: 1;">
+        <ui:VisualElement name="item-container" style="flex-basis: 90%; background-color: rgb(0, 0, 0); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom: 2%;">
+            <ui:VisualElement name="item-info" style="flex-basis: 88%; background-color: rgba(0, 0, 0, 0);">
+                <ui:VisualElement name="icon_and_title" style="flex-direction: row; flex-basis: 35%;">
+                    <ui:VisualElement name="item-icon" style="flex-basis: 34%; background-image: resource(&apos;ArtAssets/Items/60px-Alien_Tongue&apos;); -unity-background-scale-mode: scale-to-fit; background-color: rgb(77, 77, 77); border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 3%; margin-right: 3%; margin-top: 3%; margin-bottom: 3%;" />
+                    <ui:VisualElement name="item-text-container" style="flex-basis: 60%;">
+                        <ui:Label text="沸水" display-tooltip-when-elided="true" name="item-name" style="flex-basis: 25%; margin-top: 8%; font-size: 32px;" />
+                        <ui:Label text="道具" display-tooltip-when-elided="true" name="item-tag" style="flex-basis: 25%; font-size: 26px; color: rgb(164, 155, 78); margin-top: 1%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="+30拾取范围" display-tooltip-when-elided="true" name="item-description" style="flex-grow: 1; margin-left: 3%; margin-right: 3%; margin-top: 3%; margin-bottom: 3%; font-size: 24px; -unity-text-align: upper-left; white-space: normal;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="buy-btn-container" style="flex-direction: row; padding-left: 28%; padding-right: 30%; padding-top: 1%; padding-bottom: 1%; flex-basis: 12%;">
+                <ui:Button text="12" display-tooltip-when-elided="true" name="buy-btn" style="flex-basis: 100%; background-color: rgb(38, 38, 38); border-top-right-radius: 12px; border-bottom-right-radius: 12px; padding-right: 20%; margin-right: 0; margin-left: 0; padding-left: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; font-size: 36px; -unity-text-align: middle-center;" />
+                <ui:VisualElement name="harvest-icon" picking-mode="Ignore" style="flex-basis: 50%; background-image: resource(&apos;ArtAssets/Stats/60px-Harvesting&apos;); -unity-background-scale-mode: scale-and-crop; background-color: rgba(0, 0, 0, 0); border-top-right-radius: 0; border-bottom-right-radius: 0; padding-right: 0; margin-right: 12%; margin-left: -70px; border-top-left-radius: 0; border-bottom-left-radius: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="lock-btn-container" style="flex-basis: 10%; padding-left: 0; padding-right: 0; justify-content: center; margin-left: 40%; margin-right: 40%; padding-top: 0; padding-bottom: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; margin-top: 0;">
+            <ui:Button text="锁定" display-tooltip-when-elided="true" name="lock-btn" style="background-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 12px; border-bottom-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; font-size: 24px; margin-left: 0; margin-right: 0; margin-top: 8%; margin-bottom: 8px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

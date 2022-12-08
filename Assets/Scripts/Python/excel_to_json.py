@@ -19,6 +19,7 @@ def json_dict_to_list():
 
     json_lst = []
     for k, v in tables.items():
+        v["Id"] = int(k)
         json_lst.append(v)
 
     with open("./Items.json", "w") as f:
