@@ -3413,7 +3413,7 @@
         "BasePrice": 15,
         "Limit": 0,
         "UnlockedBy": "Unlocked by default",
-        "Path": "ArtAssets/Items/60px-Claw_Tree",
+        "Path": "ArtAssets/Items/60px-Tree",
         "MaxHp": 0,
         "HpRegeneration": 0,
         "LifeSteal": 0,
@@ -3960,7 +3960,7 @@
         "Limit": 1,
         "UnlockedBy": "Unlocked by default",
         "Path": "ArtAssets/Characters/60px-Well_Rounded",
-        "MaxHp": 0,
+        "MaxHp": 5,
         "HpRegeneration": 0,
         "LifeSteal": 0,
         "Damage": 0,
@@ -3973,9 +3973,9 @@
         "Range": 0,
         "Armor": 0,
         "Dodge": 0,
-        "Speed": 0,
+        "Speed": 0.05,
         "Luck": 0,
-        "Harvesting": 0
+        "Harvesting": 8
     },
     {
         "Id": 153,

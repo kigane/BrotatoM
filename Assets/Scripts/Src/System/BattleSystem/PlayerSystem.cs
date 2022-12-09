@@ -58,6 +58,7 @@ namespace BrotatoM
         public List<int> CurrItems { get; }
         public List<int> CurrLockIndices { get; }
 
+        public void ResetPlayerStat();
         public void AddItem(int itemId);
         public bool HasItem(int itemId);
         public void AddWeapon(WeaponConfigItem weaponConfigItem, int rarity = 0);
@@ -114,10 +115,34 @@ namespace BrotatoM
 
         protected override void OnInit()
         {
-            // 创建一个GO用于挂载TimeSystemUpdateBehaviour
             var updateBehaviourGO = new GameObject("GameManager");
             updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
             mItemConfigs = this.GetModel<ItemConfigModel>().GetAllConfigItems();
+            ResetPlayerStat();
+        }
+
+        public void ResetPlayerStat()
+        {
+            Harvest.Value = Params.Harvest;
+            CurrMaxExp.Value = Params.MaxExp;
+            MaxHp.Value = Params.MaxHp;
+            HpRegeneration.Value = Params.HpRegeneration;
+            LifeSteal.Value = Params.LifeSteal;
+            Damage.Value = Params.Damage;
+            MeleeDamage.Value = Params.MeleeDamage;
+            RangedDamage.Value = Params.RangedDamage;
+            ElementalDamage.Value = Params.ElementalDamage;
+            AttackSpeed.Value = Params.AttackSpeed;
+            CritChance.Value = Params.CritChance;
+            Range.Value = Params.Range;
+            Armor.Value = Params.Armor;
+            Dodge.Value = Params.Dodge;
+            Speed.Value = Params.Speed;
+            Luck.Value = Params.Luck;
+            Harvesting.Value = Params.Harvesting;
+            EnemiesSpawnRate.Value = Params.EnemiesSpawnRate;
+            TreeSpawnRate.Value = Params.TreeSpawnRate;
+            CurrWave.Value = 1;
         }
 
         /// <summary>

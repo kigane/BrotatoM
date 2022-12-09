@@ -19,9 +19,9 @@ namespace BrotatoM
         private Label mHarvestBagLabel;
         private Label mTimeLabel;
         private IPlayerSystem mPlayerSystem;
+        private GameManagerSystem mGMSystem;
         private PlayerControl mPlayerControl;
         private ITimeSystem mTimeSystem;
-        private GameState mGameState = GameState.PLAY;
         private AttrInfo[] mNeedShowProperties;
 
         private void Awake()
@@ -29,6 +29,7 @@ namespace BrotatoM
             mPlayerControl = new PlayerControl();
             mTimeSystem = this.GetSystem<ITimeSystem>();
             mPlayerSystem = this.GetSystem<IPlayerSystem>();
+            mGMSystem = this.GetSystem<GameManagerSystem>();
         }
 
         protected override void OnUIEnable()
@@ -116,7 +117,7 @@ namespace BrotatoM
             {
                 Log.Info("升级!");
                 // icon为UI Builder中的模板元素
-                var icon = new Icon("ArtAssets/Characters/60px-Mutant");
+                var icon = new Icon(Params.UpgradeIconPath);
                 icon.style.flexBasis = Length.Percent(25);
                 mLevelUpContainer.Add(icon);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -177,7 +178,7 @@ namespace BrotatoM
                 mLevelUpContainer.Clear();
                 //TODO 箱子图标清空
                 //TODO 每隔几秒生成一波敌人
-            });
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
             #endregion
         }
 
@@ -188,23 +189,21 @@ namespace BrotatoM
 
         private void OnReturn(InputAction.CallbackContext obj)
         {
-            if (mGameState == GameState.PLAY)
+            if (mGMSystem.State == GameState.PLAY)
             {
                 // 显示暂停界面
                 Log.Info("游戏暂停", 16);
                 stopScreenUI.gameObject.SetActive(true);
-                // mBodyContainer.style.display = DisplayStyle.Flex;
                 mTimeSystem.Stop();
-                mGameState = GameState.STOPPED;
+                mGMSystem.State = GameState.STOPPED;
                 Time.timeScale = 0;
             }
-            else if (mGameState == GameState.STOPPED)
+            else if (mGMSystem.State == GameState.STOPPED)
             {
                 Log.Info("游戏继续", 16);
                 stopScreenUI.gameObject.SetActive(false);
-                // mBodyContainer.style.display = DisplayStyle.None;
                 mTimeSystem.Resume();
-                mGameState = GameState.PLAY;
+                mGMSystem.State = GameState.PLAY;
                 Time.timeScale = 1;
             }
         }

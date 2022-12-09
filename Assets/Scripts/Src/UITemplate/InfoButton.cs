@@ -45,5 +45,45 @@ namespace BrotatoM
                 onClick(i);
             });
         }
+
+        public InfoButton(WeaponInfo weaponInfo) : this()
+        {
+            var btn = mTemplateContainer.Q("character-btn");
+            btn.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(weaponInfo.Path));
+
+            var rawColor = btn.style.backgroundColor;
+            // 鼠标移动上去背景色变白。
+            btn.RegisterCallback<MouseOverEvent>((type) =>
+            {
+                btn.style.backgroundColor = UIColor.WHITE;
+                //TODO 显示武器信息
+            });
+
+            btn.RegisterCallback<MouseLeaveEvent>((type) =>
+            {
+                btn.style.backgroundColor = rawColor;
+            });
+
+        }
+
+        public InfoButton(ItemConfigItem item) : this()
+        {
+            var btn = mTemplateContainer.Q("character-btn");
+            btn.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(item.Path));
+
+            var rawColor = btn.style.backgroundColor;
+            // 鼠标移动上去背景色变白。
+            btn.RegisterCallback<MouseOverEvent>((type) =>
+            {
+                btn.style.backgroundColor = UIColor.WHITE;
+                //TODO 显示道具信息, 数量
+            });
+
+            btn.RegisterCallback<MouseLeaveEvent>((type) =>
+            {
+                btn.style.backgroundColor = rawColor;
+            });
+
+        }
     }
 }

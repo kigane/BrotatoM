@@ -56,7 +56,10 @@ namespace BrotatoM
             {
                 // 0.开始界面 1.选人界面 2.选武器界面 3.难度界面
                 if (mCurrPanelIndex + 1 == 4)
+                {
+                    this.GetSystem<GameManagerSystem>().State = GameState.PLAY;
                     SceneManager.LoadScene("MainScene");
+                }
                 else
                 {
                     ShowUIPanel(mCurrPanelIndex + 1);

@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 9554
+  controlID: 10579
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 9511
+  controlID: 10658
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,7 +228,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/Src/ViewController/UI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -273,18 +274,18 @@ MonoBehaviour:
     m_ExpandedIDs: ffffffff00000000fe6a0000006b0000026b0000046b0000066b0000086b00000a6b00000c6b00000e6b0000106b0000126b0000166b0000186b0000666b00007c6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: WaveOverEvent
+      m_OriginalName: WaveOverEvent
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 3384
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -350,7 +351,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 9555
+  controlID: 10580
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -982,8 +983,8 @@ MonoBehaviour:
     y: 0
     width: 530.4
     height: 1010.80005
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}

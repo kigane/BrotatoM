@@ -34,7 +34,7 @@ namespace BrotatoM
         private void ShowSelectedCharacter()
         {
             // 显示已选人物
-            Log.Debug("已选人物:" + mPlayerSystem.CharacterId);
+            // Log.Debug("已选人物:" + mPlayerSystem.CharacterId);
             var charaItem = mCharacterConfigModel.GetConfigItemById(mPlayerSystem.CharacterId);
             mRootElement.Q("chara-icon").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(charaItem.Path));
             mRootElement.Q<Label>("chara-name").text = charaItem.Name;
@@ -45,7 +45,7 @@ namespace BrotatoM
         {
             // 显示已选人物
             WeaponInfo weaponInfo = mPlayerSystem.CurrWeapons[0];
-            Log.Debug("已选武器:" + weaponInfo.Name);
+            // Log.Debug("已选武器:" + weaponInfo.Name);
             mRootElement.Q("weapon-icon").style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(weaponInfo.Path));
             mRootElement.Q<Label>("weapon-name").text = weaponInfo.Name;
             mRootElement.Q<Label>("weapon-tag").text = weaponInfo.Class.ToString();

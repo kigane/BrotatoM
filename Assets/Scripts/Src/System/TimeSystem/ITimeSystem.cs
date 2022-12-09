@@ -10,6 +10,7 @@ namespace BrotatoM
         float CurrentSeconds { get; }
         void AddDelayTask(float delayTime, Action onDelayFinish);
         void AddCountDownTask(float totalTime, float interval = 1.0f);
+        void ClearAllTasks();
         void Stop();
         void Resume();
     }
@@ -82,6 +83,12 @@ namespace BrotatoM
             };
 
             mCountDownTasks.AddLast(countDownTask);
+        }
+
+        public void ClearAllTasks()
+        {
+            mCountDownTasks.Clear();
+            mDelayTasks.Clear();
         }
 
         public void Stop()

@@ -30,5 +30,28 @@ namespace BrotatoM
             40, 40, 40, 50, 50,
             50, 50, 60, 60, 60
         };
+
+        public static string UpgradeIconPath = "ArtAssets/Characters/60px-Mutant";
+
+        public static float Harvest = 30;
+        public static float MaxExp = 20;
+        public static float MaxHp = 15;
+        public static float HpRegeneration = 0;
+        public static float LifeSteal = 0;
+        public static float Damage = 0;
+        public static float MeleeDamage = 0;
+        public static float RangedDamage = 0;
+        public static float ElementalDamage = 0;
+        public static float AttackSpeed = 0;
+        public static float CritChance = 0;
+        public static float Engineering = 0;
+        public static float Range = 0;
+        public static float Armor = 0;
+        public static float Dodge = 0;
+        public static float Speed = 0;
+        public static float Luck = 0;
+        public static float Harvesting = 0;
+        public static float EnemiesSpawnRate = 0;
+        public static float TreeSpawnRate = 0;
     }
 }

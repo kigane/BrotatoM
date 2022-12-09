@@ -718,6 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195053285}
   - component: {fileID: 1195053284}
+  - component: {fileID: 1195053286}
   m_Layer: 5
   m_Name: StopScreenUI
   m_TagString: Untagged
@@ -756,6 +757,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1195053286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195053283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06498b2498fde448a15b048b7e98569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1250188967
 GameObject:
   m_ObjectHideFlags: 0

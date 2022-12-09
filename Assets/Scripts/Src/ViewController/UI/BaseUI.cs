@@ -16,6 +16,7 @@ namespace BrotatoM
 
         protected void OnEnable()
         {
+            Log.Debug(this + " OnEnable");
             mRootElement = GetComponent<UIDocument>().rootVisualElement;
             OnUIEnable();
         }
