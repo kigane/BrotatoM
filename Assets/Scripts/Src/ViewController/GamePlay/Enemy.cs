@@ -3,21 +3,49 @@ using QFramework;
 
 namespace BrotatoM
 {
-    public class Enemy : BrotatoGameController
+    public abstract class Enemy : BrotatoGameController
     {
         public float moveSpeed;
         protected Transform mPlayerTransform;
+        protected BoxCollider2D mBoxColl;
+        protected SpriteRenderer mSpriteRenderer;
         protected float mEnemyHP = 5;
         protected float mDamage = 1;
+        private bool canMove = false;
 
         protected void Start()
         {
+            mBoxColl = GetComponent<BoxCollider2D>();
+            mSpriteRenderer = GetComponent<SpriteRenderer>();
             mPlayerTransform = GameObject.FindWithTag("Player").transform;
+
+            OnStart();
+        }
+
+        protected abstract void OnStart();
+
+        protected void OnAppearClipEnd()
+        {
+            mBoxColl.enabled = true;
+            canMove = true;
+        }
+
+        protected void OnDisappearClipStart()
+        {
+            Log.Debug("Disappear start");
+            mBoxColl.enabled = false;
+            canMove = false;
+        }
+
+        protected void OnDisappearClipEnd()
+        {
+            Destroy(gameObject);
         }
 
         protected void Update()
         {
-            MoveTo(transform, mPlayerTransform, moveSpeed);
+            if (canMove)
+                MoveTo(transform, mPlayerTransform, moveSpeed);
         }
 
         protected void OnTriggerEnter2D(Collider2D other)
@@ -78,9 +106,16 @@ namespace BrotatoM
         {
             if (moveDir.x * transform.localScale.x < 0)
             {
-                var localScale = transform.localScale;
-                localScale.x *= -1;
-                transform.localScale = localScale;
+                // 这种方式引入动画控制器后失效了
+                // var localScale = transform.localScale;
+                // localScale.x *= -1;
+                // transform.localScale = localScale;
+
+                mSpriteRenderer.flipX = true;
+            }
+            else
+            {
+                mSpriteRenderer.flipX = false;
             }
         }
     }

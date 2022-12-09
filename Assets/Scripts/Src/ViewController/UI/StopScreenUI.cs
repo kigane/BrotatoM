@@ -101,7 +101,7 @@ namespace BrotatoM
             SceneManager.LoadScene("GameStartScene");
             mTimeSystem.ClearAllTasks();
             mTimeSystem.Resume();
-            mGMSystem.State = GameState.SET_UP;
+            mGMSystem.State = GameState.PLAY;
             Time.timeScale = 1;
             mPlayerSystem.ResetPlayerStat();
             mPlayerSystem.UpgradePoint = 0;
