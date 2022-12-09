@@ -10,15 +10,12 @@ namespace BrotatoM
     {
         private IPlayerSystem mPlayerSystem;
         private ITimeSystem mTimeSystem;
-        private GameManagerSystem mGMSystem;
         private ItemConfigModel mItemConfigModel;
-        private VisualElement mAttrPanel;
 
         private void Awake()
         {
             mPlayerSystem = this.GetSystem<IPlayerSystem>();
             mTimeSystem = this.GetSystem<ITimeSystem>();
-            mGMSystem = this.GetSystem<GameManagerSystem>();
             mItemConfigModel = this.GetModel<ItemConfigModel>();
         }
 
@@ -80,14 +77,14 @@ namespace BrotatoM
             Log.Info("游戏继续", 16);
             transform.gameObject.SetActive(false);
             mTimeSystem.Resume();
-            mGMSystem.State = GameState.PLAY;
+            GameManager.Instance.State = GameState.PLAY;
             Time.timeScale = 1;
         }
 
         private void OnRestart()
         {
             Log.Info("游戏重新开始", 16);
-            mGMSystem.State = GameState.PLAY;
+            GameManager.Instance.State = GameState.PLAY;
         }
 
         private void OnSettings()
@@ -101,7 +98,7 @@ namespace BrotatoM
             SceneManager.LoadScene("GameStartScene");
             mTimeSystem.ClearAllTasks();
             mTimeSystem.Resume();
-            mGMSystem.State = GameState.PLAY;
+            GameManager.Instance.State = GameState.PLAY;
             Time.timeScale = 1;
             mPlayerSystem.ResetPlayerStat();
             mPlayerSystem.UpgradePoint = 0;

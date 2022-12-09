@@ -9,7 +9,6 @@ namespace BrotatoM
             // 系统层
             RegisterSystem<ITimeSystem>(new TimeSystem());
             RegisterSystem<IPlayerSystem>(new PlayerSystem());
-            RegisterSystem(new GameManagerSystem());
 
             // 模型层
             RegisterModel(new WeaponConfigModel("Configs/ProcessedWeapons"));

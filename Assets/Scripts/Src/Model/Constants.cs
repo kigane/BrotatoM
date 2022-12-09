@@ -53,5 +53,8 @@ namespace BrotatoM
         public static float Harvesting = 0;
         public static float EnemiesSpawnRate = 0;
         public static float TreeSpawnRate = 0;
+
+        public static float HorizontalBoundSize = 13;
+        public static float VerticalBoundSize = 7;
     }
 }

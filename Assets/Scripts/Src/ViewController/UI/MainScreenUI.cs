@@ -19,7 +19,6 @@ namespace BrotatoM
         private Label mHarvestBagLabel;
         private Label mTimeLabel;
         private IPlayerSystem mPlayerSystem;
-        private GameManagerSystem mGMSystem;
         private PlayerControl mPlayerControl;
         private ITimeSystem mTimeSystem;
         private AttrInfo[] mNeedShowProperties;
@@ -29,7 +28,6 @@ namespace BrotatoM
             mPlayerControl = new PlayerControl();
             mTimeSystem = this.GetSystem<ITimeSystem>();
             mPlayerSystem = this.GetSystem<IPlayerSystem>();
-            mGMSystem = this.GetSystem<GameManagerSystem>();
         }
 
         protected override void OnUIEnable()
@@ -56,6 +54,7 @@ namespace BrotatoM
             mTimeLabel = mRootElement.Q<Label>("time");
             mTimeLabel.text = Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value].ToString();
             mTimeSystem.AddCountDownTask(Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value]);
+            GameManager.Instance.GenerateEnemies(5);
 
             // 升级图标
             mLevelUpContainer = mRootElement.Q("levelup");
@@ -189,21 +188,21 @@ namespace BrotatoM
 
         private void OnReturn(InputAction.CallbackContext obj)
         {
-            if (mGMSystem.State == GameState.PLAY)
+            if (GameManager.Instance.State == GameState.PLAY)
             {
                 // 显示暂停界面
                 Log.Info("游戏暂停", 16);
                 stopScreenUI.gameObject.SetActive(true);
                 mTimeSystem.Stop();
-                mGMSystem.State = GameState.STOPPED;
+                GameManager.Instance.State = GameState.STOPPED;
                 Time.timeScale = 0;
             }
-            else if (mGMSystem.State == GameState.STOPPED)
+            else if (GameManager.Instance.State == GameState.STOPPED)
             {
                 Log.Info("游戏继续", 16);
                 stopScreenUI.gameObject.SetActive(false);
                 mTimeSystem.Resume();
-                mGMSystem.State = GameState.PLAY;
+                GameManager.Instance.State = GameState.PLAY;
                 Time.timeScale = 1;
             }
         }
