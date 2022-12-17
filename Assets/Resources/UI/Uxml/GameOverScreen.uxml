@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root-container" style="flex-grow: 1; background-image: none; background-color: rgb(154, 154, 154); -unity-font: resource(&apos;Fonts/SmileySans-Oblique&apos;); -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;);">
+        <ui:Label text="游戏结束" display-tooltip-when-elided="true" name="game-over-text" enable-rich-text="false" style="-unity-text-align: middle-center; -unity-font: resource(&apos;Fonts/SmileySans-Oblique&apos;); -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); -unity-font-style: normal; font-size: 200px; flex-basis: 50%;" />
+        <ui:VisualElement name="btn-container" style="flex-basis: 20%; padding-left: 40%; padding-right: 40%; height: 216px; justify-content: center; -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); -unity-font: resource(&apos;Fonts/SmileySans-Oblique&apos;);">
+            <ui:Button text="返回主菜单" display-tooltip-when-elided="true" name="return-btn" style="flex-basis: 20%; -unity-font: resource(&apos;Fonts/SmileySans-Oblique&apos;); -unity-font-definition: resource(&apos;Fonts/SmileySans-Oblique SDF&apos;); font-size: 36px; background-color: rgb(202, 202, 202); -unity-font-style: normal;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

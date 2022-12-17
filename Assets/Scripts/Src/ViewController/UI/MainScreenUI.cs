@@ -8,8 +8,9 @@ namespace BrotatoM
 {
     public class MainScreenUI : BaseUI
     {
-        public UIDocument stopScreenUI;
-        public UIDocument shopScreenUI;
+        public GameObject stopScreenUI;
+        public GameObject shopScreenUI;
+        public GameObject gameOverUI;
         private VisualElement mBodyContainer;
         private VisualElement mLevelUpContainer;
         private VisualElement mUpgradeContainer;
@@ -92,7 +93,17 @@ namespace BrotatoM
             #region 注册值变更事件
             mPlayerSystem.HP.Register(value =>
             {
-                UpdateBar("health-bar", value / mPlayerSystem.MaxHp.Value);
+                if (value <= 0)
+                {
+                    Log.Debug("Game Over", 16);
+                    gameOverUI.SetActive(true);
+                    UpdateBar("health-bar", 0);
+                }
+                else
+                {
+                    UpdateBar("health-bar", value / mPlayerSystem.MaxHp.Value);
+                }
+
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             mPlayerSystem.Exp.Register(value =>
@@ -154,7 +165,7 @@ namespace BrotatoM
                     }//TODO 开箱子，获得道具
                     else
                     {// 直接进商店
-                        shopScreenUI.gameObject.SetActive(true);
+                        shopScreenUI.SetActive(true);
                     }
                 });
                 // TODO 在延迟的一秒内,让敌人消失，并收集可收集物
@@ -170,14 +181,14 @@ namespace BrotatoM
             this.RegisterEvent<WaveOverEvent>(e =>
             {
                 // 收集掉落物
-                shopScreenUI.gameObject.SetActive(true);
+                shopScreenUI.SetActive(true);
                 StopCoroutine(mCoroutine);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             // 出发按钮
             this.RegisterEvent<NextWaveEvent>(e =>
             {
-                shopScreenUI.gameObject.SetActive(false);
+                shopScreenUI.SetActive(false);
                 Hide(mBodyContainer);
                 Hide(mPromptLabel);
                 // 开始新一轮倒计时
@@ -204,7 +215,7 @@ namespace BrotatoM
             {
                 // 显示暂停界面
                 Log.Info("游戏暂停", 16);
-                stopScreenUI.gameObject.SetActive(true);
+                stopScreenUI.SetActive(true);
                 mTimeSystem.Stop();
                 GameManagerSystem.Instance.State = GameState.STOPPED;
                 Time.timeScale = 0;
@@ -212,7 +223,7 @@ namespace BrotatoM
             else if (GameManagerSystem.Instance.State == GameState.STOPPED)
             {
                 Log.Info("游戏继续", 16);
-                stopScreenUI.gameObject.SetActive(false);
+                stopScreenUI.SetActive(false);
                 mTimeSystem.Resume();
                 GameManagerSystem.Instance.State = GameState.PLAY;
                 Time.timeScale = 1;
