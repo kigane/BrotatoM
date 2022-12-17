@@ -34,12 +34,20 @@ namespace BrotatoM
 
             mTemplateContainer.Q("buy-btn-container").RegisterCallback<ClickEvent>(e =>
             {
-                Log.Debug($"添加 道具 {item.Id} {item.Name}");
-                // 添加道具
-                playerSystem.AddItem(item.Id);
+                if (playerSystem.Harvest.Value < item.BasePrice)
+                {
+                    Log.Debug("买不起!");
+                }
+                else
+                {
+                    Log.Debug($"添加 道具 {item.Id} {item.Name}");
+                    // 添加道具
+                    playerSystem.AddItem(item.Id);
+                    playerSystem.Harvest.Value -= item.BasePrice;
 
-                // 清除Panel
-                mTemplateContainer.Q("item-panel").Clear();
+                    // 清除Panel
+                    mTemplateContainer.Q("item-panel").Clear();
+                }
             });
 
             // 图片的PickMode要设为Ignore
@@ -72,6 +80,7 @@ namespace BrotatoM
                     lockBtn.RegisterCallback(OnLeave);
                 }
             };
+
             if (locked)
             {
                 lockBtn.style.backgroundColor = UIColor.LOCKED;

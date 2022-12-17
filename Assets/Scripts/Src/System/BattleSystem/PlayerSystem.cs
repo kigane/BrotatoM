@@ -45,6 +45,7 @@ namespace BrotatoM
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; }
         public BindableProperty<float> TreeSpawnRate { get; }
+        public BindableProperty<int> RefreshCost { get; }
         public int CharacterId { get; set; }
         /// <summary>
         /// 升级点数，决定升级界面的显示与消失
@@ -99,6 +100,7 @@ namespace BrotatoM
         // 隐藏属性
         public BindableProperty<float> EnemiesSpawnRate { get; } = new() { Value = 1 };
         public BindableProperty<float> TreeSpawnRate { get; } = new() { Value = 1 };
+        public BindableProperty<int> RefreshCost { get; } = new() { Value = 2 };
         public int CharacterId { get; set; }
         public int UpgradePoint { get; set; }
 

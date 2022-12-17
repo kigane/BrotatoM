@@ -11,6 +11,7 @@ namespace BrotatoM
         private VisualElement mItemsContainer;
         private Label mWaveLabel;
         private Label mHarvestLabel;
+        private Button mRefreshBtn;
 
         private void Awake()
         {
@@ -23,8 +24,7 @@ namespace BrotatoM
             // mRootElement = GetComponent<UIDocument>().rootVisualElement;// 不能放到awake里面
             mWaveLabel = mRootElement.Q<Label>("wave-text");
             mHarvestLabel = mRootElement.Q<Label>("harvest-text");
-
-            mHarvestLabel.text = ((int)mPlayerSystem.Harvest.Value).ToString();
+            mRefreshBtn = mRootElement.Q<Button>("refresh-btn");
 
             // 按钮hover => 可以找到当前创建了的模板上的button，但如果模板重新创建了就管不到了。
             // 所以最好放在模板创建之前，否则会多次注册事件。
@@ -40,7 +40,20 @@ namespace BrotatoM
             var refreshBtn = mRootElement.Q<Button>("refresh-btn");
             refreshBtn.RegisterCallback<ClickEvent>(e =>
             {
-                ShowRandomItems();
+                if (mPlayerSystem.Harvest.Value < mPlayerSystem.RefreshCost.Value)
+                {
+                    Log.Debug("刷新不起!");
+                }
+                else
+                {
+                    // 显示新物品
+                    ShowRandomItems();
+                    // 扣钱
+                    mPlayerSystem.Harvest.Value -= mPlayerSystem.RefreshCost.Value;
+                    // 增加下次刷新的钱数并显示
+                    mPlayerSystem.RefreshCost.Value++;
+                    mRefreshBtn.text = "-" + mPlayerSystem.RefreshCost.Value.ToString();
+                }
             });
 
             // 出发按钮
@@ -55,6 +68,11 @@ namespace BrotatoM
             {
                 mWaveLabel.text = $"商店(第{mPlayerSystem.CurrWave}波)";
             });
+
+            mPlayerSystem.Harvest.RegisterWithInitValue(value =>
+            {
+                mHarvestLabel.text = ((int)value).ToString();
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
         }
 
         private void ShowRandomItems()

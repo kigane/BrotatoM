@@ -93,22 +93,22 @@ namespace BrotatoM
             mPlayerSystem.HP.Register(value =>
             {
                 UpdateBar("health-bar", value / mPlayerSystem.MaxHp.Value);
-            });
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             mPlayerSystem.Exp.Register(value =>
             {
                 UpdateBar("exp-bar", value / mPlayerSystem.CurrMaxExp.Value);
-            });
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             mPlayerSystem.Harvest.Register(value =>
             {
                 mRootElement.Q<Label>("stuff-amount").text = value.ToString();
-            });
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             mPlayerSystem.CurrWave.Register(value =>
             {
                 mRootElement.Q<Label>("wave").text = $"第{value}波";
-            });
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
             #endregion
 
             #region 注册事件处理函数
