@@ -117,8 +117,8 @@ namespace BrotatoM
 
         protected override void OnInit()
         {
-            var updateBehaviourGO = new GameObject("GameManager");
-            updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
+            // var updateBehaviourGO = new GameObject("GameManager");
+            // updateBehaviourGO.AddComponent<DontDestroyOnLoadScript>();
             mItemConfigs = this.GetModel<ItemConfigModel>().GetAllConfigItems();
             ResetPlayerStat();
         }

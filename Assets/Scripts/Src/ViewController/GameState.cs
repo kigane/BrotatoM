@@ -7,6 +7,7 @@ namespace BrotatoM
         SET_UP,
         PLAY,
         STOPPED,
-        GAME_OVER
+        GAME_OVER,
+        COLLECTING
     }
 }

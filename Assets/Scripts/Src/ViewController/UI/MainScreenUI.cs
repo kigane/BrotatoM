@@ -102,7 +102,12 @@ namespace BrotatoM
 
             mPlayerSystem.Harvest.Register(value =>
             {
-                mRootElement.Q<Label>("stuff-amount").text = value.ToString();
+                mHarvestLabel.text = value.ToString();
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            mPlayerSystem.HarvestBag.Register(value =>
+            {
+                mHarvestBagLabel.text = value.ToString();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             mPlayerSystem.CurrWave.Register(value =>
@@ -131,6 +136,7 @@ namespace BrotatoM
             // 倒计时结束
             this.RegisterEvent<CountDownOverEvent>(e =>
             {
+                GameManagerSystem.Instance.State = GameState.COLLECTING;
                 // 增加收获
                 mPlayerSystem.Harvest.Value += mPlayerSystem.Harvesting.Value;
                 //TODO 收集可收集物
@@ -139,6 +145,7 @@ namespace BrotatoM
 
                 this.GetSystem<ITimeSystem>().AddDelayTask(1f, () =>
                 {
+                    GameManagerSystem.Instance.State = GameState.PLAY;
                     if (mPlayerSystem.UpgradePoint > 0)
                     {// 升级
                         mPromptLabel.text = "升级!";
@@ -162,6 +169,7 @@ namespace BrotatoM
             // 一波结束进入商店界面
             this.RegisterEvent<WaveOverEvent>(e =>
             {
+                // 收集掉落物
                 shopScreenUI.gameObject.SetActive(true);
                 StopCoroutine(mCoroutine);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -191,6 +199,7 @@ namespace BrotatoM
 
         private void OnReturn(InputAction.CallbackContext obj)
         {
+            Log.Debug(GameManagerSystem.Instance.State);
             if (GameManagerSystem.Instance.State == GameState.PLAY)
             {
                 // 显示暂停界面

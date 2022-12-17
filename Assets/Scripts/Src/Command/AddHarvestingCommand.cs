@@ -4,11 +4,31 @@ namespace BrotatoM
 {
     public class AddHarvestingCommand : AbstractCommand
     {
+        public int addAmount;
+
+        public AddHarvestingCommand(int amount)
+        {
+            addAmount = amount;
+        }
+
         protected override void OnExecute()
         {
             var playerSystem = this.GetSystem<IPlayerSystem>();
-            playerSystem.Harvest.Value++;
-            playerSystem.Exp.Value += 15;
+            if (GameManagerSystem.Instance.State == GameState.COLLECTING)
+            {
+                playerSystem.HarvestBag.Value++;
+            }
+            else
+            {
+                if (playerSystem.HarvestBag.Value > 0)
+                {
+                    playerSystem.Harvest.Value += addAmount + 1;
+                    playerSystem.HarvestBag.Value--;
+                }
+                else
+                    playerSystem.Harvest.Value += addAmount;
+            }
+            playerSystem.Exp.Value += 3;
 
             // 升级
             if (playerSystem.Exp.Value >= playerSystem.CurrMaxExp.Value)

@@ -5,17 +5,22 @@ namespace BrotatoM
     public class GameManagerSystem : MonoBehaviour
     {
         private GameManagerSystem() { }
-        private readonly static GameManagerSystem instance;
+        private static GameManagerSystem instance;
+        private static readonly object mLock = new();
         public static GameManagerSystem Instance
         {
             get
             {
-                if (instance == null)
+                lock (mLock)
                 {
-                    GameObject go = new("GameManager");
-                    go.AddComponent<GameManagerSystem>();
-                    go.AddComponent<DontDestroyOnLoadScript>();
-                    return go.GetComponent<GameManagerSystem>();
+                    if (instance == null)
+                    {
+                        GameObject go = new("GameManager");
+                        go.AddComponent<GameManagerSystem>();
+                        go.AddComponent<DontDestroyOnLoadScript>();
+                        instance = go.GetComponent<GameManagerSystem>();
+                        return instance;
+                    }
                 }
                 return instance;
             }
