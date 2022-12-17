@@ -58,7 +58,7 @@ namespace BrotatoM
                 if (mCurrPanelIndex + 1 == 4)
                 {
                     // this.GetSystem<GameManagerSystem>().State = GameState.PLAY;
-                    GameManager.Instance.State = GameState.PLAY;
+                    GameManagerSystem.Instance.State = GameState.PLAY;
                     SceneManager.LoadScene("MainScene");
                 }
                 else

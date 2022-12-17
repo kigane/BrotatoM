@@ -22,6 +22,7 @@ namespace BrotatoM
         private PlayerControl mPlayerControl;
         private ITimeSystem mTimeSystem;
         private AttrInfo[] mNeedShowProperties;
+        private Coroutine mCoroutine;
 
         private void Awake()
         {
@@ -54,7 +55,7 @@ namespace BrotatoM
             mTimeLabel = mRootElement.Q<Label>("time");
             mTimeLabel.text = Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value].ToString();
             mTimeSystem.AddCountDownTask(Params.WaveLastSeconds[mPlayerSystem.CurrWave.Value]);
-            GameManager.Instance.GenerateEnemies(5);
+            mCoroutine = StartCoroutine(GenerateEnemies("BabyAlien", 5, 5));
 
             // 升级图标
             mLevelUpContainer = mRootElement.Q("levelup");
@@ -158,10 +159,11 @@ namespace BrotatoM
                 ShowRandomUpgradeItems();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
-            // 进入商店界面
+            // 一波结束进入商店界面
             this.RegisterEvent<WaveOverEvent>(e =>
             {
                 shopScreenUI.gameObject.SetActive(true);
+                StopCoroutine(mCoroutine);
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
 
             // 出发按钮
@@ -177,6 +179,7 @@ namespace BrotatoM
                 mLevelUpContainer.Clear();
                 //TODO 箱子图标清空
                 //TODO 每隔几秒生成一波敌人
+                mCoroutine = StartCoroutine(GenerateEnemies("BabyAlien", 5, 5));
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
             #endregion
         }
@@ -188,21 +191,21 @@ namespace BrotatoM
 
         private void OnReturn(InputAction.CallbackContext obj)
         {
-            if (GameManager.Instance.State == GameState.PLAY)
+            if (GameManagerSystem.Instance.State == GameState.PLAY)
             {
                 // 显示暂停界面
                 Log.Info("游戏暂停", 16);
                 stopScreenUI.gameObject.SetActive(true);
                 mTimeSystem.Stop();
-                GameManager.Instance.State = GameState.STOPPED;
+                GameManagerSystem.Instance.State = GameState.STOPPED;
                 Time.timeScale = 0;
             }
-            else if (GameManager.Instance.State == GameState.STOPPED)
+            else if (GameManagerSystem.Instance.State == GameState.STOPPED)
             {
                 Log.Info("游戏继续", 16);
                 stopScreenUI.gameObject.SetActive(false);
                 mTimeSystem.Resume();
-                GameManager.Instance.State = GameState.PLAY;
+                GameManagerSystem.Instance.State = GameState.PLAY;
                 Time.timeScale = 1;
             }
         }
@@ -265,6 +268,18 @@ namespace BrotatoM
         private void Hide(VisualElement el)
         {
             el.style.display = DisplayStyle.None;
+        }
+
+        IEnumerator GenerateEnemies(string name, int amount, int interval)
+        {
+            int waves = Params.WaveLastSeconds[mPlayerSystem.CurrWave] / interval;
+            while (waves > 0)
+            {
+                Log.Debug("Generating " + name);
+                waves--;
+                GameManagerSystem.Instance.GenerateEnemies(name, amount);
+                yield return new WaitForSeconds(interval);
+            }
         }
     }
 }

@@ -4,6 +4,6 @@ namespace BrotatoM
 {
     public class NextWaveEvent
     {
-
+        
     }
 }

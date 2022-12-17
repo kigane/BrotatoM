@@ -32,7 +32,6 @@ namespace BrotatoM
 
         protected void OnDisappearClipStart()
         {
-            Log.Debug("Disappear start");
             mBoxColl.enabled = false;
             canMove = false;
         }

@@ -7,8 +7,9 @@ namespace BrotatoM
         private Transform mEnemyTransform;
         private GameObject mBullet;
         public float range;
+        public float bulletSpeed = 10f;
         private float mShouldRotate;
-        private float mCooldown = 0.5f;
+        private float mCooldown = 0.2f;
         private bool needCooldown = false;
 
         private void Start()
@@ -23,10 +24,16 @@ namespace BrotatoM
             if (mCooldown <= 0)
             {
                 needCooldown = false;
-                mCooldown = 0.5f;
+                mCooldown = 0.2f;
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && !needCooldown)
+            // if (Input.GetKeyDown(KeyCode.Space) && !needCooldown)
+            // {
+            //     Shoot();
+            //     needCooldown = true;
+            // }
+
+            if (FindNearestEnemyInRange(range) && !needCooldown)
             {
                 Shoot();
                 needCooldown = true;
@@ -44,7 +51,7 @@ namespace BrotatoM
             bullet.SetActive(true);
             // 直接在这里设置子弹速度和方向,延时销毁
             var rig = bullet.GetComponent<Rigidbody2D>();
-            rig.velocity = 6 * (transform.rotation * Vector3.right).normalized;
+            rig.velocity = bulletSpeed * (transform.rotation * Vector3.right).normalized;
             Destroy(bullet, 3f);
         }
 

@@ -77,14 +77,14 @@ namespace BrotatoM
             Log.Info("游戏继续", 16);
             transform.gameObject.SetActive(false);
             mTimeSystem.Resume();
-            GameManager.Instance.State = GameState.PLAY;
+            GameManagerSystem.Instance.State = GameState.PLAY;
             Time.timeScale = 1;
         }
 
         private void OnRestart()
         {
             Log.Info("游戏重新开始", 16);
-            GameManager.Instance.State = GameState.PLAY;
+            GameManagerSystem.Instance.State = GameState.PLAY;
         }
 
         private void OnSettings()
@@ -98,7 +98,7 @@ namespace BrotatoM
             SceneManager.LoadScene("GameStartScene");
             mTimeSystem.ClearAllTasks();
             mTimeSystem.Resume();
-            GameManager.Instance.State = GameState.PLAY;
+            GameManagerSystem.Instance.State = GameState.PLAY;
             Time.timeScale = 1;
             mPlayerSystem.ResetPlayerStat();
             mPlayerSystem.UpgradePoint = 0;
